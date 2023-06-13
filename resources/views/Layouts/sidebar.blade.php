@@ -24,13 +24,22 @@
                 
                     <li class="nav-item  ">
                         <a href="{{ url('/admin/images') }}"
-                            class="nav-link {{ Request::is('departments') ? 'active' : '' }}">
+                            class="nav-link {{ Request::is('admin/images') ? 'active' : '' }}">
                             <i class="nav-icon fa fa-th-large"></i>
                             <p>
                                 Images
                             </p>
                         </a>
                     </li>
+                 <li class="nav-item  ">
+                        <a href="{{ url('/admin/social-links') }}"
+                            class="nav-link {{ Request::is('admin/social-links') ? 'active' : '' }}">
+                            <i class="nav-icon fa fa-th-large"></i>
+                            <p>
+                                Social Links
+                            </p>
+                        </a>
+                    </li>   
                 
             </ul>
         </nav>

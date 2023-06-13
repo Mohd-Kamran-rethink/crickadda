@@ -59,15 +59,28 @@
 <body>
     <div class="wrapper home-new">
 
-        <?php if($responseData['country'] == 'PK'){ ?>
-        <div id="floater"><a href="https://wa.me/971569062916" target="_blank"><img src="images/images.png"></a>
-        </div>
-        <?php } else { ?>
-        <!-- Watsapp Floating Icon -->
-        <div id="floater"><a href="https://wa.me/919913144444" target="_blank"><img src="images/images.png"></a>
-        </div>
-        <?php } ?>
+        {{-- <?php if($responseData['country'] == 'PK'){ ?> --}}
+        {{-- <div id="floater"><a href="https://wa.me/971569062916" target="_blank"><img src="images/images.png"></a> --}}
+        {{-- </div> --}}
+        {{-- <?php } else { ?> --}}
+        {{-- <!-- Watsapp Floating Icon --> --}}
+        {{-- <div id="floater"><a href="https://wa.me/919913144444" target="_blank"><img src="images/images.png"></a> --}}
+        {{-- </div> --}}
+        {{-- <?php } ?> --}}
 
+        {{-- dynamic links numbers --}}
+        @php
+            $WhatsAppLink = $socialLinks->last(function ($item) {
+                return $item->platform === 'whatsapp';
+            });
+            $TelegramLink = $socialLinks->last(function ($item) {
+                return $item->platform === 'telegram';
+            });
+        @endphp
+        <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+                    src="images/images.png"></a>
+            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a>
+        </div>
         <!-- Header -->
         <div class="home-new-header container-fluid container-fluid-5">
             <div class="row row5">
@@ -119,13 +132,13 @@
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
                     @foreach ($images as $item)
-                    @if($item->category=='banner')
-                    <div class="item  carousel-item carousal-23">
-                        <img src="{{ asset('storage/Banners/' . $item->filename) }}">
-                    </div>
-                    @endif
+                        @if ($item->category == 'banner')
+                            <div class="item  carousel-item carousal-23">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            </div>
+                        @endif
                     @endforeach
-                    
+
                 </div>
             </div>
         @else
@@ -133,13 +146,13 @@
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
                     @foreach ($images as $item)
-                    @if($item->category=='banner')
-                    <div class="item  carousel-item carousal-23">
-                        <img src="{{ asset('storage/Banners/' . $item->filename) }}">
-                    </div>
-                    @endif
+                        @if ($item->category == 'banner')
+                            <div class="item  carousel-item carousal-23">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            </div>
+                        @endif
                     @endforeach
-                    
+
                 </div>
             </div>
         @endif
@@ -526,23 +539,40 @@
                     </div>
                     <?php } else {?>
                     <div class="text-center w-100">
-                        <span>+91 9913144444</span>
+                        <span>{{ $WhatsAppLink->value }}</span>
                     </div>
                     <?php } ?>
                 </div>
+                {{-- dynamic social slinks --}}
+                @php
+                    
+                    $FacebookLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'facebook';
+                    });
+                    
+                    $youtubeLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'youtube';
+                    });
+                    $instagramLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'instagram';
+                    });
+                    
+                @endphp
+
                 <div class="footer-social">
                     <?php if($responseData['country'] == 'PK'){ ?>
                     <a href="https://wa.me/971569062916" target="_blank"></a>
                     <?php } else {?>
-                    <a href="https://wa.me/919913144444" target="_blank"><img src="images/whatsapp.png">
+                    <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+                            src="images/whatsapp.png">
                     </a>
-                    <a href="https://www.facebook.com/cricadda.official" target="_blank">
+                    <a href="{{ $FacebookLink->value }}" target="_blank">
                         <img src="images/facebooklogo.png">
                     </a>
-                    <a href="https://www.instagram.com/cricadda.official" target="_blank">
+                    <a href="{{ $instagramLink->value ?? '' }}" target="_blank">
                         <img src="images/instagramlogo.png">
                     </a>
-                    <a href="https://t.me/officialcricadda" target="_blank">
+                    <a href="{{ $TelegramLink->value }}" target="_blank">
                         <img src="images/telegram.png">
                     </a>
                     <?php } ?>

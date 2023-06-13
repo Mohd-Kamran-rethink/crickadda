@@ -30,3 +30,7 @@ Route::get('/admin/images', [MainController::class, 'listImages'])->name('listIm
 Route::get('admin/images/add', [MainController::class, 'addForm'])->name('addForm');
 Route::post('admin/images/add', [MainController::class, 'add'])->name('add');
 Route::post('admin/images/delete', [MainController::class, 'deletImgae'])->name('deletImgae');
+Route::get('/admin/social-links/add', [MainController::class, 'socialLinksForm'])->name('socialLinksForm');
+Route::post('/admin/social-links/add', [MainController::class, 'socialLinksAdd'])->name('socialLinksAdd');
+Route::get('/admin/social-links', [MainController::class, 'socialLinksList'])->name('socialLinksList');
+Route::post('/admin/social-links/delete', [MainController::class, 'socialLinkDelete'])->name('socialLinkDelete');

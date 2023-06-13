@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Banners </h1>
+                    <h1>Social Links </h1>
                 </div>
             </div>
             @if (session()->has('msg-success'))
@@ -24,7 +24,7 @@
     <section class="content">
         <div class="card">
             <div class="card-body">
-                <a href="{{url('admin/images/add')}}" class="btn btn-primary mb-4">Add Image</a>
+                <a href="{{url('admin/social-links/add')}}" class="btn btn-primary mb-4">Add Social Link</a>
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -33,21 +33,21 @@
                                     <thead>
                                         <tr>
                                             <th>S.No.</th>
-                                            <th>Name</th>
-                                            <th>Image</th>
-                                            <th>Actions</th>
+                                            <th>Country</th>
+                                            <th>Platform</th>
+                                            <th>Value</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @forelse ($images as $item)
+                                        @forelse ($links as $item)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $item->name }}</td>
-                                                <td><img style="max-width: 100px" src="{{asset('storage/Banners/'.$item->filename)}}" alt=""></td>
+                                                <td>{{ $item->country }}</td>
+                                                <td>{{ $item->platform }}</td>
+                                                <td>{{ $item->value }}</td>
                                                 <td>
-                                                    {{-- <a href="{{ url('expense-type/edit/?id=' . $item->id) }}"
-                                                        title="Edit this expense type" class="btn btn-primary"><i
-                                                            class="fa fa-pen"></i></a> --}}
+                                                 
                                                     <button title="Delete this image"
                                                         onclick="manageModal({{ $item->id }})" class="btn btn-danger"><i
                                                             class="fa fa-trash"></i></button>
@@ -75,17 +75,17 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete image</h4>
+                    <h4 class="modal-title">Delete social link.</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <form action="{{ url('/admin/images/delete') }}" method="POST">
+                <form action="{{ url('/admin/social-links/delete') }}" method="POST">
                     @csrf
                     <input type="hidden" name="deleteId" id="deleteInput">
 
                     <div class="modal-body">
-                        <h4>Are you sure you want to delete this image?</h4>
+                        <h4>Are you sure you want to delete this social link?</h4>
                     </div>
                     <div class="modal-footer ">
                         <button type="submit" class="btn btn-danger">Delete</button>
