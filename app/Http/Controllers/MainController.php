@@ -24,7 +24,7 @@ class MainController extends Controller
 
         // Retrieve the country information
         $country = $data['country']??"IN";
-
+dd($country);
         $responseData = ['country' => $country];
         $logo = Image::where('category', 'logo')
             ->orderBy('created_at', 'desc')
