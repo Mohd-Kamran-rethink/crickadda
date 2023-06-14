@@ -29,10 +29,9 @@ class MainController extends Controller
             ->orderBy('created_at', 'desc')
             ->first();
         $images = Image::get();
-        if($responseData['country']=="IN")
-        {
+        
           $socialLinks=SocialLink::where('country','=','india')->get();  
-        }
+        
         return view('index', compact('responseData', 'logo', 'images','socialLinks'));
     }
     public function listImages()
