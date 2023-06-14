@@ -6,12 +6,26 @@ use App\Image;
 use App\SocialLink;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use GuzzleHttp\Client;
 
 class MainController extends Controller
 {
     public function landingPage()
     {
-        $responseData = ['country' => 'IN'];
+        // Get the user's IP address
+    $userIpAddress = request()->ip();
+
+    // Make a request to the IP geolocation service
+    $client = new Client();
+    $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
+
+    // Parse the JSON response
+    $data = json_decode($response->getBody(), true);
+
+        // Retrieve the country information
+        $country = $data['country']??"IN";
+
+        $responseData = ['country' => $country];
         $logo = Image::where('category', 'logo')
             ->orderBy('created_at', 'desc')
             ->first();
@@ -34,31 +48,31 @@ class MainController extends Controller
     public function add(Request $req)
     {
         $req->validate([
-            'file' => 'required',
+            'files' => 'required',
             'category' => 'required|not_in:0',
         ]);
-        $image = new Image();
-        if ($req->file('file')) {
-            // Get filename with the extension
-            $filenameWithExt = $req->file('file')->getClientOriginalName();
-            //Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            // Get just ext
-            $extension = $req->file('file')->getClientOriginalExtension();
-            // Filename to store
-            $Image = $filename . '_' . time() . '.' . $extension;
-            // Upload Image
-            $path = $req->file('file')->storeAs('public/Banners/', $Image);
-            $image->filename = $Image;
+        if ($req->hasFile('files')) {
+            foreach ($req->file('files') as $file) {
+                // Get filename with the extension
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just the filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                // Get just the extension
+                $extension = $file->getClientOriginalExtension();
+                // Filename to store
+                $Image = $filename . '_' . time() . '.' . $extension;
+                // Upload Image
+                $path = $file->storeAs('public/Banners/', $Image);
+                // Save the image record
+                $image = new Image();
+                $image->filename = $Image;
+                $image->name = $filename;
+                $image->category = $req->category;
+                $image->save();
+            }
         }
-        $image->name = $req->category;
-        $image->category = $req->category;
-        $result = $image->save();
-        if ($result) {
-            return redirect('/admin/images')->with(['msg-success' => 'Image   has been updated.']);
-        } else {
-            return redirect('/admin/images')->with(['msg-error' => 'Something went wrong could not update Image  .']);
-        }
+        
+        return redirect('/admin/images')->with(['msg-success' => 'Images have been uploaded.']);
     }
     public function deletImgae(Request $req)
     {

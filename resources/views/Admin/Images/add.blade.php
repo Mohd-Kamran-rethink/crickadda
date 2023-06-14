@@ -41,8 +41,8 @@
                         <div class="col-xs-12 col-md-4">
                             <div class="form-group">
                                 <label>Image<span style="color:red">*</span></label>
-                                <input type="file" name="file" class="form-control">
-                                @error('file')
+                                <input type="file" name="files[]" class="form-control" multiple>
+                                @error('files')
                                     <span class="text-danger">
                                         {{ $message }}
                                     </span>

@@ -43,8 +43,8 @@
                                         @forelse ($links as $item)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $item->country }}</td>
-                                                <td>{{ $item->platform }}</td>
+                                                <td style="text-transform: capitalize">{{ $item->country }}</td>
+                                                <td style="text-transform: capitalize">{{ $item->platform }}</td>
                                                 <td>{{ $item->value }}</td>
                                                 <td>
                                                  
