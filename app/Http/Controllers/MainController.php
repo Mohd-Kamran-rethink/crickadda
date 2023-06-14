@@ -23,7 +23,7 @@ class MainController extends Controller
     $data = json_decode($response->getBody(), true);
 
         // Retrieve the country information
-        $country = $data['country']??"IN";
+        $country = $data['countryCode']??"IN";
 dd($country);
         $responseData = ['country' => $country];
         $logo = Image::where('category', 'logo')
