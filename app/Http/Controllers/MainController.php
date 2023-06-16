@@ -32,7 +32,7 @@ class MainController extends Controller
         
           $socialLinks=SocialLink::where('country','=','india')->get();  
         
-        return view('index', compact('responseData', 'logo', 'images','socialLinks'));
+        return view('MainTheme.index', compact('responseData', 'logo', 'images','socialLinks'));
     }
     public function listImages()
     {
@@ -66,6 +66,7 @@ class MainController extends Controller
                 $image->filename = $Image;
                 $image->name = $filename;
                 $image->category = $req->category;
+                $image->heading = $req->heading;
                 $image->save();
             }
         }

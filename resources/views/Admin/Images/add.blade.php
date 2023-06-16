@@ -24,12 +24,14 @@
                                 <label>Category<span style="color:red">*</span></label>
                                 <select class="form-control" name="category" id="">
                                     <option value="0">--Choose--</option>
-                                    <option value="logo">Logo</option>
                                     <option value="banner">Banner</option>
-                                    <option value="outliveCasino">Our Live Casino</option>
-                                    <option value="virtualCasino">Virtual Casino</option>
-                                    <option value="liveCasino">Live Casino</option>
                                     <option value="fantasyGames">Fantasy Games</option>
+                                    <option value="liveCasino">Live Casino</option>
+                                    <option value="logo">Logo</option>
+                                    <option value="outliveCasino">Our Live Casino</option>
+                                    <option value="popular_today">Popular Today</option>
+                                    <option value="sport">Sports</option>
+                                    <option value="virtualCasino">Virtual Casino</option>
                                 </select>
                                 @error('category')
                                     <span class="text-danger">
@@ -43,6 +45,17 @@
                                 <label>Image<span style="color:red">*</span></label>
                                 <input type="file" name="files[]" class="form-control" multiple>
                                 @error('files')
+                                    <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label>Heading</label>
+                                <input type="text" name="heading" class="form-control" multiple>
+                                @error('heading')
                                     <span class="text-danger">
                                         {{ $message }}
                                     </span>
