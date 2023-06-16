@@ -710,7 +710,7 @@
                 <div class="bb-styling">
                     <a>
                         <span>
-                            <img width="24px;" alt="Providers" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            <img width="24px;" alt="Providers" src="NewTheme/images/Providers.svg">
                         </span>
                         <h1 style="margin-top: 2px;">Providers</h1>
                     </a>
@@ -730,7 +730,7 @@
                         <li class="item">
                             <div class="top-row">
                                 <a>
-                                    <img alt="Evolution Gaming" src="NewTheme/images/Evolution Gaming.webp">
+                                    <img alt="Evolution Gaming" src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
                         </li>
