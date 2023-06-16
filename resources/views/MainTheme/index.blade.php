@@ -31,7 +31,7 @@
                 <div class="nav-contain">
                     <div class="sidebrand-contain">
                         <div class="site_logo">
-                            <a id="logo-container" href="#" class="brand-logo">
+                            <a id="logo-container" href="https://app.cricadda.com/login" class="brand-logo">
                                 <img
                                     class="menu_icon ng-star-inserted"src="{{ asset('storage/Banners/' . $logo->filename) }}">
                             </a>
@@ -54,7 +54,7 @@
                                     </a>
                                 </span>
                                 <span class="signup_btn_wrapper">
-                                    <a href="#" class="signup waves-effect waves-light ng-star-inserted">
+                                    <a href="https://app.cricadda.com/login" class="signup waves-effect waves-light ng-star-inserted">
                                         <span>
                                             <img src="NewTheme/images/signup.svg" alt="">
                                         </span>
@@ -93,7 +93,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="#" class="withdraw">
+                                        <a href="https://app.cricadda.com/login" class="withdraw">
                                             <span class="flex-grow-1">Withdraw</span>
                                             <img src="NewTheme/images/arrow.svg" class="arrow mt-0"
                                                 style="transform: rotate(-90deg);">
@@ -381,7 +381,7 @@
         <div class="categories-home">
             <ul class="nav mobile-nav mobile-nav home-slider mobile-home-scroll-content">
                 <li class="item" tabindex="0">
-                    <a href="#" id="navMobileBetGamesTV" name="navMobileBetGamesTV"
+                    <a href="https://app.cricadda.com/login" id="navMobileBetGamesTV" name="navMobileBetGamesTV"
                         class="betgamestv item-nav">
                         <img alt="Exchange" class="top_bar_images" src="NewTheme/images/Casino.svg"> Lottery </a>
                 </li>
@@ -391,26 +391,26 @@
                         SportBook1 </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="#"
+                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img alt="Casino" class="top_bar_images" src="NewTheme/images/EXCHANGE12.svg">
                         <span style="margin-top: 4px;">Exchange</span>
                     </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="#"
+                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img alt="Teen Patti" class="top_bar_images" src="NewTheme/images/Teen Patti.svg">
                         <span style="margin-top: 4px;">Live Casino</span>
                     </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="#"
+                    <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img alt="Inplay" class="top_bar_images" src="NewTheme/images/Inplay.svg"> Slot </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileSports" name="navMobileSports" href="#" class="sports item-nav">
+                    <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login" class="sports item-nav">
                         <img alt="Cricket" class="top_bar_images" src="NewTheme/images/Cricket.svg"> Fantasy Games
                     </a>
                 </li>
@@ -451,7 +451,7 @@
                     @if ($item->category == 'popular_today')
                         <li class="item ng-star-inserted">
                             <div class="top-row">
-                                <a href="#">
+                                <a href="https://app.cricadda.com/login">
                                     <img alt="New Games" src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
@@ -461,7 +461,7 @@
                 @endforeach
                 {{-- <li class="item ng-star-inserted">
           <div class="top-row">
-            <a href="#">
+            <a href="https://app.cricadda.com/login">
               <img alt="New Games" src="NewTheme/images/Test-Match--Bangladesh-VS-Afghanistan---Copy.png">
             </a>
           </div>
@@ -469,7 +469,7 @@
         </li>
         <li class="item ng-star-inserted">
           <div class="top-row">
-            <a href="#">
+            <a href="https://app.cricadda.com/login">
               <img alt="New Games" src="NewTheme/images/TNPL-Chepauk-Super-Gillies-VS-IDream-Tiruppur-Tamizhans.png">
             </a>
           </div>
@@ -477,7 +477,7 @@
         </li>
         <li class="item ng-star-inserted">
           <div class="top-row">
-            <a href="#">
+            <a href="https://app.cricadda.com/login">
               <img alt="New Games" src="NewTheme/images/Friendlies-International-Australia-VS-Argentina.png">
             </a>
           </div>
@@ -488,14 +488,14 @@
 
         <div class="text-slider">
             <div class="info">
-                <a href="#" class="title-left text_decoration_none">
+                <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
                     <span>
                         <img width="25px;" alt="Exchange Games" src="NewTheme/images/Sports.svg">
                     </span>
                     <h1 class="title-section"> Sports</h1>
                 </a>
                 {{-- <div>
-          <a href="#" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
+          <a href="https://app.cricadda.com/login" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
           </a>
         </div> --}}
             </div>
@@ -505,7 +505,7 @@
 
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img alt="Cricket" src="NewTheme/images/Cricket.webp">
                         </a>
                     </div>
@@ -515,7 +515,7 @@
                 </li>
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img alt="Football" src="NewTheme/images/Football.webp">
                         </a>
                     </div>
@@ -525,7 +525,7 @@
                 </li>
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img alt="Tennis" src="NewTheme/images/Tennis.webp">
                         </a>
                     </div>
@@ -535,7 +535,7 @@
                 </li>
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img alt="Greyhound Racing" src="NewTheme/images/Greyhound.webp">
                         </a>
                     </div>
@@ -545,7 +545,7 @@
                 </li>
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img alt="Horse Racing" src="NewTheme/images/Horse Racing.webp">
                         </a>
                     </div>
@@ -555,7 +555,7 @@
                 </li>
                 <li class="item">
                     <div class="top-row">
-                        <a href="#">
+                        <a href="https://app.cricadda.com/login">
                             <img src="NewTheme/images/See All - Sportrs (108x72).webp" alt="See All">
                         </a>
                     </div>
@@ -564,7 +564,7 @@
         </div>
         <div class="text-slider">
             <div class="info">
-                <a href="#" class="title-left text_decoration_none">
+                <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
                     <span _ngcontent-klx-c78="">
                         <img src="NewTheme/images/Popular Games Icon.svg" width="25px;" alt="Popular Games">
                     </span>
@@ -586,13 +586,13 @@
 
         {{-- <div class="text-slider">
       <div class="info">
-        <a href="#" class="bb-styling text_decoration_none">
+        <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
           <span> <img width="22px;" alt="Games" src="NewTheme/images/Games.svg">
           </span>
           <h1 style="margin-top: 2px;">Games</h1>
         </a>
         <div>
-          <a href="#" class="see-all-a">
+          <a href="https://app.cricadda.com/login" class="see-all-a">
             <span>See All</span>
             <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
           </a>
@@ -635,13 +635,13 @@
     </div> --}}
         <div class="text-slider">
             <div class="info">
-                <a href="#" class="bb-styling text_decoration_none">
+                <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
                     <span> <img width="22px;" alt="Casino" src="NewTheme/images/Casino.svg">
                     </span>
                     <h1 style="margin-top: 2px;">Casinos</h1>
                 </a>
                 {{-- <div>
-          <a href="#" class="see-all-a">
+          <a href="https://app.cricadda.com/login" class="see-all-a">
             <span>See All</span>
             <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
           </a>
@@ -772,7 +772,7 @@
           </div>
         </li>
         <li class="item">
-          <a href="#">
+          <a href="https://app.cricadda.com/login">
             <div class="box-align top-row">
               <i class="icon sport-icon"></i>
               <img src="NewTheme/images/See All - Provider (108x72).webp" alt="See All" class="img img-responsive bets">
@@ -869,7 +869,7 @@
 
         <div class="container">
             <div _ngcontent-kbj-c86="">
-                <a target="_parent" href="#">
+                <a target="_parent" href="https://app.cricadda.com/login">
                     <img width="100%" src="NewTheme/images/BANNER-GIF-DOWNLOAD.gif" alt="download app">
                 </a>
             </div>
@@ -1065,19 +1065,19 @@
                     </footer>
                 </section>
                 <div class="flexout">
-                    <a href="#">
+                    <a href="https://app.cricadda.com/login">
                         <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
                     </a>
-                    <a href="#">
+                    <a href="https://app.cricadda.com/login">
                         <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
                     </a>
-                    <a href="#">
+                    <a href="https://app.cricadda.com/login">
                         <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
                     </a>
-                    <a href="#">
+                    <a href="https://app.cricadda.com/login">
                         <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
                     </a>
-                    <a href="#">
+                    <a href="https://app.cricadda.com/login">
                         <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
                     </a>
                 </div>
