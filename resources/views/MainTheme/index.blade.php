@@ -725,7 +725,7 @@
         </div>
         <div class="mobile-home-games-scroll">
             <ul class="home-slider mobile-home-scroll-content">
-                @foreach ($collection as $item)
+                @foreach ($images as $item)
                     @if ($item->category == 'liveCasino')
                         <li class="item">
                             <div class="top-row">
