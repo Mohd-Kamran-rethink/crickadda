@@ -710,7 +710,7 @@
                 <div class="bb-styling">
                     <a>
                         <span>
-                            <img width="24px;" alt="Providers" src="NewTheme/images/Providers.svg">
+                            <img width="24px;" alt="Providers" src="{{ asset('storage/Banners/' . $item->filename) }}">
                         </span>
                         <h1 style="margin-top: 2px;">Providers</h1>
                     </a>
