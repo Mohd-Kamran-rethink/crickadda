@@ -1072,13 +1072,13 @@
                         <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
                     </a>
                     <a href="#">
-                        <img alt="instagram" class="social2" src="NewTheme/images/Instagram.svg">
+                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
                     </a>
                     <a href="#">
-                        <img alt="twitter" class="social2" src="NewTheme/images/Twitter.svg">
+                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
                     </a>
                     <a href="#">
-                        <img alt="telegram" class="social2" src="NewTheme/images/Telegram.svg">
+                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
                     </a>
                 </div>
             </div>
