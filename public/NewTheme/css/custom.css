@@ -1008,4 +1008,9 @@ input[type=text]:not(.browser-default):focus {
 }
 
 
-.fixed-footer-buttons{position: fixed;bottom: 0;margin-top:50px;width: 99%;}
+.fixed-footer-buttons{position: fixed;bottom: 0;margin-top:50px;width: 99%;
+/* Media query for large screens */
+@media (min-width: 1200px) {
+    width: 40% !important; /* Width for large screens */
+  }
+}
