@@ -18,26 +18,4 @@
             @endif
         </div>
     </section>
-
-
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-6">
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <h3>{{ $totalDailyExpense ?? 0 }}</h3>
-                            <p> Today's Expense</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa">₹</i>
-                        </div>
-                        <a href="{{ url('/expenses') }}" class="small-box-footer">More info <i
-                                class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 @endsection

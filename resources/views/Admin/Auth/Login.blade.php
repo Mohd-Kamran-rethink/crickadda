@@ -30,7 +30,6 @@
                                 @if (session()->has('msg-error-username'))
                                     <span class="text-danger">{{ session('msg-error-username') }}</span>
                                 @endif
-
                             </div>
                             <div class="mb-1">
                                 {{-- <label for="password" class="form-label">Password</label> --}}

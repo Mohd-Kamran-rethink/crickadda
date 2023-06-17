@@ -45,6 +45,16 @@
                         </div>
                         <div class="user-contain media-query-fold">
                             <div class="user-signin-links ng-star-inserted">
+                                <span class="signup_btn_wrapper">
+                                    <a href="https://app.cricadda.com/login"
+                                        class="signup waves-effect waves-light ng-star-inserted">
+                                        <span>
+                                            <img onclick="redirectToGoogle();" src="NewTheme/images/signup.svg"
+                                                alt="">
+                                        </span>
+                                        <span> Register </span>
+                                    </a>
+                                </span>
                                 <span>
                                     <a class="login waves-effect waves-light">
                                         <span>
@@ -54,16 +64,7 @@
                                         <span> Login </span>
                                     </a>
                                 </span>
-                                <span class="signup_btn_wrapper">
-                                    <a href="https://app.cricadda.com/login"
-                                        class="signup waves-effect waves-light ng-star-inserted">
-                                        <span>
-                                            <img onclick="redirectToGoogle();" src="NewTheme/images/signup.svg"
-                                                alt="">
-                                        </span>
-                                        <span> Signup </span>
-                                    </a>
-                                </span>
+
                             </div>
                             <div class="gear hide">
                                 <a data-target="dropdown">
@@ -476,7 +477,7 @@
                 <div class="title-left">
                     <img onclick="redirectToGoogle();" alt="Table Games"
                         src="NewTheme/images/Popular Today Icon-01.svg">
-                    <h1 class="title-section"> Popular Today</h1>
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Popular Today</h1>
                 </div>
             </div>
         </div>
@@ -530,7 +531,7 @@
                         <img onclick="redirectToGoogle();" width="25px;" alt="Exchange Games"
                             src="NewTheme/images/Sports.svg">
                     </span>
-                    <h1 class="title-section"> Sports</h1>
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Sports</h1>
                 </a>
                 {{-- <div>
           <a href="https://app.cricadda.com/login" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
@@ -610,7 +611,7 @@
                         <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
                             width="25px;" alt="Popular Games">
                     </span>
-                    <h1 class="title-section"> Popular Games</h1>
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Popular Games</h1>
                 </a>
             </div>
         </div>
@@ -681,7 +682,7 @@
                     <span> <img onclick="redirectToGoogle();" width="22px;" alt="Casino"
                             src="NewTheme/images/Casino.svg">
                     </span>
-                    <h1 style="margin-top: 2px;">Casinos</h1>
+                    <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Casinos</h1>
                 </a>
                 {{-- <div>
           <a href="https://app.cricadda.com/login" class="see-all-a">
@@ -719,7 +720,7 @@
                             <img onclick="redirectToGoogle();" width="20px;" alt="Live Casino"
                                 src="NewTheme/images/allcasinoo.svg">
                         </span>
-                        <h1 style="margin-top: 2px;">Live Casinos</h1>
+                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Live Casinos</h1>
                     </a>
                 </div>
                 {{-- <div>
@@ -759,7 +760,7 @@
                             <img onclick="redirectToGoogle();" width="24px;" alt="Providers"
                                 src="NewTheme/images/Providers.svg">
                         </span>
-                        <h1 style="margin-top: 2px;">Providers</h1>
+                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Virtual Casinos</h1>
                     </a>
                 </div>
                 {{-- <div>
@@ -784,7 +785,7 @@
                         </li>
                     @endif
                 @endforeach
-                
+
             </ul>
         </div>
         <!--   <div class="text-slider">
@@ -985,37 +986,37 @@
                                             </div>
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
-                                                    <img  alt="INB"
-                                                        class="row-images1" src="NewTheme/images/INB.svg">
-                                                    <img  alt="UPI"
-                                                        class="row-images1" src="NewTheme/images/UP.svg">
-                                                    <img  alt="Visa"
-                                                        class="row-images1" src="NewTheme/images/VISA.svg">
-                                                    <img  alt="Master"
-                                                        class="row-images1" src="NewTheme/images/MASTER.svg">
-                                                    <img  alt="Paytm"
-                                                        class="row-images1" src="NewTheme/images/PAYT.svg">
-                                                    <img  alt="Gpay"
-                                                        class="row-images1" src="NewTheme/images/GPY.svg">
-                                                    <img  alt="Bank Trasnfer"
-                                                        class="row-images1" src="NewTheme/images/BNKTRANSFER.svg">
+                                                    <img alt="INB" class="row-images1"
+                                                        src="NewTheme/images/INB.svg">
+                                                    <img alt="UPI" class="row-images1"
+                                                        src="NewTheme/images/UP.svg">
+                                                    <img alt="Visa" class="row-images1"
+                                                        src="NewTheme/images/VISA.svg">
+                                                    <img alt="Master" class="row-images1"
+                                                        src="NewTheme/images/MASTER.svg">
+                                                    <img alt="Paytm" class="row-images1"
+                                                        src="NewTheme/images/PAYT.svg">
+                                                    <img alt="Gpay" class="row-images1"
+                                                        src="NewTheme/images/GPY.svg">
+                                                    <img alt="Bank Trasnfer" class="row-images1"
+                                                        src="NewTheme/images/BNKTRANSFER.svg">
                                                 </div>
                                                 <div class="row"
                                                     style="margin-top: 8px; justify-content: space-around;">
-                                                    <img  alt="One Rupee"
-                                                        class="row-images1" src="NewTheme/images/ONERUPEE.svg">
-                                                    <img  alt="Jeton"
-                                                        class="row-images1" src="NewTheme/images/JETON.svg">
-                                                    <img  alt="Skrill"
-                                                        class="row-images1" src="NewTheme/images/SKRILL.svg">
-                                                    <img  alt="Jio Money"
-                                                        class="row-images1" src="NewTheme/images/JIO.svg">
-                                                    <img  alt="IMPS"
-                                                        class="row-images1" src="NewTheme/images/IMP.svg">
-                                                    <img  alt="BBL"
-                                                        class="row-images1" src="NewTheme/images/BBL.svg">
-                                                    <img alt="Net Banking"
-                                                        class="row-images1" src="NewTheme/images/NETBANK.svg">
+                                                    <img alt="One Rupee" class="row-images1"
+                                                        src="NewTheme/images/ONERUPEE.svg">
+                                                    <img alt="Jeton" class="row-images1"
+                                                        src="NewTheme/images/JETON.svg">
+                                                    <img alt="Skrill" class="row-images1"
+                                                        src="NewTheme/images/SKRILL.svg">
+                                                    <img alt="Jio Money" class="row-images1"
+                                                        src="NewTheme/images/JIO.svg">
+                                                    <img alt="IMPS" class="row-images1"
+                                                        src="NewTheme/images/IMP.svg">
+                                                    <img alt="BBL" class="row-images1"
+                                                        src="NewTheme/images/BBL.svg">
+                                                    <img alt="Net Banking" class="row-images1"
+                                                        src="NewTheme/images/NETBANK.svg">
                                                 </div>
                                             </div>
                                             <div class="footer-items">
@@ -1081,27 +1082,44 @@
                         </div>
                     </footer>
                 </section>
+                @php
+                    $WhatsAppLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'whatsapp';
+                    });
+                    $TelegramLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'telegram';
+                    });
+                    $FacebookLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'facebook';
+                    });
+                    
+                    $youtubeLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'youtube';
+                    });
+                    $instagramLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'instagram';
+                    });
+                    
+                @endphp
                 <div class="flexout">
-                    <a href="https://app.cricadda.com/login">
-                        <img  alt="instagram" class="social2"
-                            src="NewTheme/images/Faceook.svg">
+                    <a href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
+                        <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
                     </a>
-                    <a href="https://app.cricadda.com/login">
-                        <img  alt="twitter" class="social2"
-                            src="NewTheme/images/Youtube.svg">
+                    <a href="{{ $youtubeLink->value ?? '#' }}" target="_blank">
+                        <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
                     </a>
-                    <a href="https://app.cricadda.com/login">
-                        <img  alt="instagram" class="social2"
-                            src="NewTheme/images/instagram.svg">
+                    <a href="{{ $instagramLink->value ?? '#' }}" target="_blank">
+                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
                     </a>
-                    <a href="https://app.cricadda.com/login">
-                        <img  alt="twitter" class="social2"
-                            src="NewTheme/images/twitter.svg">
+                    <a href="https://app.cricadda.com/login" target="_blank">
+                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
                     </a>
-                    <a href="https://app.cricadda.com/login">
-                        <img  alt="telegram" class="social2"
-                            src="NewTheme/images/telegram.svg">
+                    <a href="{{ $TelegramLink->value ?? '#' }}" target="_blank">
+                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
                     </a>
+                </div>
+                <div class="fixed-footer-buttons">
+
                 </div>
             </div>
         </div>

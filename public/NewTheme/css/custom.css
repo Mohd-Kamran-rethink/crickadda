@@ -136,13 +136,13 @@ nav {
 
 .user-signin-links a.login {
 	background-color: transparent !important;
-	color: #000;
-	border: 1px solid #968c56;
+	color: #F5F7B8;
+	border: 1px solid #E6C540;
 }
 
 .user-signin-links a {
 	background: transparent !important;
-	color: #968c56;
+	color: #F5F7B8;
 	padding: 0 5px;
 	white-space: nowrap;
 	font-weight: 400;
@@ -167,18 +167,18 @@ nav {
 
 .signup_btn_wrapper {
 	padding: 2px 2.5px;
-	border: 1px solid #968c56;
+	border: 1px solid #E6C540;
 	border-radius: 5px;
 }
 
 html body.dark-theme .user-signin-links a.signup {
 	color: #020c1b !important;
-	background: linear-gradient(90deg, #625022 0%, #d5c77d 100%) !important;
+	background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;
 }
 
 html body.dark-theme .user-signin-links a {
 	background: transparent !important;
-	color: #968c56;
+	color: #F5F7B8;
 	padding: 0 5px;
 	white-space: nowrap;
 	font-weight: 400;
@@ -1006,3 +1006,5 @@ input[type=text]:not(.browser-default):focus {
 	transform: rotate(45deg);
 	margin-bottom: -8px;
 }
+
+

@@ -18,10 +18,8 @@ class MainController extends Controller
     // Make a request to the IP geolocation service
     $client = new Client();
     $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
-
-    // Parse the JSON response
-    $data = json_decode($response->getBody(), true);
-
+        // Parse the JSON response
+        $data = json_decode($response->getBody(), true);
         // Retrieve the country information
         $country = $data['countryCode']??"IN";
         $responseData = ['country' => $country];
