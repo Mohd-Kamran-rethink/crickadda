@@ -784,49 +784,7 @@
                         </li>
                     @endif
                 @endforeach
-                {{-- <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Ezugi" src="NewTheme/images/Ezugi.webp">
-            </a>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="QTech" src="NewTheme/images/QTech.webp">
-            </a>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Supernowa" src="NewTheme/images/Supernova.webp">
-            </a>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Super Spade" src="NewTheme/images/Super Spade.webp">
-            </a>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Power Games" src="NewTheme/images/Power Games.webp">
-            </a>
-          </div>
-        </li>
-        <li class="item">
-          <a href="https://app.cricadda.com/login">
-            <div class="box-align top-row">
-              <i class="icon sport-icon"></i>
-              <img onclick="redirectToGoogle();" src="NewTheme/images/See All - Provider (108x72).webp" alt="See All" class="img img-responsive bets">
-            </div>
-          </a>
-        </li> --}}
+                
             </ul>
         </div>
         <!--   <div class="text-slider">
@@ -1027,36 +985,36 @@
                                             </div>
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
-                                                    <img onclick="redirectToGoogle();" alt="INB"
+                                                    <img  alt="INB"
                                                         class="row-images1" src="NewTheme/images/INB.svg">
-                                                    <img onclick="redirectToGoogle();" alt="UPI"
+                                                    <img  alt="UPI"
                                                         class="row-images1" src="NewTheme/images/UP.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Visa"
+                                                    <img  alt="Visa"
                                                         class="row-images1" src="NewTheme/images/VISA.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Master"
+                                                    <img  alt="Master"
                                                         class="row-images1" src="NewTheme/images/MASTER.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Paytm"
+                                                    <img  alt="Paytm"
                                                         class="row-images1" src="NewTheme/images/PAYT.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Gpay"
+                                                    <img  alt="Gpay"
                                                         class="row-images1" src="NewTheme/images/GPY.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Bank Trasnfer"
+                                                    <img  alt="Bank Trasnfer"
                                                         class="row-images1" src="NewTheme/images/BNKTRANSFER.svg">
                                                 </div>
                                                 <div class="row"
                                                     style="margin-top: 8px; justify-content: space-around;">
-                                                    <img onclick="redirectToGoogle();" alt="One Rupee"
+                                                    <img  alt="One Rupee"
                                                         class="row-images1" src="NewTheme/images/ONERUPEE.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Jeton"
+                                                    <img  alt="Jeton"
                                                         class="row-images1" src="NewTheme/images/JETON.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Skrill"
+                                                    <img  alt="Skrill"
                                                         class="row-images1" src="NewTheme/images/SKRILL.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Jio Money"
+                                                    <img  alt="Jio Money"
                                                         class="row-images1" src="NewTheme/images/JIO.svg">
-                                                    <img onclick="redirectToGoogle();" alt="IMPS"
+                                                    <img  alt="IMPS"
                                                         class="row-images1" src="NewTheme/images/IMP.svg">
-                                                    <img onclick="redirectToGoogle();" alt="BBL"
+                                                    <img  alt="BBL"
                                                         class="row-images1" src="NewTheme/images/BBL.svg">
-                                                    <img onclick="redirectToGoogle();" alt="Net Banking"
+                                                    <img alt="Net Banking"
                                                         class="row-images1" src="NewTheme/images/NETBANK.svg">
                                                 </div>
                                             </div>
@@ -1125,23 +1083,23 @@
                 </section>
                 <div class="flexout">
                     <a href="https://app.cricadda.com/login">
-                        <img onclick="redirectToGoogle();" alt="instagram" class="social2"
+                        <img  alt="instagram" class="social2"
                             src="NewTheme/images/Faceook.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img onclick="redirectToGoogle();" alt="twitter" class="social2"
+                        <img  alt="twitter" class="social2"
                             src="NewTheme/images/Youtube.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img onclick="redirectToGoogle();" alt="instagram" class="social2"
+                        <img  alt="instagram" class="social2"
                             src="NewTheme/images/instagram.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img onclick="redirectToGoogle();" alt="twitter" class="social2"
+                        <img  alt="twitter" class="social2"
                             src="NewTheme/images/twitter.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img onclick="redirectToGoogle();" alt="telegram" class="social2"
+                        <img  alt="telegram" class="social2"
                             src="NewTheme/images/telegram.svg">
                     </a>
                 </div>
