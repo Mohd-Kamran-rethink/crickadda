@@ -718,7 +718,7 @@
                             <img onclick="redirectToGoogle();" width="20px;" alt="Live Casino"
                                 src="NewTheme/images/allcasinoo.svg">
                         </span> --}}
-                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Live Casinos</h1>
+                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Virtual Casinos</h1>
                     </a>
                 </div>
                 {{-- <div>
@@ -758,7 +758,7 @@
                             <img onclick="redirectToGoogle();" width="24px;" alt="Providers"
                                 src="NewTheme/images/Providers.svg">
                         </span> --}}
-                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Virtual Casinos</h1>
+                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Live Casinos</h1>
                     </a>
                 </div>
                 {{-- <div>
