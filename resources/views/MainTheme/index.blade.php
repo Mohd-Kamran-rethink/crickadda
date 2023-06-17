@@ -451,7 +451,7 @@
                 <li class="item">
                     <a id="navMobileSports" name="navMobileSports" href="#scrollDiv"
                         class="sports item-nav">
-                        <img onclick="redirectToGoogle();" alt="Cricket" class="top_bar_images"
+                        <img  alt="Cricket" class="top_bar_images"
                             src="NewTheme/images/game icon.png"> Fantasy Games
                     </a>
                 </li>
