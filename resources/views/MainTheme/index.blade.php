@@ -446,7 +446,7 @@
                     <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login"
                         class="sports item-nav">
                         <img onclick="redirectToGoogle();" alt="Cricket" class="top_bar_images"
-                            src="NewTheme/images/GAME.svg"> Fantasy Games
+                            src="NewTheme/images/game icon.png"> Fantasy Games
                     </a>
                 </li>
             </ul>
