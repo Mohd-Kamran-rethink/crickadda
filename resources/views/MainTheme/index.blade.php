@@ -493,7 +493,7 @@
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                            <div class="name-slider">{{ $item->heading ?? '' }}</div>
+                            <div class="name-slider" style="text-align: center">{{ $item->heading ?? '' }}</div>
                         </li>
                     @endif
                 @endforeach
@@ -548,9 +548,7 @@
                             <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics.jpg">
                         </a>
                     </div>
-                    {{-- <div class="heading_wrapper">
-                        <span>Cricket</span>
-                    </div> --}}
+                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? 'sdff' }}</div>
                 </li>
                 <li class="item">
                     <div class="top-row">
@@ -558,9 +556,9 @@
                             <img onclick="redirectToGoogle();" alt="Football" src="NewTheme/images/Football.webp">
                         </a>
                     </div>
-                    <div class="heading_wrapper">
+                    {{-- <div class="heading_wrapper">
                         <span>Football</span>
-                    </div>
+                    </div> --}}
                 </li>
                 <li class="item">
                     <div class="top-row">
@@ -568,9 +566,9 @@
                             <img onclick="redirectToGoogle();" alt="Tennis" src="NewTheme/images/Tennis.webp">
                         </a>
                     </div>
-                    <div class="heading_wrapper">
+                    {{-- <div class="heading_wrapper">
                         <span>Tennis</span>
-                    </div>
+                    </div> --}}
                 </li>
                 <li class="item">
                     <div class="top-row">
