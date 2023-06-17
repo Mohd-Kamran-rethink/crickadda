@@ -32,7 +32,7 @@
                     <div class="sidebrand-contain">
                         <div class="site_logo">
                             <a id="logo-container" href="https://app.cricadda.com/login" class="brand-logo">
-                                <img
+                                <img onclick="redirectToGoogle();"
                                     class="menu_icon ng-star-inserted"src="{{ asset('storage/Banners/' . $logo->filename) }}">
                             </a>
                         </div>
@@ -48,15 +48,18 @@
                                 <span>
                                     <a class="login waves-effect waves-light">
                                         <span>
-                                            <img src="NewTheme/images/login.svg" alt="">
+                                            <img onclick="redirectToGoogle();" src="NewTheme/images/login.svg"
+                                                alt="">
                                         </span>
                                         <span> Login </span>
                                     </a>
                                 </span>
                                 <span class="signup_btn_wrapper">
-                                    <a href="https://app.cricadda.com/login" class="signup waves-effect waves-light ng-star-inserted">
+                                    <a href="https://app.cricadda.com/login"
+                                        class="signup waves-effect waves-light ng-star-inserted">
                                         <span>
-                                            <img src="NewTheme/images/signup.svg" alt="">
+                                            <img onclick="redirectToGoogle();" src="NewTheme/images/signup.svg"
+                                                alt="">
                                         </span>
                                         <span> Signup </span>
                                     </a>
@@ -95,8 +98,8 @@
                                     <li>
                                         <a href="https://app.cricadda.com/login" class="withdraw">
                                             <span class="flex-grow-1">Withdraw</span>
-                                            <img src="NewTheme/images/arrow.svg" class="arrow mt-0"
-                                                style="transform: rotate(-90deg);">
+                                            <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg"
+                                                class="arrow mt-0" style="transform: rotate(-90deg);">
                                         </a>
                                     </li>
                                     <li>
@@ -167,10 +170,11 @@
             <div class="d-flex align-items-center justify-content-between market-border backGround_gradient"
                 style="margin-top: 3px;">
                 <label>
-                    <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg">
+                    <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                        src="NewTheme/images/Casino.svg">
                     <span class="getColor">Popular Sports</span>
                 </label>
-                <!-- <img src="NewTheme/images/arrow.svg" class="arrow mt-0 ng-star-inserted" style="transform: rotate(0deg);"> -->
+                <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" class="arrow mt-0 ng-star-inserted" style="transform: rotate(0deg);"> -->
             </div>
             <li class="sub ng-star-inserted"></li>
             <li class="sub ng-star-inserted"></li>
@@ -179,197 +183,220 @@
                 class="d-flex align-items-center justify-content-between market-border backGround_gradient"
                 tabindex="0">
                 <label>
-                    <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg">
+                    <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                        src="NewTheme/images/Casino.svg">
                     <span class="getColor">Casinos</span>
                 </label>
             </div>
             <div
                 class="d-flex align-items-center justify-content-between market-border backGround_gradient ng-star-inserted">
                 <label>
-                    <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg">
+                    <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                        src="NewTheme/images/Casino.svg">
                     <span class="getColor">Virtual Sports </span>
                 </label>
-                <!-- <img src="NewTheme/images/arrow.svg" class="arrow mt-0 ng-star-inserted" style="transform: rotate(0deg);"> -->
+                <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" class="arrow mt-0 ng-star-inserted" style="transform: rotate(0deg);"> -->
             </div>
             <li>
                 <div class="d-flex align-items-center justify-content-between market-border backGround_gradient">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg">
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg">
                         <span class="getColor"> Sports</span>
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" class="arrow mt-0" style="transform: rotate(90deg);"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" class="arrow mt-0" style="transform: rotate(90deg);"> -->
                 </div>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Soccer Fixtures
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Soccer Fixtures
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Horse Racing
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Horse Racing
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Horse Race
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Horse Race
                         Todays Card </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Greyhound Racing
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Greyhound Racing
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Greyhound Todays
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Greyhound Todays
                         Card </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> American
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> American
                         Football </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Baseball
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Baseball
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Basketball
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Basketball
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Boxing </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Boxing </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Cricket </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Cricket </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Darts </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Darts </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Gaelic Games
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Gaelic Games
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Golf </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Golf </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Mixed Martial
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Mixed Martial
                         Arts </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Motor Sport
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Motor Sport
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Rugby League
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Rugby League
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Rugby Union
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Rugby Union
                     </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Snooker </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Snooker </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg">Soccer </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg">Soccer </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
             <li class="lc-1 ng-star-inserted">
                 <div class="d-flex align-items-center justify-content-around">
                     <label>
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/Casino.svg"> Tennis </label>
-                    <!-- <img src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Tennis </label>
+                    <!-- <img onclick="redirectToGoogle();" src="NewTheme/images/arrow.svg" alt="" class="dwn-arrow"> -->
                 </div>
                 <ul data-check="1" class="lc-2"></ul>
             </li>
@@ -383,35 +410,42 @@
                 <li class="item" tabindex="0">
                     <a href="https://app.cricadda.com/login" id="navMobileBetGamesTV" name="navMobileBetGamesTV"
                         class="betgamestv item-nav">
-                        <img alt="Exchange" class="top_bar_images" src="NewTheme/images/Casino.svg"> Lottery </a>
+                        <img onclick="redirectToGoogle();" alt="Exchange" class="top_bar_images"
+                            src="NewTheme/images/Casino.svg"> Lottery </a>
                 </li>
                 <li class="item">
                     <a id="navMobileBetGamesTV" name="navMobileBetGamesTV" class="betgamestv item-nav">
-                        <img alt="Sports Book" class="top_bar_images" src="NewTheme/images/SPORTSBOOK12.svg">
+                        <img onclick="redirectToGoogle();" alt="Sports Book" class="top_bar_images"
+                            src="NewTheme/images/SPORTSBOOK12.svg">
                         SportBook1 </a>
                 </li>
                 <li class="item">
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
-                        <img alt="Casino" class="top_bar_images" src="NewTheme/images/EXCHANGE12.svg">
+                        <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
+                            src="NewTheme/images/EXCHANGE12.svg">
                         <span style="margin-top: 4px;">Exchange</span>
                     </a>
                 </li>
                 <li class="item">
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
-                        <img alt="Teen Patti" class="top_bar_images" src="NewTheme/images/Teen Patti.svg">
+                        <img onclick="redirectToGoogle();" alt="Teen Patti" class="top_bar_images"
+                            src="NewTheme/images/Teen Patti.svg">
                         <span style="margin-top: 4px;">Live Casino</span>
                     </a>
                 </li>
                 <li class="item">
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
-                        <img alt="Inplay" class="top_bar_images" src="NewTheme/images/Inplay.svg"> Slot </a>
+                        <img onclick="redirectToGoogle();" alt="Inplay" class="top_bar_images"
+                            src="NewTheme/images/SLOT.svg"> Slot </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login" class="sports item-nav">
-                        <img alt="Cricket" class="top_bar_images" src="NewTheme/images/Cricket.svg"> Fantasy Games
+                    <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login"
+                        class="sports item-nav">
+                        <img onclick="redirectToGoogle();" alt="Cricket" class="top_bar_images"
+                            src="NewTheme/images/GAME.svg"> Fantasy Games
                     </a>
                 </li>
             </ul>
@@ -423,15 +457,16 @@
                 @foreach ($images as $item)
                     @if ($item->category == 'banner')
                         <div class="item  carousel-item carousal-23">
-                            <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            <img onclick="redirectToGoogle();"
+                                src="{{ asset('storage/Banners/' . $item->filename) }}">
                         </div>
                     @endif
                 @endforeach
                 {{-- <div class="item carousel-item carousal-23">
-          <img src="NewTheme/images/slider2.jpeg">
+          <img onclick="redirectToGoogle();" src="NewTheme/images/slider2.jpeg">
         </div>
         <div class="item carousel-item carousal-23">
-          <img src="NewTheme/images/slider3.jpeg">
+          <img onclick="redirectToGoogle();" src="NewTheme/images/slider3.jpeg">
         </div> --}}
             </div>
         </div>
@@ -439,7 +474,8 @@
         <div class="text-slider ng-star-inserted">
             <div class="info ng-star-inserted">
                 <div class="title-left">
-                    <img alt="Table Games" src="NewTheme/images/Popular Today Icon-01.svg">
+                    <img onclick="redirectToGoogle();" alt="Table Games"
+                        src="NewTheme/images/Popular Today Icon-01.svg">
                     <h1 class="title-section"> Popular Today</h1>
                 </div>
             </div>
@@ -452,7 +488,8 @@
                         <li class="item ng-star-inserted">
                             <div class="top-row">
                                 <a href="https://app.cricadda.com/login">
-                                    <img alt="New Games" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                    <img onclick="redirectToGoogle();" alt="New Games"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
                             <div class="name-slider">{{ $item->heading ?? '' }}</div>
@@ -462,7 +499,7 @@
                 {{-- <li class="item ng-star-inserted">
           <div class="top-row">
             <a href="https://app.cricadda.com/login">
-              <img alt="New Games" src="NewTheme/images/Test-Match--Bangladesh-VS-Afghanistan---Copy.png">
+              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/Test-Match--Bangladesh-VS-Afghanistan---Copy.png">
             </a>
           </div>
           <div class="name-slider">AFG vs BAN</div>
@@ -470,7 +507,7 @@
         <li class="item ng-star-inserted">
           <div class="top-row">
             <a href="https://app.cricadda.com/login">
-              <img alt="New Games" src="NewTheme/images/TNPL-Chepauk-Super-Gillies-VS-IDream-Tiruppur-Tamizhans.png">
+              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/TNPL-Chepauk-Super-Gillies-VS-IDream-Tiruppur-Tamizhans.png">
             </a>
           </div>
           <div class="name-slider">CHEPAUK vs IDREAM</div>
@@ -478,7 +515,7 @@
         <li class="item ng-star-inserted">
           <div class="top-row">
             <a href="https://app.cricadda.com/login">
-              <img alt="New Games" src="NewTheme/images/Friendlies-International-Australia-VS-Argentina.png">
+              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/Friendlies-International-Australia-VS-Argentina.png">
             </a>
           </div>
           <div class="name-slider">ARG vs AUS</div>
@@ -490,7 +527,8 @@
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
                     <span>
-                        <img width="25px;" alt="Exchange Games" src="NewTheme/images/Sports.svg">
+                        <img onclick="redirectToGoogle();" width="25px;" alt="Exchange Games"
+                            src="NewTheme/images/Sports.svg">
                     </span>
                     <h1 class="title-section"> Sports</h1>
                 </a>
@@ -506,17 +544,17 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img alt="Cricket" src="NewTheme/images/Cricket.webp">
+                            <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics.jpg">
                         </a>
                     </div>
-                    <div class="heading_wrapper">
+                    {{-- <div class="heading_wrapper">
                         <span>Cricket</span>
-                    </div>
+                    </div> --}}
                 </li>
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img alt="Football" src="NewTheme/images/Football.webp">
+                            <img onclick="redirectToGoogle();" alt="Football" src="NewTheme/images/Football.webp">
                         </a>
                     </div>
                     <div class="heading_wrapper">
@@ -526,7 +564,7 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img alt="Tennis" src="NewTheme/images/Tennis.webp">
+                            <img onclick="redirectToGoogle();" alt="Tennis" src="NewTheme/images/Tennis.webp">
                         </a>
                     </div>
                     <div class="heading_wrapper">
@@ -536,7 +574,8 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img alt="Greyhound Racing" src="NewTheme/images/Greyhound.webp">
+                            <img onclick="redirectToGoogle();" alt="Greyhound Racing"
+                                src="NewTheme/images/Greyhound.webp">
                         </a>
                     </div>
                     <div class="heading_wrapper">
@@ -546,7 +585,8 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img alt="Horse Racing" src="NewTheme/images/Horse Racing.webp">
+                            <img onclick="redirectToGoogle();" alt="Horse Racing"
+                                src="NewTheme/images/Horse Racing.webp">
                         </a>
                     </div>
                     <div class="heading_wrapper">
@@ -556,7 +596,8 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img src="NewTheme/images/See All - Sportrs (108x72).webp" alt="See All">
+                            <img onclick="redirectToGoogle();" src="NewTheme/images/See All - Sportrs (108x72).webp"
+                                alt="See All">
                         </a>
                     </div>
                 </li>
@@ -566,7 +607,8 @@
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
                     <span _ngcontent-klx-c78="">
-                        <img src="NewTheme/images/Popular Games Icon.svg" width="25px;" alt="Popular Games">
+                        <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
+                            width="25px;" alt="Popular Games">
                     </span>
                     <h1 class="title-section"> Popular Games</h1>
                 </a>
@@ -577,7 +619,7 @@
             <div class="secPopular">
                 @foreach ($images as $item)
                     @if ($item->category == 'fantasyGames')
-                        <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
                     @endif
                 @endforeach
             </div>
@@ -587,7 +629,7 @@
         {{-- <div class="text-slider">
       <div class="info">
         <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
-          <span> <img width="22px;" alt="Games" src="NewTheme/images/Games.svg">
+          <span> <img onclick="redirectToGoogle();" width="22px;" alt="Games" src="NewTheme/images/Games.svg">
           </span>
           <h1 style="margin-top: 2px;">Games</h1>
         </a>
@@ -604,7 +646,7 @@
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Lottery Games" src="NewTheme/images/Lottery.webp">
+              <img onclick="redirectToGoogle();" alt="Lottery Games" src="NewTheme/images/Lottery.webp">
             </a>
           </div>
           <div class="heading_wrapper">
@@ -614,7 +656,7 @@
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Instant Win" src="NewTheme/images/Instant Win.webp">
+              <img onclick="redirectToGoogle();" alt="Instant Win" src="NewTheme/images/Instant Win.webp">
             </a>
           </div>
           <div class="heading_wrapper">
@@ -624,7 +666,7 @@
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Slot" src="NewTheme/images/Slots.webp">
+              <img onclick="redirectToGoogle();" alt="Slot" src="NewTheme/images/Slots.webp">
             </a>
           </div>
           <div class="heading_wrapper">
@@ -636,7 +678,8 @@
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
-                    <span> <img width="22px;" alt="Casino" src="NewTheme/images/Casino.svg">
+                    <span> <img onclick="redirectToGoogle();" width="22px;" alt="Casino"
+                            src="NewTheme/images/Casino.svg">
                     </span>
                     <h1 style="margin-top: 2px;">Casinos</h1>
                 </a>
@@ -655,7 +698,8 @@
                         <li class="item">
                             <div class="top-row">
                                 <a>
-                                    <img alt="Casino Games" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                    <img onclick="redirectToGoogle();" alt="Casino Games"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
                             {{-- <div class="heading_wrapper">
@@ -672,7 +716,8 @@
                 <div class="bb-styling">
                     <a>
                         <span>
-                            <img width="20px;" alt="Live Casino" src="NewTheme/images/allcasinoo.svg">
+                            <img onclick="redirectToGoogle();" width="20px;" alt="Live Casino"
+                                src="NewTheme/images/allcasinoo.svg">
                         </span>
                         <h1 style="margin-top: 2px;">Live Casinos</h1>
                     </a>
@@ -692,7 +737,8 @@
                         <li class="item">
                             <div class="top-row">
                                 <a>
-                                    <img alt="Roulette" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                    <img onclick="redirectToGoogle();" alt="Roulette"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
                             {{-- <div class="heading_wrapper">
@@ -710,7 +756,8 @@
                 <div class="bb-styling">
                     <a>
                         <span>
-                            <img width="24px;" alt="Providers" src="NewTheme/images/Providers.svg">
+                            <img onclick="redirectToGoogle();" width="24px;" alt="Providers"
+                                src="NewTheme/images/Providers.svg">
                         </span>
                         <h1 style="margin-top: 2px;">Providers</h1>
                     </a>
@@ -730,7 +777,8 @@
                         <li class="item">
                             <div class="top-row">
                                 <a>
-                                    <img alt="Evolution Gaming" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                    <img onclick="redirectToGoogle();" alt="Evolution Gaming"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
                         </li>
@@ -739,35 +787,35 @@
                 {{-- <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Ezugi" src="NewTheme/images/Ezugi.webp">
+              <img onclick="redirectToGoogle();" alt="Ezugi" src="NewTheme/images/Ezugi.webp">
             </a>
           </div>
         </li>
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="QTech" src="NewTheme/images/QTech.webp">
+              <img onclick="redirectToGoogle();" alt="QTech" src="NewTheme/images/QTech.webp">
             </a>
           </div>
         </li>
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Supernowa" src="NewTheme/images/Supernova.webp">
+              <img onclick="redirectToGoogle();" alt="Supernowa" src="NewTheme/images/Supernova.webp">
             </a>
           </div>
         </li>
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Super Spade" src="NewTheme/images/Super Spade.webp">
+              <img onclick="redirectToGoogle();" alt="Super Spade" src="NewTheme/images/Super Spade.webp">
             </a>
           </div>
         </li>
         <li class="item">
           <div class="top-row">
             <a>
-              <img alt="Power Games" src="NewTheme/images/Power Games.webp">
+              <img onclick="redirectToGoogle();" alt="Power Games" src="NewTheme/images/Power Games.webp">
             </a>
           </div>
         </li>
@@ -775,7 +823,7 @@
           <a href="https://app.cricadda.com/login">
             <div class="box-align top-row">
               <i class="icon sport-icon"></i>
-              <img src="NewTheme/images/See All - Provider (108x72).webp" alt="See All" class="img img-responsive bets">
+              <img onclick="redirectToGoogle();" src="NewTheme/images/See All - Provider (108x72).webp" alt="See All" class="img img-responsive bets">
             </div>
           </a>
         </li> --}}
@@ -784,7 +832,7 @@
         <!--   <div class="text-slider">
       <div class="info">
         <div class="bb-styling">
-          <a> <img width="24px;" alt="Providers" src="NewTheme/images/endors.svg">
+          <a> <img onclick="redirectToGoogle();" width="24px;" alt="Providers" src="NewTheme/images/endors.svg">
             <h1 style="right: 10px;">Endorsements</h1>
           </a>
         </div>
@@ -870,7 +918,8 @@
         <div class="container">
             <div _ngcontent-kbj-c86="">
                 <a target="_parent" href="https://app.cricadda.com/login">
-                    <img width="100%" src="NewTheme/images/BANNER-GIF-DOWNLOAD.gif" alt="download app">
+                    <img onclick="redirectToGoogle();" width="100%" src="NewTheme/images/BANNER-GIF-DOWNLOAD.gif"
+                        alt="download app">
                 </a>
             </div>
         </div>
@@ -895,13 +944,15 @@
                                                 class="ng-star-inserted">
                                                 <a class="btn_wrapper special_border">
                                                     <button type="button" class="button-1 for-img">
-                                                        <img alt="chat icon" src="NewTheme/images/chatic.svg">
+                                                        <img onclick="redirectToGoogle();" alt="chat icon"
+                                                            src="NewTheme/images/chatic.svg">
                                                         <span class="livebtn">Live Chat</span>
                                                         <div style="display: contents;">
-                                                            <img alt="angle icon"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
                                                                 style="width: 6px; margin-right: 0; position: absolute; right: 30%;"
                                                                 src="NewTheme/images/angle.svg">
-                                                            <img alt="angle icon" class="angle-right"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                class="angle-right"
                                                                 style="width: 6px; margin-right: 0; position: absolute; right: 31%;"
                                                                 src="NewTheme/images/angle.svg">
                                                         </div>
@@ -919,9 +970,11 @@
                                                             <a>Signup/Login</a>
                                                         </span>
                                                         <div class="angle">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
                                                         </div>
                                                     </div>
@@ -932,9 +985,11 @@
                                                             <a>Automatic Deposit</a>
                                                         </span>
                                                         <div class="angle">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
                                                         </div>
                                                     </div>
@@ -945,9 +1000,11 @@
                                                             <a>Manual Deposit</a>
                                                         </span>
                                                         <div class="angle">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
                                                         </div>
                                                     </div>
@@ -958,9 +1015,11 @@
                                                             <a>Withdrawal</a>
                                                         </span>
                                                         <div class="angle">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
-                                                            <img alt="angle icon" style="width: 6px; margin-right: 0;"
+                                                            <img onclick="redirectToGoogle();" alt="angle icon"
+                                                                style="width: 6px; margin-right: 0;"
                                                                 src="NewTheme/images/angle.svg">
                                                         </div>
                                                     </div>
@@ -968,37 +1027,37 @@
                                             </div>
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
-                                                    <img alt="INB" class="row-images1"
-                                                        src="NewTheme/images/INB.svg">
-                                                    <img alt="UPI" class="row-images1"
-                                                        src="NewTheme/images/UP.svg">
-                                                    <img alt="Visa" class="row-images1"
-                                                        src="NewTheme/images/VISA.svg">
-                                                    <img alt="Master" class="row-images1"
-                                                        src="NewTheme/images/MASTER.svg">
-                                                    <img alt="Paytm" class="row-images1"
-                                                        src="NewTheme/images/PAYT.svg">
-                                                    <img alt="Gpay" class="row-images1"
-                                                        src="NewTheme/images/GPY.svg">
-                                                    <img alt="Bank Trasnfer" class="row-images1"
-                                                        src="NewTheme/images/BNKTRANSFER.svg">
+                                                    <img onclick="redirectToGoogle();" alt="INB"
+                                                        class="row-images1" src="NewTheme/images/INB.svg">
+                                                    <img onclick="redirectToGoogle();" alt="UPI"
+                                                        class="row-images1" src="NewTheme/images/UP.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Visa"
+                                                        class="row-images1" src="NewTheme/images/VISA.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Master"
+                                                        class="row-images1" src="NewTheme/images/MASTER.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Paytm"
+                                                        class="row-images1" src="NewTheme/images/PAYT.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Gpay"
+                                                        class="row-images1" src="NewTheme/images/GPY.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Bank Trasnfer"
+                                                        class="row-images1" src="NewTheme/images/BNKTRANSFER.svg">
                                                 </div>
                                                 <div class="row"
                                                     style="margin-top: 8px; justify-content: space-around;">
-                                                    <img alt="One Rupee" class="row-images1"
-                                                        src="NewTheme/images/ONERUPEE.svg">
-                                                    <img alt="Jeton" class="row-images1"
-                                                        src="NewTheme/images/JETON.svg">
-                                                    <img alt="Skrill" class="row-images1"
-                                                        src="NewTheme/images/SKRILL.svg">
-                                                    <img alt="Jio Money" class="row-images1"
-                                                        src="NewTheme/images/JIO.svg">
-                                                    <img alt="IMPS" class="row-images1"
-                                                        src="NewTheme/images/IMP.svg">
-                                                    <img alt="BBL" class="row-images1"
-                                                        src="NewTheme/images/BBL.svg">
-                                                    <img alt="Net Banking" class="row-images1"
-                                                        src="NewTheme/images/NETBANK.svg">
+                                                    <img onclick="redirectToGoogle();" alt="One Rupee"
+                                                        class="row-images1" src="NewTheme/images/ONERUPEE.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Jeton"
+                                                        class="row-images1" src="NewTheme/images/JETON.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Skrill"
+                                                        class="row-images1" src="NewTheme/images/SKRILL.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Jio Money"
+                                                        class="row-images1" src="NewTheme/images/JIO.svg">
+                                                    <img onclick="redirectToGoogle();" alt="IMPS"
+                                                        class="row-images1" src="NewTheme/images/IMP.svg">
+                                                    <img onclick="redirectToGoogle();" alt="BBL"
+                                                        class="row-images1" src="NewTheme/images/BBL.svg">
+                                                    <img onclick="redirectToGoogle();" alt="Net Banking"
+                                                        class="row-images1" src="NewTheme/images/NETBANK.svg">
                                                 </div>
                                             </div>
                                             <div class="footer-items">
@@ -1066,19 +1125,24 @@
                 </section>
                 <div class="flexout">
                     <a href="https://app.cricadda.com/login">
-                        <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
+                        <img onclick="redirectToGoogle();" alt="instagram" class="social2"
+                            src="NewTheme/images/Faceook.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
+                        <img onclick="redirectToGoogle();" alt="twitter" class="social2"
+                            src="NewTheme/images/Youtube.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
+                        <img onclick="redirectToGoogle();" alt="instagram" class="social2"
+                            src="NewTheme/images/instagram.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
+                        <img onclick="redirectToGoogle();" alt="twitter" class="social2"
+                            src="NewTheme/images/twitter.svg">
                     </a>
                     <a href="https://app.cricadda.com/login">
-                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
+                        <img onclick="redirectToGoogle();" alt="telegram" class="social2"
+                            src="NewTheme/images/telegram.svg">
                     </a>
                 </div>
             </div>
@@ -1094,7 +1158,11 @@
     <script src="{{ asset('NewTheme/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/slick.js') }}"></script>
     <script src="{{ asset('NewTheme/js/video.min.js') }}"></script>
-
+    <script>
+        function redirectToGoogle() {
+            window.location.href = 'https://app.cricadda.com/login';
+        }
+    </script>
 </body>
 
 </html>
