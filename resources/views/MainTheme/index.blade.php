@@ -475,8 +475,8 @@
         <div class="text-slider ng-star-inserted">
             <div class="info ng-star-inserted">
                 <div class="title-left">
-                    <img onclick="redirectToGoogle();" alt="Table Games"
-                        src="NewTheme/images/popular.svg">
+                    {{-- <img onclick="redirectToGoogle();" alt="Table Games"
+                        src="NewTheme/images/popular.svg"> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Popular Today</h1>
                 </div>
             </div>
@@ -527,10 +527,10 @@
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
-                    <span>
+                    {{-- <span>
                         <img onclick="redirectToGoogle();" width="25px;" alt="Exchange Games"
                             src="NewTheme/images/Sports.svg">
-                    </span>
+                    </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Sports</h1>
                 </a>
                 {{-- <div>
@@ -605,10 +605,10 @@
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
-                    <span _ngcontent-klx-c78="">
+                    {{-- <span _ngcontent-klx-c78="">
                         <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
                             width="25px;" alt="Popular Games">
-                    </span>
+                    </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Popular Games</h1>
                 </a>
             </div>
@@ -677,9 +677,9 @@
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
-                    <span> <img onclick="redirectToGoogle();" width="22px;" alt="Casino"
+                    {{-- <span> <img onclick="redirectToGoogle();" width="22px;" alt="Casino"
                             src="NewTheme/images/Casino.svg">
-                    </span>
+                    </span> --}}
                     <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Casinos</h1>
                 </a>
                 {{-- <div>
@@ -714,10 +714,10 @@
             <div class="info">
                 <div class="bb-styling">
                     <a>
-                        <span>
+                        {{-- <span>
                             <img onclick="redirectToGoogle();" width="20px;" alt="Live Casino"
                                 src="NewTheme/images/allcasinoo.svg">
-                        </span>
+                        </span> --}}
                         <h1 style="margin-top: 2px;color: #DEB439 !important;">Live Casinos</h1>
                     </a>
                 </div>
@@ -754,10 +754,10 @@
             <div class="info">
                 <div class="bb-styling">
                     <a>
-                        <span>
+                        {{-- <span>
                             <img onclick="redirectToGoogle();" width="24px;" alt="Providers"
                                 src="NewTheme/images/Providers.svg">
-                        </span>
+                        </span> --}}
                         <h1 style="margin-top: 2px;color: #DEB439 !important;">Virtual Casinos</h1>
                     </a>
                 </div>
@@ -1122,25 +1122,25 @@
                         <a href="https://app.cricadda.com/login"
                             class="signup waves-effect waves-light ng-star-inserted">
                             <span>
-                                <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png" alt="">
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png" alt="" style="width: 19px !important;">
                             </span>
-                            <span style="font-size: 10px"> Telegram for new ID</span>
+                            <span style="font-size: 10px;font-weight: 900" > Telegram for new ID</span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 20%" style="">
                         <a href="https://app.cricadda.com/login"
                             class="signup waves-effect waves-light ng-star-inserted" style="text-align: center;display: flex;justify-content: center">
                             
-                            <span style="font-size: 10px"> Live Chat </span>
+                            <span style="font-size: 10px;font-weight: 900" > Live Chat </span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="https://app.cricadda.com/login"
                             class="signup waves-effect waves-light ng-star-inserted">
                             <span>
-                                <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="">
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="" style="width: 19px !important;">
                             </span>
-                            <span style="font-size: 10px"> Whatsapp for new ID  </span>
+                            <span style="font-size: 10px;font-weight: 900" > Whatsapp for new ID  </span>
                         </a>
                     </span>
 
