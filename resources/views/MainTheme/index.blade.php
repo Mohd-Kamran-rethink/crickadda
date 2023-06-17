@@ -1119,7 +1119,7 @@
                     </a>
                 </div>
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
-                    style="display: flex  !important;justify-content: center !important;margin-bottom: 20px">
+                    style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="https://app.cricadda.com/login"
                             class="signup waves-effect waves-light ng-star-inserted">
