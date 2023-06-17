@@ -412,19 +412,19 @@
                     <a href="https://app.cricadda.com/login" id="navMobileBetGamesTV" name="navMobileBetGamesTV"
                         class="betgamestv item-nav">
                         <img onclick="redirectToGoogle();" alt="Exchange" class="top_bar_images"
-                            src="NewTheme/images/Casino.svg"> Lottery </a>
+                            src="NewTheme/images/lotteryicon.png"> Lottery </a>
                 </li>
                 <li class="item">
                     <a id="navMobileBetGamesTV" name="navMobileBetGamesTV" class="betgamestv item-nav">
                         <img onclick="redirectToGoogle();" alt="Sports Book" class="top_bar_images"
-                            src="NewTheme/images/SPORTSBOOK12.svg">
+                            src="NewTheme/images/sportbookicon.png">
                         SportBook1 </a>
                 </li>
                 <li class="item">
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img onclick="redirectToGoogle();" alt="Casino" class="top_bar_images"
-                            src="NewTheme/images/EXCHANGE12.svg">
+                            src="NewTheme/images/exchangeicon.png">
                         <span style="margin-top: 4px;">Exchange</span>
                     </a>
                 </li>
@@ -432,7 +432,7 @@
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img onclick="redirectToGoogle();" alt="Teen Patti" class="top_bar_images"
-                            src="NewTheme/images/Teen Patti.svg">
+                            src="NewTheme/images/casinoicon.png">
                         <span style="margin-top: 4px;">Live Casino</span>
                     </a>
                 </li>
@@ -548,7 +548,7 @@
                             <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics.jpg">
                         </a>
                     </div>
-                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? 'sdff' }}</div>
+                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? '' }}</div>
                 </li>
                 <li class="item">
                     <div class="top-row">
