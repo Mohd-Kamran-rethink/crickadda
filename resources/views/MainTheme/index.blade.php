@@ -1080,23 +1080,23 @@
                     style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="{{$TelegramLink->value}}"
-                            class="signup waves-effect waves-light ng-star-inserted">
+                            class="signup waves-effect waves-light ng-star-inserted" style="display: flex;justify-content: center">
                             <span>
                                 <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png" alt="" style="width: 19px !important;">
                             </span>
                             <span style="font-size: 10px;font-weight: 900" > Telegram for new ID</span>
                         </a>
                     </span>
-                    <span class="signup_btn_wrapper" style="width: 20%" style="">
+                    <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
                         <a href="https://app.cricadda.com/login"
                             class="signup waves-effect waves-light ng-star-inserted" style="text-align: center;display: flex;justify-content: center">
                             
                             <span style="font-size: 10px;font-weight: 900" > Live Chat </span>
                         </a>
                     </span>
-                    <span class="signup_btn_wrapper" style="width: 36%">
+                    <span class="signup_btn_wrapper" style="width: 36%;">
                         <a href="{{'https://wa.me/' . $WhatsAppLink->value}}"
-                            class="signup waves-effect waves-light ng-star-inserted">
+                            class="signup waves-effect waves-light ng-star-inserted" style="display: flex;justify-content: center">
                             <span>
                                 <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="" style="width: 19px !important;">
                             </span>
