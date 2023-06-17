@@ -1095,7 +1095,7 @@
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%">
-                        <a href="{{$WhatsAppLink->value}}"
+                        <a href="{{'https://wa.me/' . $WhatsAppLink->value}}"
                             class="signup waves-effect waves-light ng-star-inserted">
                             <span>
                                 <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="" style="width: 19px !important;">
