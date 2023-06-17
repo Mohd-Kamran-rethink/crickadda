@@ -440,7 +440,7 @@
                     <a id="navMobileLiveSports" name="navMobileLiveSports" href="https://app.cricadda.com/login"
                         class="livesports item-nav">
                         <img onclick="redirectToGoogle();" alt="Inplay" class="top_bar_images"
-                            src="NewTheme/images/SLOT.svg"> Slot </a>
+                            src="NewTheme/images/slot.png"> Slot </a>
                 </li>
                 <li class="item">
                     <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login"
