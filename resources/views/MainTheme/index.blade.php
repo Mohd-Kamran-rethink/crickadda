@@ -899,7 +899,7 @@
                                 <div class="footer-nav max-footer-width">
                                     <div>
                                         <div class="license-column-holder">
-                                            <div style="display: flex; justify-content: center;"
+                                            {{-- <div style="display: flex; justify-content: center;"
                                                 class="ng-star-inserted">
                                                 <a class="btn_wrapper special_border">
                                                     <button type="button" class="button-1 for-img">
@@ -917,12 +917,12 @@
                                                         </div>
                                                     </button>
                                                 </a>
-                                            </div>
+                                            </div> --}}
                                             <!---->
-                                            <div class="tut-class">
+                                            {{-- <div class="tut-class">
                                                 <span>Tutorials</span>
-                                            </div>
-                                            <div class="tutorials">
+                                            </div> --}}
+                                            {{-- <div class="tutorials">
                                                 <span class="special_border">
                                                     <div class="tutorial-btn">
                                                         <span class="tut-span">
@@ -983,7 +983,7 @@
                                                         </div>
                                                     </div>
                                                 </span>
-                                            </div>
+                                            </div> --}}
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
                                                     <img alt="INB" class="row-images1"
@@ -1101,7 +1101,7 @@
                     });
                     
                 @endphp
-                <div class="flexout">
+                <div class="flexout" style="margin-bottom: 50px">
                     <a href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
                         <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
                     </a>
@@ -1118,7 +1118,33 @@
                         <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
                     </a>
                 </div>
-                <div class="fixed-footer-buttons">
+                <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
+                    style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 10px">
+                    <span class="signup_btn_wrapper" style="width: 36%">
+                        <a href="https://app.cricadda.com/login"
+                            class="signup waves-effect waves-light ng-star-inserted">
+                            <span>
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/telegram.svg" alt="">
+                            </span>
+                            <span style="font-size: 10px"> Telegram for new ID</span>
+                        </a>
+                    </span>
+                    <span class="signup_btn_wrapper" style="width: 20%" style="">
+                        <a href="https://app.cricadda.com/login"
+                            class="signup waves-effect waves-light ng-star-inserted" style="text-align: center;display: flex;justify-content: center">
+                            
+                            <span style="font-size: 10px"> Live Chat </span>
+                        </a>
+                    </span>
+                    <span class="signup_btn_wrapper" style="width: 36%">
+                        <a href="https://app.cricadda.com/login"
+                            class="signup waves-effect waves-light ng-star-inserted">
+                            <span>
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/signup.svg" alt="">
+                            </span>
+                            <span style="font-size: 10px"> Whatsapp for new ID  </span>
+                        </a>
+                    </span>
 
                 </div>
             </div>
