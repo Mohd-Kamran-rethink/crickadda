@@ -609,7 +609,7 @@
                         <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
                             width="25px;" alt="Popular Games">
                     </span> --}}
-                    <h1 class="title-section" style="color: #DEB439 !important;"> Popular Games</h1>
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
                 </a>
             </div>
         </div>
