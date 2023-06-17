@@ -476,7 +476,7 @@
             <div class="info ng-star-inserted">
                 <div class="title-left">
                     <img onclick="redirectToGoogle();" alt="Table Games"
-                        src="NewTheme/images/Popular Today Icon-01.svg">
+                        src="NewTheme/images/popular.svg">
                     <h1 class="title-section" style="color: #DEB439 !important;"> Popular Today</h1>
                 </div>
             </div>
