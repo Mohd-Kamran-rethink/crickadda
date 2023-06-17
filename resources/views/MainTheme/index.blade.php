@@ -499,7 +499,7 @@
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                            <div class="name-slider" style="text-align: center">{{ $item->heading ?? '' }}</div>
+                            <div class="name-slider" style="text-align: center;color: #DEB439 !important;">{{ $item->heading ?? '' }}</div>
                         </li>
                     @endif
                 @endforeach
@@ -547,65 +547,19 @@
         </div>
         <div class="mobile-home-games-scroll">
             <ul class="home-slider sports-section mobile-home-scroll-content">
-
+                @foreach ($images as $item)
+                @if($item->category=='sport')
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics new.jpg">
+                            <img onclick="redirectToGoogle();" alt="Cricket" src="{{ asset('storage/Banners/' . $item->filename) }}">
                         </a>
                     </div>
-                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? 'POLITICS' }}</div>
+                    <div class="name-slider" style="text-align: center;color: #DEB439 !important;text-transform: uppercase">{{ $item->heading ?? '' }}</div>
                 </li>
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Football" src="NewTheme/images/Football.webp">
-                        </a>
-                    </div>
-                    {{-- <div class="heading_wrapper">
-                        <span>Football</span>
-                    </div> --}}
-                </li>
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Tennis" src="NewTheme/images/Tennis.webp">
-                        </a>
-                    </div>
-                    {{-- <div class="heading_wrapper">
-                        <span>Tennis</span>
-                    </div> --}}
-                </li>
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Greyhound Racing"
-                                src="NewTheme/images/Greyhound.webp">
-                        </a>
-                    </div>
-                    <div class="heading_wrapper">
-                        <span>GreyHound</span>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Horse Racing"
-                                src="NewTheme/images/Horse Racing.webp">
-                        </a>
-                    </div>
-                    <div class="heading_wrapper">
-                        <span>Horse</span>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" src="NewTheme/images/See All - Sportrs (108x72).webp"
-                                alt="See All">
-                        </a>
-                    </div>
-                </li>
+                @endif
+                @endforeach
+                 
             </ul>
         </div>
         <div class="text-slider" id="scrollDiv">
@@ -1125,7 +1079,7 @@
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
                     style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
-                        <a href="https://app.cricadda.com/login"
+                        <a href="{{$TelegramLink->value}}"
                             class="signup waves-effect waves-light ng-star-inserted">
                             <span>
                                 <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png" alt="" style="width: 19px !important;">
@@ -1141,7 +1095,7 @@
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%">
-                        <a href="https://app.cricadda.com/login"
+                        <a href="{{$WhatsAppLink->value}}"
                             class="signup waves-effect waves-light ng-star-inserted">
                             <span>
                                 <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="" style="width: 19px !important;">
