@@ -23,7 +23,13 @@
     <!-- fevicon -->
     <link rel="icon" href="NewTheme/images/favicon.png" type="image/gif" />
 </head>
-
+<style>
+    #scrollDiv {
+      scroll-margin-top: 50px; /* Offset to adjust for any fixed header */
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+  </style>
+  
 <body class="dark-theme">
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
@@ -443,7 +449,7 @@
                             src="NewTheme/images/slot.png"> Slot </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileSports" name="navMobileSports" href="https://app.cricadda.com/login"
+                    <a id="navMobileSports" name="navMobileSports" href="#scrollDiv"
                         class="sports item-nav">
                         <img onclick="redirectToGoogle();" alt="Cricket" class="top_bar_images"
                             src="NewTheme/images/game icon.png"> Fantasy Games
@@ -602,7 +608,7 @@
                 </li>
             </ul>
         </div>
-        <div class="text-slider">
+        <div class="text-slider" id="scrollDiv">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
                     {{-- <span _ngcontent-klx-c78="">
