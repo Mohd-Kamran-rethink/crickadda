@@ -545,10 +545,10 @@
                 <li class="item">
                     <div class="top-row">
                         <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics.jpg">
+                            <img onclick="redirectToGoogle();" alt="Cricket" src="NewTheme/images/politics new.jpg">
                         </a>
                     </div>
-                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? '' }}</div>
+                    <div class="name-slider" style="text-align: center">{{ $item->heading ?? 'POLITICS' }}</div>
                 </li>
                 <li class="item">
                     <div class="top-row">
