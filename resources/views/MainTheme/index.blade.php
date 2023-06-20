@@ -33,6 +33,8 @@
 </style>
 
 <body class="dark-theme">
+    
+    {{--  mobile theme start --}}
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
             <div class="nav-wrapper container">
@@ -411,10 +413,9 @@
             </li>
         </ul>
     </header>
-
     <main class="content-wrapper">
 
-        <div class="categories-home">
+        {{-- <div class="categories-home">
             <ul class="nav mobile-nav mobile-nav home-slider mobile-home-scroll-content">
                 <li class="item" tabindex="0">
                     <a href="https://app.cricadda.com/login" id="navMobileBetGamesTV" name="navMobileBetGamesTV"
@@ -456,8 +457,15 @@
                     </a>
                 </li>
             </ul>
-        </div>
-
+        </div> --}}
+        <div class="news-bar" style="height: 26px;z-index: 999;background: #DEB439;position: relative">
+           
+            <marquee> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY REFILL! </marquee>
+                 
+            <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #DEB439">
+               <img style="width: 20px" alt="Online betting in india | Cricadda" loading="lazy" src="images/speaker.svg">
+            </div>
+         </div>
         <!-- Banner Section -->
         <div class="carousel slide banner-slider">
             <div class="owl-carousel owl-theme" id="banner-slider">
@@ -745,11 +753,7 @@
         </div>
 
     </main>
-
-
-
     <!-- Footer -->
-
     <footer>
         <div class="max-width content-padding">
             <div class="footer-nav-items">
@@ -984,6 +988,12 @@
             </div>
         </div>
     </footer>
+    {{-- mobile theme end --}}
+
+
+
+
+
 
 
     <!-- Javascript files-->
