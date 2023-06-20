@@ -692,8 +692,8 @@
             </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
                 </a>
-                <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box')" class="see-all-a"> See All <i
-                        class="fas fa-solid fa-arrow-right iconArrow"></i>
+                <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box',this)" class="see-all-a"> See All
+                    <i class="fas fa-solid fa-arrow-right iconArrow"></i>
 
             </div>
         </div>
@@ -1022,7 +1022,8 @@
             window.location.href = 'https://app.cricadda.com/login';
         }
 
-        function toggleSeeAll(ID1, ID2) {
+        function toggleSeeAll(ID1, ID2, button) {
+
             var element1 = document.getElementById(ID1);
             var element2 = document.getElementById(ID2);
             // Toggle visibility for element with id1
@@ -1037,6 +1038,12 @@
                 element2.style.display = 'block';
             } else {
                 element2.style.display = 'none';
+            }
+            // Toggle button text
+            if (button.innerText === 'See All') {
+                button.innerText = 'See Less';
+            } else {
+                button.innerText = 'See All';
             }
         }
     </script>
