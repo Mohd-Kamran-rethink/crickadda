@@ -692,9 +692,12 @@
             </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
                 </a>
+                <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box')"
+                    class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
+
             </div>
         </div>
-        <div class="mobile-home-games-scroll">
+        <div class="mobile-home-games-scroll" id="fantasy-games-scroll" style="display: block">
             <ul class="home-slider mobile-home-scroll-content">
                 @foreach ($images as $item)
                     @if ($item->category == 'fantasyGames')
@@ -711,15 +714,15 @@
             </ul>
         </div>
         {{-- for seee all --}}
-        {{-- <div class="mobile-home-games-scroll">
-            <div class="home-slider mobile-home-scroll-content">
+        <div class="containerPopular" style="display: none" id="fantasy-games-box">
+            <div class="secPopular">
                 @foreach ($images as $item)
                     @if ($item->category == 'fantasyGames')
                         <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
                     @endif
                 @endforeach
             </div>
-        </div> --}}
+        </div>
 
 
         <!-- Advirtize Banner Section -->
@@ -1016,6 +1019,24 @@
     <script>
         function redirectToGoogle() {
             window.location.href = 'https://app.cricadda.com/login';
+        }
+
+        function toggleSeeAll(ID1, ID2) {
+            var element1 = document.getElementById(ID1);
+    var element2 = document.getElementById(ID2);
+            // Toggle visibility for element with id1
+            if (element1.style.display === 'none') {
+                element1.style.display = 'block';
+            } else {
+                element1.style.display = 'none';
+            }
+
+            // Toggle visibility for element with id2
+            if (element2.style.display === 'none') {
+                element2.style.display = 'block';
+            } else {
+                element2.style.display = 'none';
+            }
         }
     </script>
 </body>

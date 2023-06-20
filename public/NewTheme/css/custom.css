@@ -694,11 +694,12 @@ body .links {
 }
 
 .secPopular img {
-	width: calc(85% / 4);
+	width: calc(85% / 2.5);
 	height: calc(100% / 4);
 	display: block;
 	float: left;
 	flex: 0 0 auto;
+	border-radius: 6px;
 }
 
 .text-slider {
