@@ -21,7 +21,7 @@ class adminMiddleware
         }
         else
         {
-            return redirect('/login');
+            return redirect('/admin');
         }
 
     }

@@ -30,6 +30,26 @@
         scroll-behavior: smooth;
         /* Enable smooth scrolling */
     }
+
+    .mobileDiv {
+        display: none;
+        /* Hide the div by default */
+    }
+    .desktopDiv {
+    display: block;
+    /* Show the div for screens that are not mobile */
+    }
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 767px) {
+        .mobileDiv {
+            display: block;
+            /* Show the div for screen widths up to 767px */
+        }
+        .desktopDiv {
+        display: none;
+        /* Hide the div for mobile devices */
+    }
+    }
 </style>
 
 <body class="dark-theme">
@@ -53,7 +73,7 @@
         
     @endphp
     {{--  mobile theme start --}}
-    <header class="darker_theme">
+    <header class="darker_theme mobileDiv">
         <nav role="navigation" class="header_top_bar">
             <div class="nav-wrapper container" style="padding-left: 0px">
                 <div class="nav-contain">
@@ -431,7 +451,7 @@
             </li>
         </ul>
     </header>
-    <main class="content-wrapper">
+    <main class="content-wrapper mobileDiv">
 
         {{-- <div class="categories-home">
             <ul class="nav mobile-nav mobile-nav home-slider mobile-home-scroll-content">
@@ -774,7 +794,7 @@
 
     </main>
     <!-- Footer -->
-    <footer style="background: #23292E">
+    <footer style="background: #23292E" class="mobileDiv">
         <div class="max-width content-padding">
             <div class="footer-nav-items">
                 <section class="footers-container-second">
@@ -1012,7 +1032,11 @@
         </div>
     </footer>
     {{-- mobile theme end --}}
-
+<div class="desktopDiv text-center" style="height: 100vh;display: flex;align-items: center;justify-content: center">
+    <h2>Kamran Ali Multani is working on desktop design. <br>
+    Intezar karen!
+</h2>
+</div>
 
 
 

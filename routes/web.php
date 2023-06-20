@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[MainController::class,'landingPage'])->name('landingPage');
-Route::get('/dashboard',[AuthController::class,'dashboard'])->name('dashboard');
+Route::get('/dashboard',[AuthController::class,'dashboard'])->name('dashboard')->middleware('ValidateAdmin');
 
 // admin apnnelt
 
@@ -27,16 +27,16 @@ Route::post('admin/login', [AuthController::class, 'login'])->name('login');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::get('/admin/images', [MainController::class, 'listImages'])->name('listImages');
-Route::get('admin/images/add', [MainController::class, 'addForm'])->name('addForm');
-Route::post('admin/images/add', [MainController::class, 'add'])->name('add');
-Route::post('admin/images/delete', [MainController::class, 'deletImgae'])->name('deletImgae');
-Route::get('/admin/social-links/add', [MainController::class, 'socialLinksForm'])->name('socialLinksForm');
-Route::post('/admin/social-links/add', [MainController::class, 'socialLinksAdd'])->name('socialLinksAdd');
-Route::get('/admin/social-links', [MainController::class, 'socialLinksList'])->name('socialLinksList');
-Route::post('/admin/social-links/delete', [MainController::class, 'socialLinkDelete'])->name('socialLinkDelete');
+Route::get('/admin/images', [MainController::class, 'listImages'])->name('listImages')->middleware('ValidateAdmin');
+Route::get('admin/images/add', [MainController::class, 'addForm'])->name('addForm')->middleware('ValidateAdmin');
+Route::post('admin/images/add', [MainController::class, 'add'])->name('add')->middleware('ValidateAdmin');
+Route::post('admin/images/delete', [MainController::class, 'deletImgae'])->name('deletImgae')->middleware('ValidateAdmin');
+Route::get('/admin/social-links/add', [MainController::class, 'socialLinksForm'])->name('socialLinksForm')->middleware('ValidateAdmin');
+Route::post('/admin/social-links/add', [MainController::class, 'socialLinksAdd'])->name('socialLinksAdd')->middleware('ValidateAdmin');
+Route::get('/admin/social-links', [MainController::class, 'socialLinksList'])->name('socialLinksList')->middleware('ValidateAdmin');
+Route::post('/admin/social-links/delete', [MainController::class, 'socialLinkDelete'])->name('socialLinkDelete')->middleware('ValidateAdmin');
 
-Route::get('/admin/anouncement', [AnouncementController::class, 'list'])->name('list');
-Route::get('/admin/anouncement/add', [AnouncementController::class, 'addForm'])->name('addForm');
-Route::post('/admin/anouncement/add', [AnouncementController::class, 'add'])->name('add');
-Route::post('/admin/anouncememnt/delete', [AnouncementController::class, 'delete'])->name('delete');
+Route::get('/admin/anouncement', [AnouncementController::class, 'list'])->name('list')->middleware('ValidateAdmin');
+Route::get('/admin/anouncement/add', [AnouncementController::class, 'addForm'])->name('addForm')->middleware('ValidateAdmin');
+Route::post('/admin/anouncement/add', [AnouncementController::class, 'add'])->name('add')->middleware('ValidateAdmin');
+Route::post('/admin/anouncememnt/delete', [AnouncementController::class, 'delete'])->name('delete')->middleware('ValidateAdmin');
