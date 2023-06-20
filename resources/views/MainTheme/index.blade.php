@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+div<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -569,12 +569,12 @@
         <div class="containerPopular" style="display: none" id="sports-box">
             @foreach ($images as $item)
                 @if ($item->category == 'sport')
-                    <div class="secPopular d-flex flex-column align-items-center" >
+                    <div class="secPopular " >
                         <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
-                        <div class="name-slider"
-                            style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
-                            {{ $item->heading ?? '' }}</div>
                     </div>
+                    <div class="name-slider"
+                        style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
+                        {{ $item->heading ?? '' }}</div>
                 @endif
             @endforeach
         </div>
