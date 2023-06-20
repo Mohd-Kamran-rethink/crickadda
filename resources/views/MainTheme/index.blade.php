@@ -934,6 +934,59 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="footer-menu text-center mt-4" style="font-size: 13px;">
+                            <ul>
+                                <li>
+                                    <a href="https://app.cricadda.com/about-us " style="color: #bebebe !important"
+                                        class="" target="_blank">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://app.cricadda.com/terms-and-conditions"
+                                        style="color: #bebebe !important" class="" target="_blank">Terms and
+                                        Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="https://app.cricadda.com/responsible-gaming"
+                                        style="color: #bebebe !important" class="" target="_blank">Responsible
+                                        Gaming</a>
+                                </li>
+                                <li>
+                                    <a href="https://app.cricadda.com/aml-policy" style="color: #bebebe !important"
+                                        class="" target="_blank">AML Policy</a>
+                                </li>
+                                <li>
+                                    <a href="https://app.cricadda.com/kyc-policy" style="color: #bebebe !important"
+                                        class="" target="_blank">KYC Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
+
+                        <div class="footer-top mb-4" style="display: flex;flex-direction: column;align-items: center">
+                            <div class="secure-logo text-center">
+                                <div class="mt-2">
+                                    <img style="max-width: 75px" src="images/ssl.png">
+                                </div>
+                                <div class="ml-2">
+                                    <b>100% SAFE</b>
+                                    <div style="font-size: 12px">Protected connection and encrypted data.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex footer-other mt-2">
+                                <a  href="javascript:void(0)" role="button" data-toggle="modal"
+                                    data-target="#modal-18plusModal">
+                                    <img style="max-width: 30px" src="images/18plus.png">
+                                </a>
+                                <a class="mx-3" href="#" target="_blank">
+                                    <img style="max-width: 30px" src="images/gamecare.png">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img style="max-width: 30px" src="images/gt.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
                     </footer>
                 </section>
                 @php
@@ -1030,12 +1083,12 @@
             if (element1.style.display === 'none') {
                 element1.style.display = 'block';
                 button.innerText = 'See All';
-                
+
             } else {
                 element1.style.display = 'none';
                 button.innerText = 'See Less';
             }
-            
+
             // Toggle visibility for element with id2
             if (element2.style.display === 'none') {
                 element2.style.display = 'block';
