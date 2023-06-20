@@ -606,6 +606,7 @@
 
             </ul>
         </div>
+        {{-- our virtual cashino --}}
         <div class="text-slider">
             <div class="info">
                 <div class="bb-styling">
@@ -618,7 +619,8 @@
                     </a>
                 </div>
                 <div>
-                    <a class="see-all-a" onclick="toggleSeeAll('our-virtual-cashino-scroll','our-virtual-cashino-box',this)">
+                    <a class="see-all-a"
+                        onclick="toggleSeeAll('our-virtual-cashino-scroll','our-virtual-cashino-box',this)">
                         See All
                         {{-- <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i> --}}
                     </a>
@@ -644,38 +646,34 @@
                 @endforeach
             </ul>
         </div>
-        {{--ourlive casino box --}}
         <div class="containerPopular" style="display: none" id="our-virtual-cashino-box">
             <div class="secPopular">
                 @foreach ($images as $item)
-                @if ($item->category == 'virtualCasino')
+                    @if ($item->category == 'virtualCasino')
                         <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
                     @endif
                 @endforeach
             </div>
         </div>
 
-
+        {{-- live cascino --}}
         <div class="text-slider">
             <div class="info">
                 <div class="bb-styling">
                     <a>
-                        {{-- <span>
-                            <img onclick="redirectToGoogle();" width="24px;" alt="Providers"
-                                src="NewTheme/images/Providers.svg">
-                        </span> --}}
                         <h1 style="margin-top: 2px;color: #DEB439 !important;">Live Casinos</h1>
                     </a>
                 </div>
-                {{-- <div>
-          <a class="see-all-a">
-            <span>See All</span>
-            <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
-          </a>
-        </div> --}}
+                <div>
+                    <a class="see-all-a"
+                        onclick="toggleSeeAll('live-cascino-scroll','live-cascino-box',this)">
+                        See All
+                        {{-- <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i> --}}
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="mobile-home-games-scroll">
+        <div id="live-cascino-scroll" class="mobile-home-games-scroll">
             <ul class="home-slider mobile-home-scroll-content">
                 @foreach ($images as $item)
                     @if ($item->category == 'liveCasino')
@@ -692,19 +690,23 @@
 
             </ul>
         </div>
-
+        <div class="containerPopular" style="display: none" id="live-cascino-box">
+            <div class="secPopular">
+                @foreach ($images as $item)
+                    @if ($item->category == 'liveCasino')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
+        </div>
+        {{-- fanasy games --}}
         <div class="text-slider" id="scrollDiv">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
-                    {{-- <span _ngcontent-klx-c78="">
-                <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
-                    width="25px;" alt="Popular Games">
-            </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
                 </a>
                 <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box',this)" class="see-all-a"> See All
                     <i class="fas fa-solid fa-arrow-right iconArrow"></i>
-
             </div>
         </div>
         <div class="mobile-home-games-scroll" id="fantasy-games-scroll" style="display: block">
@@ -723,7 +725,6 @@
                 @endforeach
             </ul>
         </div>
-        {{-- for seee all --}}
         <div class="containerPopular" style="display: none" id="fantasy-games-box">
             <div class="secPopular">
                 @foreach ($images as $item)
@@ -736,7 +737,6 @@
 
 
         <!-- Advirtize Banner Section -->
-
         <div class="container">
             <div _ngcontent-kbj-c86="">
                 <a target="_parent" href="https://app.cricadda.com/login">
