@@ -477,12 +477,12 @@
             </ul>
         </div> --}}
         <div class="news-bar"
-            style="height: 32px;z-index: 999;background: #DEB439;position: relative;display: flex;align-items: center">
+            style="height: 32px;z-index: 999;background: #ffe062  ;position: relative;display: flex;align-items: center">
 
-            <marquee style="font-size: 12px"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET
+            <marquee style="font-size: 12px;color: #23292E"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET
                 5% BONUS ON EVERY REFILL! </marquee>
 
-            <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #DEB439">
+            <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #ffe062  ">
                 <img style="width: 30px" alt="Online betting in india | Cricadda" loading="lazy"
                     src="images/speaker.svg">
             </div>
@@ -493,7 +493,7 @@
                 @foreach ($images as $item)
                     @if ($item->category == 'banner')
                         <div class="item  carousel-item carousal-23">
-                            <img onclick="redirectToGoogle();"
+                            <img style="height: 150px" onclick="redirectToGoogle();"
                                 src="{{ asset('storage/Banners/' . $item->filename) }}">
                         </div>
                     @endif
