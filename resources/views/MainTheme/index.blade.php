@@ -57,10 +57,10 @@
         <nav role="navigation" class="header_top_bar">
             <div class="nav-wrapper container" style="padding-left: 0px">
                 <div class="nav-contain">
-                    <div class="sidebrand-contain">
+                    <div class="sidebrand-contain ml-0">
                         <div class="site_logo">
                             <a id="logo-container" href="https://app.cricadda.com/login" class="brand-logo">
-                                <img style="height: 48px !important" onclick="redirectToGoogle();"
+                                <img style="height: 48px !important;max-width: 132px;" onclick="redirectToGoogle();"
                                     class="menu_icon ng-star-inserted"src="{{ asset('storage/Banners/' . $logo->filename) }}">
                             </a>
                         </div>
