@@ -786,7 +786,7 @@
                                     <div>
                                         <div class="license-column-holder">
 
-                                            <div class="payment-img-holder">
+                                            <div class="payment-img-holder pt-3">
                                                 <div class="row" style="justify-content: space-around;">
                                                     {{-- <img alt="INB" class="row-images1"
                                                         src="NewTheme/images/INB.svg"> --}}
