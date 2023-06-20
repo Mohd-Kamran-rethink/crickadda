@@ -25,11 +25,13 @@
 </head>
 <style>
     #scrollDiv {
-      scroll-margin-top: 50px; /* Offset to adjust for any fixed header */
-      scroll-behavior: smooth; /* Enable smooth scrolling */
+        scroll-margin-top: 50px;
+        /* Offset to adjust for any fixed header */
+        scroll-behavior: smooth;
+        /* Enable smooth scrolling */
     }
-  </style>
-  
+</style>
+
 <body class="dark-theme">
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
@@ -449,10 +451,8 @@
                             src="NewTheme/images/slot.png"> Slot </a>
                 </li>
                 <li class="item">
-                    <a id="navMobileSports" name="navMobileSports" href="#scrollDiv"
-                        class="sports item-nav">
-                        <img  alt="Cricket" class="top_bar_images"
-                            src="NewTheme/images/game icon.png"> Fantasy Games
+                    <a id="navMobileSports" name="navMobileSports" href="#scrollDiv" class="sports item-nav">
+                        <img alt="Cricket" class="top_bar_images" src="NewTheme/images/game icon.png"> Fantasy Games
                     </a>
                 </li>
             </ul>
@@ -499,7 +499,8 @@
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                            <div class="name-slider" style="text-align: center;color: #DEB439 !important;">{{ $item->heading ?? '' }}</div>
+                            <div class="name-slider" style="text-align: center;color: #DEB439 !important;">
+                                {{ $item->heading ?? '' }}</div>
                         </li>
                     @endif
                 @endforeach
@@ -548,92 +549,27 @@
         <div class="mobile-home-games-scroll">
             <ul class="home-slider sports-section mobile-home-scroll-content">
                 @foreach ($images as $item)
-                @if($item->category=='sport')
-                <li class="item">
-                    <div class="top-row">
-                        <a href="https://app.cricadda.com/login">
-                            <img onclick="redirectToGoogle();" alt="Cricket" src="{{ asset('storage/Banners/' . $item->filename) }}">
-                        </a>
-                    </div>
-                    <div class="name-slider" style="text-align: center;color: #DEB439 !important;text-transform: uppercase">{{ $item->heading ?? '' }}</div>
-                </li>
-                @endif
-                @endforeach
-                 
-            </ul>
-        </div>
-        <div class="text-slider" id="scrollDiv">
-            <div class="info">
-                <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
-                    {{-- <span _ngcontent-klx-c78="">
-                        <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
-                            width="25px;" alt="Popular Games">
-                    </span> --}}
-                    <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
-                </a>
-            </div>
-        </div>
-
-        <div class="containerPopular">
-            <div class="secPopular">
-                @foreach ($images as $item)
-                    @if ($item->category == 'fantasyGames')
-                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @if ($item->category == 'sport')
+                        <li class="item">
+                            <div class="top-row">
+                                <a href="https://app.cricadda.com/login">
+                                    <img onclick="redirectToGoogle();" alt="Cricket"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                </a>
+                            </div>
+                            <div class="name-slider"
+                                style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
+                                {{ $item->heading ?? '' }}</div>
+                        </li>
                     @endif
                 @endforeach
-            </div>
+
+            </ul>
         </div>
 
 
-        {{-- <div class="text-slider">
-      <div class="info">
-        <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
-          <span> <img onclick="redirectToGoogle();" width="22px;" alt="Games" src="NewTheme/images/Games.svg">
-          </span>
-          <h1 style="margin-top: 2px;">Games</h1>
-        </a>
-        <div>
-          <a href="https://app.cricadda.com/login" class="see-all-a">
-            <span>See All</span>
-            <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div> --}}
-        {{-- <div class="mobile-home-games-scroll">
-      <ul class="home-slider mobile-home-scroll-content">
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Lottery Games" src="NewTheme/images/Lottery.webp">
-            </a>
-          </div>
-          <div class="heading_wrapper">
-            <span>Lottery Games</span>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Instant Win" src="NewTheme/images/Instant Win.webp">
-            </a>
-          </div>
-          <div class="heading_wrapper">
-            <span>Instant Win</span>
-          </div>
-        </li>
-        <li class="item">
-          <div class="top-row">
-            <a>
-              <img onclick="redirectToGoogle();" alt="Slot" src="NewTheme/images/Slots.webp">
-            </a>
-          </div>
-          <div class="heading_wrapper">
-            <span>Slot Games</span>
-          </div>
-        </li>
-      </ul>
-    </div> --}}
+
+
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
@@ -746,88 +682,44 @@
 
             </ul>
         </div>
-        <!--   <div class="text-slider">
-      <div class="info">
-        <div class="bb-styling">
-          <a> <img onclick="redirectToGoogle();" width="24px;" alt="Providers" src="NewTheme/images/endors.svg">
-            <h1 style="right: 10px;">Endorsements</h1>
-          </a>
+
+        <div class="text-slider" id="scrollDiv">
+            <div class="info">
+                <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
+                    {{-- <span _ngcontent-klx-c78="">
+                <img onclick="redirectToGoogle();" src="NewTheme/images/Popular Games Icon.svg"
+                    width="25px;" alt="Popular Games">
+            </span> --}}
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="mobile-home-games-scroll">
-      <ul class="home-slider mobile-home-scroll-content">
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-03.png" data-setup="{}">
-            <source src="NewTheme/images/Govinda.mp4" type="video/mp4" />
-       <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-08.png" data-setup="{}">
-            <source src="NewTheme/images/adah-khan-reel-withlogo.mp4" type="video/mp4" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-02.png" data-setup="{}">
-            <source src="NewTheme/images/nitin-1080-1920-4.mp4" type="video/mp4" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-01.png" data-setup="{}">
-            <source src="NewTheme/images/rashmi-reel-bg-replaced.mp4" type="video/mp4" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-05.png" data-setup="{}">
-            <source src="NewTheme/images/Shakti reel_4.mp4" type="video/mp4" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-        <li class="item last-sport-item ng-star-inserted">
-          <video id="Govinda-vid" class="video-js" controls preload="auto" width="166" height="295"
-            poster="NewTheme/images/CELEB THUMBNAIL-06.png" data-setup="{}">
-            <source src="NewTheme/images/shefali-reel-withlogo.mp4" type="video/mp4" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-            </p>
-          </video>
-        </li>
-      </ul>
-    </div>
- -->
-
+        <div class="mobile-home-games-scroll">
+            <ul class="home-slider mobile-home-scroll-content">
+                @foreach ($images as $item)
+                    @if ($item->category == 'fantasyGames')
+                        <li class="item">
+                            <div class="top-row">
+                                <a>
+                                    <img onclick="redirectToGoogle();" alt="Evolution Gaming"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                </a>
+                            </div>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+        </div>
+        {{-- for seee all --}}
+        {{-- <div class="mobile-home-games-scroll">
+            <div class="home-slider mobile-home-scroll-content">
+                @foreach ($images as $item)
+                    @if ($item->category == 'fantasyGames')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
+        </div> --}}
 
 
         <!-- Advirtize Banner Section -->
@@ -1079,31 +971,34 @@
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
                     style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
-                        <a href="{{$TelegramLink->value}}"
-                            class="signup waves-effect waves-light ng-star-inserted" style="display: flex;justify-content: center">
+                        <a href="{{ $TelegramLink->value }}" class="signup waves-effect waves-light ng-star-inserted"
+                            style="display: flex;justify-content: center">
                             <span>
-                                <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png" alt="" style="width: 19px !important;">
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/telegramoriginal.png"
+                                    alt="" style="width: 19px !important;">
                             </span>
-                            <span style="font-size: 10px;font-weight: 900" > Telegram for new ID</span>
+                            <span style="font-size: 10px;font-weight: 900"> Telegram for new ID</span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
                         <a href="https://app.cricadda.com/login"
-                            class="signup waves-effect waves-light ng-star-inserted" style="text-align: center;display: flex;justify-content: center">
-                            
-                            <span style="font-size: 10px;font-weight: 900" > Live Chat </span>
+                            class="signup waves-effect waves-light ng-star-inserted"
+                            style="text-align: center;display: flex;justify-content: center">
+
+                            <span style="font-size: 10px;font-weight: 900"> Live Chat </span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%;">
-                        <a href="{{'https://wa.me/' . $WhatsAppLink->value}}"
-                            class="signup waves-effect waves-light ng-star-inserted" style="display: flex;justify-content: center">
+                        <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}"
+                            class="signup waves-effect waves-light ng-star-inserted"
+                            style="display: flex;justify-content: center">
                             <span>
-                                <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png" alt="" style="width: 19px !important;">
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png"
+                                    alt="" style="width: 19px !important;">
                             </span>
-                            <span style="font-size: 10px;font-weight: 900" > Whatsapp for new ID  </span>
+                            <span style="font-size: 10px;font-weight: 900"> Whatsapp for new ID </span>
                         </a>
                     </span>
-
                 </div>
             </div>
         </div>
