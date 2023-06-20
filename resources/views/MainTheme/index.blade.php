@@ -692,8 +692,8 @@
             </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Fantasy Games</h1>
                 </a>
-                <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box')"
-                    class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
+                <a onclick="toggleSeeAll('fantasy-games-scroll','fantasy-games-box')" class="see-all-a"> See All <i
+                        class="fas fa-solid fa-arrow-right iconArrow"></i>
 
             </div>
         </div>
@@ -839,8 +839,8 @@
                                             </div> --}}
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
-                                                    <img alt="INB" class="row-images1"
-                                                        src="NewTheme/images/INB.svg">
+                                                    {{-- <img alt="INB" class="row-images1"
+                                                        src="NewTheme/images/INB.svg"> --}}
                                                     <img alt="UPI" class="row-images1"
                                                         src="NewTheme/images/UP.svg">
                                                     <img alt="Visa" class="row-images1"
@@ -851,13 +851,14 @@
                                                         src="NewTheme/images/PAYT.svg">
                                                     <img alt="Gpay" class="row-images1"
                                                         src="NewTheme/images/GPY.svg">
-                                                    <img alt="Bank Trasnfer" class="row-images1"
-                                                        src="NewTheme/images/BNKTRANSFER.svg">
-                                                </div>
-                                                <div class="row"
-                                                    style="margin-top: 8px; justify-content: space-around;">
                                                     <img alt="One Rupee" class="row-images1"
                                                         src="NewTheme/images/ONERUPEE.svg">
+                                                </div>
+                                                {{-- <div class="row"
+                                                    style="margin-top: 8px; justify-content: space-around;">
+                                                    <img alt="Bank Trasnfer" class="row-images1"
+                                                        src="NewTheme/images/BNKTRANSFER.svg">
+
                                                     <img alt="Jeton" class="row-images1"
                                                         src="NewTheme/images/JETON.svg">
                                                     <img alt="Skrill" class="row-images1"
@@ -870,7 +871,7 @@
                                                         src="NewTheme/images/BBL.svg">
                                                     <img alt="Net Banking" class="row-images1"
                                                         src="NewTheme/images/NETBANK.svg">
-                                                </div>
+                                                </div> --}}
                                             </div>
                                             <div class="footer-items">
                                                 <div class="footer-text">
@@ -1023,7 +1024,7 @@
 
         function toggleSeeAll(ID1, ID2) {
             var element1 = document.getElementById(ID1);
-    var element2 = document.getElementById(ID2);
+            var element2 = document.getElementById(ID2);
             // Toggle visibility for element with id1
             if (element1.style.display === 'none') {
                 element1.style.display = 'block';
