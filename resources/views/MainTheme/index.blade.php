@@ -541,9 +541,10 @@
                     <h1 class="title-section" style="color: #DEB439 !important;"> Sports</h1>
                 </a>
                 <div>
-          <a onclick="toggleSeeAll('sports-scroll','sports-box',this)" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
-          </a>
-        </div>
+                    <a onclick="toggleSeeAll('sports-scroll','sports-box',this)" class="see-all-a"> See All <i
+                            class="fas fa-solid fa-arrow-right iconArrow"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="mobile-home-games-scroll" id="sports-scroll">
@@ -566,16 +567,16 @@
             </ul>
         </div>
         <div class="containerPopular" style="display: none" id="sports-box">
-            <div class="secPopular d-flex align-items-center flex-column">
-                @foreach ($images as $item)
+            @foreach ($images as $item)
                 @if ($item->category == 'sport')
+                    <div class="secPopular d-flex flex-column align-items-center" >
                         <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
                         <div class="name-slider"
-                                style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
-                                {{ $item->heading ?? '' }}</div>
+                            style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
+                            {{ $item->heading ?? '' }}</div>
+                    </div>
                 @endif
-                @endforeach
-            </div>
+            @endforeach
         </div>
 
 
