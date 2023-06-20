@@ -986,7 +986,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
+                        
                     </footer>
                 </section>
                 @php
