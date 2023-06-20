@@ -856,7 +856,7 @@
                                             {{-- old theme --}}
                                             <div class="menu-old text-center mt-3" >
                                                 <div style="color: #AAAFB5 !important">
-                                                    <h5 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7 Support</h5>
+                                                    <h4 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7 Support</h4>
                                                     <p style="font-size: 14px" class="mt-0 pt-0">{{$WhatsAppLink->value}}</p>
                                                 </div>
 
