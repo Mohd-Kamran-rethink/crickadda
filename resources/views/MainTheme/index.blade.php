@@ -919,6 +919,7 @@
                                                 </div>
                                             </div>
                                            
+                                            <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
 
                                             <br />
                                             <div class="footer">
@@ -953,8 +954,7 @@
                         </div>
 
 
-                        <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
-
+                        
 
 
                     </footer>
