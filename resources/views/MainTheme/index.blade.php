@@ -566,11 +566,14 @@
             </ul>
         </div>
         <div class="containerPopular" style="display: none" id="sports-box">
-            <div class="secPopular">
+            <div class="secPopular d-flex align-items-center flex-column">
                 @foreach ($images as $item)
                 @if ($item->category == 'sport')
                         <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
-                    @endif
+                        <div class="name-slider"
+                                style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
+                                {{ $item->heading ?? '' }}</div>
+                @endif
                 @endforeach
             </div>
         </div>
