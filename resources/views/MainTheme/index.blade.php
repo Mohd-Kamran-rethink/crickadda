@@ -33,7 +33,25 @@
 </style>
 
 <body class="dark-theme">
+    @php
+    $WhatsAppLink = $socialLinks->last(function ($item) {
+        return $item->platform === 'whatsapp';
+    });
+    $TelegramLink = $socialLinks->last(function ($item) {
+        return $item->platform === 'telegram';
+    });
+    $FacebookLink = $socialLinks->last(function ($item) {
+        return $item->platform === 'facebook';
+    });
     
+    $youtubeLink = $socialLinks->last(function ($item) {
+        return $item->platform === 'youtube';
+    });
+    $instagramLink = $socialLinks->last(function ($item) {
+        return $item->platform === 'instagram';
+    });
+    
+@endphp
     {{--  mobile theme start --}}
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
@@ -458,14 +476,17 @@
                 </li>
             </ul>
         </div> --}}
-        <div class="news-bar" style="height: 32px;z-index: 999;background: #DEB439;position: relative;display: flex;align-items: center">
-           
-            <marquee style="font-size: 12px"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY REFILL! </marquee>
-                 
+        <div class="news-bar"
+            style="height: 32px;z-index: 999;background: #DEB439;position: relative;display: flex;align-items: center">
+
+            <marquee style="font-size: 12px"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET
+                5% BONUS ON EVERY REFILL! </marquee>
+
             <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #DEB439">
-               <img style="width: 30px" alt="Online betting in india | Cricadda" loading="lazy" src="images/speaker.svg">
+                <img style="width: 30px" alt="Online betting in india | Cricadda" loading="lazy"
+                    src="images/speaker.svg">
             </div>
-         </div>
+        </div>
         <!-- Banner Section -->
         <div class="carousel slide banner-slider">
             <div class="owl-carousel owl-theme" id="banner-slider">
@@ -574,7 +595,7 @@
                 @endforeach
             </ul>
         </div>
-        
+
 
 
 
@@ -754,7 +775,7 @@
 
     </main>
     <!-- Footer -->
-    <footer>
+    <footer style="background: #23292E">
         <div class="max-width content-padding">
             <div class="footer-nav-items">
                 <section class="footers-container-second">
@@ -801,7 +822,9 @@
                                                         src="NewTheme/images/NETBANK.svg">
                                                 </div> --}}
                                             </div>
-                                            <div class="footer-items">
+                                            {{-- about section same as old  --}}
+                                            {{-- new theme --}}
+                                            {{-- <div class="footer-items">
                                                 <div class="footer-text">
                                                     <ul class="link-list">
                                                         <li>
@@ -829,8 +852,16 @@
                                                         </li>
                                                     </ul>
                                                 </div>
+                                            </div> --}}
+                                            {{-- old theme --}}
+                                            <div class="menu-old text-center mt-3" >
+                                                <div style="color: #AAAFB5 !important">
+                                                    <h5 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7 Support</h5>
+                                                    <p style="font-size: 14px" class="mt-0 pt-0">{{$WhatsAppLink->value}}</p>
+                                                </div>
+
+
                                             </div>
-                                            <br />
                                             <br />
                                             <div class="footer">
                                                 <div class="max-footer-width">
@@ -917,25 +948,7 @@
 
                     </footer>
                 </section>
-                @php
-                    $WhatsAppLink = $socialLinks->last(function ($item) {
-                        return $item->platform === 'whatsapp';
-                    });
-                    $TelegramLink = $socialLinks->last(function ($item) {
-                        return $item->platform === 'telegram';
-                    });
-                    $FacebookLink = $socialLinks->last(function ($item) {
-                        return $item->platform === 'facebook';
-                    });
-                    
-                    $youtubeLink = $socialLinks->last(function ($item) {
-                        return $item->platform === 'youtube';
-                    });
-                    $instagramLink = $socialLinks->last(function ($item) {
-                        return $item->platform === 'instagram';
-                    });
-                    
-                @endphp
+                
                 <div class="flexout" style="margin-bottom: 60px">
                     <a href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
                         <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
