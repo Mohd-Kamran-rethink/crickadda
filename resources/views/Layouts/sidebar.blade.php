@@ -39,6 +39,15 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item  ">
+                    <a href="{{ url('/admin/anouncement') }}"
+                        class="nav-link {{ Request::is('admin/anouncement') ? 'active' : '' }}">
+                        <i class="nav-icon fa fa-volume-off"></i>
+                        <p>
+                            Anouncement
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>

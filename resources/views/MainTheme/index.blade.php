@@ -479,8 +479,7 @@
         <div class="news-bar"
             style="height: 32px;z-index: 999;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;position: relative;display: flex;align-items: center">
 
-            <marquee style="font-size: 12px;color: #23292E"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET
-                5% BONUS ON EVERY REFILL! </marquee>
+            <marquee style="font-size: 12px;color: #23292E">{{ $news->title ?? '' }}</marquee>
 
             <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #F5F7B8  ">
                 <img style="width: 30px" alt="Online betting in india | Cricadda" loading="lazy"
@@ -918,7 +917,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                           
+
                                             <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
 
                                             <br />
@@ -954,7 +953,7 @@
                         </div>
 
 
-                        
+
 
 
                     </footer>

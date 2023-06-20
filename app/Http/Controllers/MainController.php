@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Anouncement;
 use App\Image;
 use App\SocialLink;
 use Illuminate\Http\Request;
@@ -29,8 +30,9 @@ class MainController extends Controller
         $images = Image::get();
         
           $socialLinks=SocialLink::where('country','=','india')->get();  
+          $news=Anouncement:: orderBy('created_at', 'desc')->first();
         
-        return view('MainTheme.index', compact('responseData', 'logo', 'images','socialLinks'));
+        return view('MainTheme.index', compact('responseData', 'logo', 'images','socialLinks','news'));
     }
     public function listImages()
     {

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AnouncementController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
@@ -34,3 +35,8 @@ Route::get('/admin/social-links/add', [MainController::class, 'socialLinksForm']
 Route::post('/admin/social-links/add', [MainController::class, 'socialLinksAdd'])->name('socialLinksAdd');
 Route::get('/admin/social-links', [MainController::class, 'socialLinksList'])->name('socialLinksList');
 Route::post('/admin/social-links/delete', [MainController::class, 'socialLinkDelete'])->name('socialLinkDelete');
+
+Route::get('/admin/anouncement', [AnouncementController::class, 'list'])->name('list');
+Route::get('/admin/anouncement/add', [AnouncementController::class, 'addForm'])->name('addForm');
+Route::post('/admin/anouncement/add', [AnouncementController::class, 'add'])->name('add');
+Route::post('/admin/anouncememnt/delete', [AnouncementController::class, 'delete'])->name('delete');
