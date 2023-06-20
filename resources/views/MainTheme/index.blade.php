@@ -540,13 +540,13 @@
                     </span> --}}
                     <h1 class="title-section" style="color: #DEB439 !important;"> Sports</h1>
                 </a>
-                {{-- <div>
-          <a href="https://app.cricadda.com/login" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
+                <div>
+          <a onclick="toggleSeeAll('sports-scroll','sports-box',this)" class="see-all-a"> See All <i class="fas fa-solid fa-arrow-right iconArrow"></i>
           </a>
-        </div> --}}
+        </div>
             </div>
         </div>
-        <div class="mobile-home-games-scroll">
+        <div class="mobile-home-games-scroll" id="sports-scroll">
             <ul class="home-slider sports-section mobile-home-scroll-content">
                 @foreach ($images as $item)
                     @if ($item->category == 'sport')
@@ -563,10 +563,17 @@
                         </li>
                     @endif
                 @endforeach
-
             </ul>
         </div>
-
+        <div class="containerPopular" style="display: none" id="sports-box">
+            <div class="secPopular">
+                @foreach ($images as $item)
+                @if ($item->category == 'sport')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
+        </div>
 
 
 
