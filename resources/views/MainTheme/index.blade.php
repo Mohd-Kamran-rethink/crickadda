@@ -1040,7 +1040,7 @@
                 element2.style.display = 'none';
             }
             // Toggle button text
-            if (button.innerText === 'See All') {
+            if (button.innerText == 'See All') {
                 button.innerText = 'See Less';
             } else {
                 button.innerText = 'See All';
