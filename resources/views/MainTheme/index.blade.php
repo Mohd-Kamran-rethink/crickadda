@@ -569,12 +569,14 @@ div<!DOCTYPE html>
         <div class="containerPopular" style="display: none" id="sports-box">
             @foreach ($images as $item)
                 @if ($item->category == 'sport')
-                    <div class="secPopular " >
-                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    <div class="secPopular" >
+                        <div class="d-flex align-items-center flex-column">
+                            <img style="height: auto;" onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            <div class="name-slider"
+                            style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
+                            {{ $item->heading ?? '' }}</div>
+                        </div>
                     </div>
-                    <div class="name-slider"
-                        style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
-                        {{ $item->heading ?? '' }}</div>
                 @endif
             @endforeach
         </div>
