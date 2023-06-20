@@ -694,7 +694,7 @@ body .links {
 }
 
 .secPopular img {
-	width: calc(85% / 2);
+	width: calc(85% / 2.5);
 	height: calc(100% / 4);
 	display: block;
 	float: left;
