@@ -935,7 +935,7 @@
                             </div>
                         </div>
                         
-                        <div class="footer-menu text-center mt-4" style="font-size: 13px;">
+                        <div class="footer-menu text-center mt-4" style="font-size: 16px;">
                             <ul>
                                 <li>
                                     <a href="https://app.cricadda.com/about-us " style="color: #bebebe !important"
