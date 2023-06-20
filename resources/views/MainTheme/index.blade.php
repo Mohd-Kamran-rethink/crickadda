@@ -458,12 +458,12 @@
                 </li>
             </ul>
         </div> --}}
-        <div class="news-bar" style="height: 26px;z-index: 999;background: #DEB439;position: relative">
+        <div class="news-bar" style="height: 32px;z-index: 999;background: #DEB439;position: relative;display: flex;align-items: center">
            
-            <marquee> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY REFILL! </marquee>
+            <marquee style="font-size: 12px"> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY REFILL! </marquee>
                  
             <div class="news-title" style="position: absolute;right: 0;top: 0px;background: #DEB439">
-               <img style="width: 20px" alt="Online betting in india | Cricadda" loading="lazy" src="images/speaker.svg">
+               <img style="width: 30px" alt="Online betting in india | Cricadda" loading="lazy" src="images/speaker.svg">
             </div>
          </div>
         <!-- Banner Section -->
