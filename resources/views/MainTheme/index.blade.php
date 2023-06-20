@@ -1029,20 +1029,19 @@
             // Toggle visibility for element with id1
             if (element1.style.display === 'none') {
                 element1.style.display = 'block';
+                button.innerText = 'See All';
+                
             } else {
                 element1.style.display = 'none';
+                button.innerText = 'See Less';
             }
-
+            
             // Toggle visibility for element with id2
             if (element2.style.display === 'none') {
                 element2.style.display = 'block';
-            } else {
-                element2.style.display = 'none';
-            }
-            // Toggle button text
-            if (button.innerText == 'See All') {
                 button.innerText = 'See Less';
             } else {
+                element2.style.display = 'none';
                 button.innerText = 'See All';
             }
         }
