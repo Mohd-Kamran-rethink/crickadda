@@ -34,24 +34,24 @@
 
 <body class="dark-theme">
     @php
-    $WhatsAppLink = $socialLinks->last(function ($item) {
-        return $item->platform === 'whatsapp';
-    });
-    $TelegramLink = $socialLinks->last(function ($item) {
-        return $item->platform === 'telegram';
-    });
-    $FacebookLink = $socialLinks->last(function ($item) {
-        return $item->platform === 'facebook';
-    });
-    
-    $youtubeLink = $socialLinks->last(function ($item) {
-        return $item->platform === 'youtube';
-    });
-    $instagramLink = $socialLinks->last(function ($item) {
-        return $item->platform === 'instagram';
-    });
-    
-@endphp
+        $WhatsAppLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'whatsapp';
+        });
+        $TelegramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'telegram';
+        });
+        $FacebookLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'facebook';
+        });
+        
+        $youtubeLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'youtube';
+        });
+        $instagramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'instagram';
+        });
+        
+    @endphp
     {{--  mobile theme start --}}
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
@@ -854,14 +854,72 @@
                                                 </div>
                                             </div> --}}
                                             {{-- old theme --}}
-                                            <div class="menu-old text-center mt-3" >
+                                            <div class="menu-old text-center mt-3">
                                                 <div style="color: #AAAFB5 !important">
-                                                    <h4 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7 Support</h4>
-                                                    <p style="font-size: 14px" class="mt-0 pt-0">{{$WhatsAppLink->value}}</p>
+                                                    <h4 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7
+                                                        Support</h4>
+                                                    <p style="font-size: 12px" class="mt-0 pt-0">
+                                                        {{ $WhatsAppLink->value }}</p>
                                                 </div>
-
-
                                             </div>
+                                            <div class="footer-menu text-center mt-4" style="font-size: 16px;">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://app.cricadda.com/about-us "
+                                                            style="color: #bebebe !important" class=""
+                                                            target="_blank">About Us</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://app.cricadda.com/terms-and-conditions"
+                                                            style="color: #bebebe !important" class=""
+                                                            target="_blank">Terms and
+                                                            Conditions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://app.cricadda.com/responsible-gaming"
+                                                            style="color: #bebebe !important" class=""
+                                                            target="_blank">Responsible
+                                                            Gaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://app.cricadda.com/aml-policy"
+                                                            style="color: #bebebe !important" class=""
+                                                            target="_blank">AML Policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://app.cricadda.com/kyc-policy"
+                                                            style="color: #bebebe !important" class=""
+                                                            target="_blank">KYC Policy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-top mb-4"
+                                                style="display: flex;flex-direction: column;align-items: center">
+                                                <div class="secure-logo d-flex align-items-center">
+                                                    <div class="mt-2">
+                                                        <img style="max-width: 90px" src="images/ssl.png">
+                                                    </div>
+                                                    <div class="ml-2" style="color:#AAAFB5 ">
+                                                        <b>100% SAFE</b>
+                                                        <div style="font-size: 12px">Protected connection and encrypted
+                                                            data.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex footer-other mt-2">
+                                                    <a href="javascript:void(0)" role="button" data-toggle="modal"
+                                                        data-target="#modal-18plusModal">
+                                                        <img style="max-width: 30px" src="images/18plus.png">
+                                                    </a>
+                                                    <a class="mx-3" href="#" target="_blank">
+                                                        <img style="max-width: 30px" src="images/gamecare.png">
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <img style="max-width: 30px" src="images/gt.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                           
+
                                             <br />
                                             <div class="footer">
                                                 <div class="max-footer-width">
@@ -894,61 +952,14 @@
                             </div>
                         </div>
 
-                        <div class="footer-menu text-center mt-4" style="font-size: 16px;">
-                            <ul>
-                                <li>
-                                    <a href="https://app.cricadda.com/about-us " style="color: #bebebe !important"
-                                        class="" target="_blank">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="https://app.cricadda.com/terms-and-conditions"
-                                        style="color: #bebebe !important" class="" target="_blank">Terms and
-                                        Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="https://app.cricadda.com/responsible-gaming"
-                                        style="color: #bebebe !important" class="" target="_blank">Responsible
-                                        Gaming</a>
-                                </li>
-                                <li>
-                                    <a href="https://app.cricadda.com/aml-policy" style="color: #bebebe !important"
-                                        class="" target="_blank">AML Policy</a>
-                                </li>
-                                <li>
-                                    <a href="https://app.cricadda.com/kyc-policy" style="color: #bebebe !important"
-                                        class="" target="_blank">KYC Policy</a>
-                                </li>
-                            </ul>
-                        </div>
+
                         <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
 
-                        <div class="footer-top mb-4" style="display: flex;flex-direction: column;align-items: center">
-                            <div class="secure-logo text-center">
-                                <div class="mt-2">
-                                    <img style="max-width: 75px" src="images/ssl.png">
-                                </div>
-                                <div class="ml-2">
-                                    <b>100% SAFE</b>
-                                    <div style="font-size: 12px">Protected connection and encrypted data.</div>
-                                </div>
-                            </div>
-                            <div class="d-flex footer-other mt-2">
-                                <a href="javascript:void(0)" role="button" data-toggle="modal"
-                                    data-target="#modal-18plusModal">
-                                    <img style="max-width: 30px" src="images/18plus.png">
-                                </a>
-                                <a class="mx-3" href="#" target="_blank">
-                                    <img style="max-width: 30px" src="images/gamecare.png">
-                                </a>
-                                <a href="#" target="_blank">
-                                    <img style="max-width: 30px" src="images/gt.png">
-                                </a>
-                            </div>
-                        </div>
+
 
                     </footer>
                 </section>
-                
+
                 <div class="flexout" style="margin-bottom: 60px">
                     <a href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
                         <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
