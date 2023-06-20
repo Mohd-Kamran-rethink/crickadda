@@ -617,15 +617,15 @@
                         <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Virtual Casinos</h1>
                     </a>
                 </div>
-                {{-- <div>
-          <a class="see-all-a">
-            <span>See All</span>
-            <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
-          </a>
-        </div> --}}
+                <div>
+                    <a class="see-all-a" onclick="toggleSeeAll('our-virtual-cashino-scroll','our-virtual-cashino-box',this)">
+                        See All
+                        {{-- <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i> --}}
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="mobile-home-games-scroll">
+        <div class="mobile-home-games-scroll" id="our-virtual-cashino-scroll">
             <ul class="home-slider mobile-home-scroll-content">
                 @foreach ($images as $item)
                     @if ($item->category == 'virtualCasino')
@@ -637,15 +637,25 @@
                                 </a>
                             </div>
                             {{-- <div class="heading_wrapper">
-            <span>Roulette</span>
-          </div> --}}
+                                <span>Roulette</span>
+                            </div> --}}
                         </li>
                     @endif
                 @endforeach
-
-
             </ul>
         </div>
+        {{--ourlive casino box --}}
+        <div class="containerPopular" style="display: none" id="our-virtual-cashino-box">
+            <div class="secPopular">
+                @foreach ($images as $item)
+                @if ($item->category == 'virtualCasino')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
+        </div>
+
+
         <div class="text-slider">
             <div class="info">
                 <div class="bb-styling">
@@ -752,91 +762,7 @@
                                 <div class="footer-nav max-footer-width">
                                     <div>
                                         <div class="license-column-holder">
-                                            {{-- <div style="display: flex; justify-content: center;"
-                                                class="ng-star-inserted">
-                                                <a class="btn_wrapper special_border">
-                                                    <button type="button" class="button-1 for-img">
-                                                        <img onclick="redirectToGoogle();" alt="chat icon"
-                                                            src="NewTheme/images/chatic.svg">
-                                                        <span class="livebtn">Live Chat</span>
-                                                        <div style="display: contents;">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0; position: absolute; right: 30%;"
-                                                                src="NewTheme/images/angle.svg">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                class="angle-right"
-                                                                style="width: 6px; margin-right: 0; position: absolute; right: 31%;"
-                                                                src="NewTheme/images/angle.svg">
-                                                        </div>
-                                                    </button>
-                                                </a>
-                                            </div> --}}
-                                            <!---->
-                                            {{-- <div class="tut-class">
-                                                <span>Tutorials</span>
-                                            </div> --}}
-                                            {{-- <div class="tutorials">
-                                                <span class="special_border">
-                                                    <div class="tutorial-btn">
-                                                        <span class="tut-span">
-                                                            <a>Signup/Login</a>
-                                                        </span>
-                                                        <div class="angle">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span class="special_border">
-                                                    <div class="tutorial-btn">
-                                                        <span class="tut-span">
-                                                            <a>Automatic Deposit</a>
-                                                        </span>
-                                                        <div class="angle">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span class="special_border">
-                                                    <div class="tutorial-btn">
-                                                        <span class="tut-span">
-                                                            <a>Manual Deposit</a>
-                                                        </span>
-                                                        <div class="angle">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span class="special_border">
-                                                    <div class="tutorial-btn">
-                                                        <span class="tut-span">
-                                                            <a>Withdrawal</a>
-                                                        </span>
-                                                        <div class="angle">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                            <img onclick="redirectToGoogle();" alt="angle icon"
-                                                                style="width: 6px; margin-right: 0;"
-                                                                src="NewTheme/images/angle.svg">
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </div> --}}
+
                                             <div class="payment-img-holder">
                                                 <div class="row" style="justify-content: space-around;">
                                                     {{-- <img alt="INB" class="row-images1"
@@ -934,7 +860,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="footer-menu text-center mt-4" style="font-size: 16px;">
                             <ul>
                                 <li>
@@ -974,7 +900,7 @@
                                 </div>
                             </div>
                             <div class="d-flex footer-other mt-2">
-                                <a  href="javascript:void(0)" role="button" data-toggle="modal"
+                                <a href="javascript:void(0)" role="button" data-toggle="modal"
                                     data-target="#modal-18plusModal">
                                     <img style="max-width: 30px" src="images/18plus.png">
                                 </a>
@@ -986,7 +912,7 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                     </footer>
                 </section>
                 @php
