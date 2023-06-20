@@ -572,21 +572,19 @@
 
         <div class="text-slider">
             <div class="info">
-                <a href="https://app.cricadda.com/login" class="bb-styling text_decoration_none">
-                    {{-- <span> <img onclick="redirectToGoogle();" width="22px;" alt="Casino"
-                            src="NewTheme/images/Casino.svg">
-                    </span> --}}
-                    <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Casinos</h1>
-                </a>
-                {{-- <div>
-          <a href="https://app.cricadda.com/login" class="see-all-a">
-            <span>See All</span>
-            <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i>
-          </a>
-        </div> --}}
+                <div class="bb-styling">
+                    <a href="https://app.cricadda.com/login">
+                        <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Casinos</h1>
+                    </a>
+                </div>
+                <div>
+                    <a class="see-all-a" onclick="toggleSeeAll('our-cashino-scroll','our-cashino-box',this)">
+                        See All
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="mobile-home-games-scroll">
+        <div id="our-cashino-scroll" class="mobile-home-games-scroll">
             <ul class="home-slider mobile-home-scroll-content">
                 @foreach ($images as $item)
                     @if ($item->category === 'outliveCasino')
@@ -597,24 +595,25 @@
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                            {{-- <div class="heading_wrapper">
-            <span>Casinos</span>
-          </div> --}}
                         </li>
                     @endif
                 @endforeach
-
             </ul>
+        </div>
+        <div class="containerPopular" style="display: none" id="our-cashino-box">
+            <div class="secPopular">
+                @foreach ($images as $item)
+                    @if ($item->category === 'outliveCasino')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
         </div>
         {{-- our virtual cashino --}}
         <div class="text-slider">
             <div class="info">
                 <div class="bb-styling">
                     <a>
-                        {{-- <span>
-                            <img onclick="redirectToGoogle();" width="20px;" alt="Live Casino"
-                                src="NewTheme/images/allcasinoo.svg">
-                        </span> --}}
                         <h1 style="margin-top: 2px;color: #DEB439 !important;">Our Virtual Casinos</h1>
                     </a>
                 </div>
@@ -665,8 +664,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="see-all-a"
-                        onclick="toggleSeeAll('live-cascino-scroll','live-cascino-box',this)">
+                    <a class="see-all-a" onclick="toggleSeeAll('live-cascino-scroll','live-cascino-box',this)">
                         See All
                         {{-- <i class="fas fa-solid fa-arrow-right iconArrow" aria-hidden="true"></i> --}}
                     </a>
