@@ -55,7 +55,7 @@
     {{--  mobile theme start --}}
     <header class="darker_theme">
         <nav role="navigation" class="header_top_bar">
-            <div class="nav-wrapper container">
+            <div class="nav-wrapper container" style="padding-left: 0px">
                 <div class="nav-contain">
                     <div class="sidebrand-contain">
                         <div class="site_logo">
