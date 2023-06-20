@@ -46,7 +46,7 @@
             /* Show the div for screen widths up to 767px */
         }
         .desktopDiv {
-        display: flex;
+        display: none;
         /* Hide the div for mobile devices */
     }
     }
@@ -1032,7 +1032,7 @@
         </div>
     </footer>
     {{-- mobile theme end --}}
-<div class="desktopDiv text-center" style="height: 100vh;display: none;align-items: center;justify-content: center">
+<div class="desktopDiv text-center" style="height: 100vh;align-items: center;justify-content: center">
     <h2>Kamran Ali Multani is working on desktop design. <br>
     Intezar karen!
 </h2>
