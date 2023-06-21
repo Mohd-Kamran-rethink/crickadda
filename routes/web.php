@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[MainController::class,'landingPage'])->name('landingPage');
 Route::get('/dashboard',[AuthController::class,'dashboard'])->name('dashboard')->middleware('ValidateAdmin');
+Route::get('/test',[MainController::class,'test'])->name('test');
 
 // admin apnnelt
 

@@ -14,25 +14,25 @@ class MainController extends Controller
     public function landingPage()
     {
         // Get the user's IP address
-    $userIpAddress = request()->ip();
+        $userIpAddress = request()->ip();
 
-    // Make a request to the IP geolocation service
-    $client = new Client();
-    $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
+        // Make a request to the IP geolocation service
+        $client = new Client();
+        $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
         // Parse the JSON response
         $data = json_decode($response->getBody(), true);
         // Retrieve the country information
-        $country = $data['countryCode']??"IN";
+        $country = $data['countryCode'] ?? "IN";
         $responseData = ['country' => $country];
         $logo = Image::where('category', 'logo')
             ->orderBy('created_at', 'desc')
             ->first();
         $images = Image::get();
-        
-          $socialLinks=SocialLink::where('country','=','india')->get();  
-          $news=Anouncement:: orderBy('created_at', 'desc')->first();
-        
-        return view('MainTheme.index', compact('responseData', 'logo', 'images','socialLinks','news'));
+
+        $socialLinks = SocialLink::where('country', '=', 'india')->get();
+        $news = Anouncement::orderBy('created_at', 'desc')->first();
+
+        return view('MainTheme.index', compact('responseData', 'logo', 'images', 'socialLinks', 'news'));
     }
     public function listImages()
     {
@@ -70,7 +70,7 @@ class MainController extends Controller
                 $image->save();
             }
         }
-        
+
         return redirect('/admin/images')->with(['msg-success' => 'Images have been uploaded.']);
     }
     public function deletImgae(Request $req)
@@ -122,4 +122,12 @@ class MainController extends Controller
             return redirect('/admin/social-links')->with(['msg-error' => 'Something went wrong could not delete link .']);
         }
     }
+
+
+
+    public function test()
+    {
+        return view('MainTheme.DesktopTheme.index');
+    }
+
 }

@@ -12,14 +12,26 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- css for mobile -->
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/bootstrap.min.css') }}" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/style.css') }}" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/custom.css') }}" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/owl.carousel.min.css') }}"media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/slick.css') }}" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/slick-theme.css') }}" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/video-js.css') }}" media="screen and (max-width: 767px)">
+
+    {{-- for desktop view add media="screen and (min-width: 768px)" --}}
     <!-- css -->
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/slick-theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/video-js.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/slick.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="{{ asset('css/intlTelInput.min.css') }}" media="screen and (min-width: 768px)">
+
     <!-- fevicon -->
     <link rel="icon" href="NewTheme/images/favicon.png" type="image/gif" />
 </head>
@@ -35,20 +47,23 @@
         display: none;
         /* Hide the div by default */
     }
+
     .desktopDiv {
-    display: flex;
-    /* Show the div for screens that are not mobile */
+        display: block;
+        /* Show the div for screens that are not mobile */
     }
+
     /* Media query for mobile devices */
     @media only screen and (max-width: 767px) {
         .mobileDiv {
             display: block;
             /* Show the div for screen widths up to 767px */
         }
+
         .desktopDiv {
-        display: none;
-        /* Hide the div for mobile devices */
-    }
+            display: none;
+            /* Hide the div for mobile devices */
+        }
     }
 </style>
 
@@ -70,8 +85,8 @@
         $instagramLink = $socialLinks->last(function ($item) {
             return $item->platform === 'instagram';
         });
-        
     @endphp
+
     {{--  mobile theme start --}}
     <header class="darker_theme mobileDiv">
         <nav role="navigation" class="header_top_bar">
@@ -793,7 +808,6 @@
         </div>
 
     </main>
-    <!-- Footer -->
     <footer style="background: #23292E" class="mobileDiv">
         <div class="max-width content-padding">
             <div class="footer-nav-items">
@@ -1032,25 +1046,605 @@
         </div>
     </footer>
     {{-- mobile theme end --}}
-<div class="desktopDiv text-center" style="height: 100vh;align-items: center;justify-content: center">
-    <h2>Kamran Ali Multani is working on desktop design. <br>
-    Intezar karen!
-</h2>
-</div>
+
+    {{-- desktop view start --}}
+    <div class="wrapper home-new desktopDiv">
+
+        {{-- <?php if($responseData['country'] == 'PK'){ ?> --}}
+        {{-- <div id="floater"><a href="https://wa.me/971569062916" target="_blank"><img src="images/images.png"></a> --}}
+        {{-- </div> --}}
+        {{-- <?php } else { ?> --}}
+        {{-- <!-- Watsapp Floating Icon --> --}}
+        {{-- <div id="floater"><a href="https://wa.me/919913144444" target="_blank"><img src="images/images.png"></a> --}}
+        {{-- </div> --}}
+        {{-- <?php } ?> --}}
+
+        {{-- dynamic links numbers --}}
+        @php
+            $WhatsAppLink = $socialLinks->last(function ($item) {
+                return $item->platform === 'whatsapp';
+            });
+            $TelegramLink = $socialLinks->last(function ($item) {
+                return $item->platform === 'telegram';
+            });
+        @endphp
+        <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+                    src="images/images.png"></a>
+            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a>
+        </div>
+        <!-- Header -->
+        <div class="home-new-header container-fluid container-fluid-5">
+            <div class="row row5">
+                <div class="col-6 col-md-2">
+                    <div class="home-new-logo">
+                        <img src="{{ asset('storage/Banners/' . $logo->filename) }}">
+                    </div>
+                </div>
+                <div class="col-6 col-md-10">
+                    <div class="home-new-header-bottom">
+                        <nav class="navbar navbar-expand-sm justify-content-center"></nav>
+                        <div class="header-buttons">
+                            <button class="btn btn-primary register-btn ml-2" onclick="registerRedirect();"
+                                href="https://app.cricadda.com/register"> Register </button>
+                            <button class="btn btn-primary ml-2" onclick="loginRedirect();"
+                                href="https://app.cricadda.com/login"> Login </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Top-Bar -->
+        <div class="header-top">
+            <ul>
+                <li><a href="https://app.cricadda.com/login" role="button">Lottery</a></li>
+                <li><a href="https://app.cricadda.com/login" role="button">SportBook1</a></li>
+                <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active"> Exchange
+                    </a></li>
+                <li><a href="https://app.cricadda.com/login" role="button">Live Casino</a></li>
+                <li><a href="https://app.cricadda.com/login" role="button">Slot</a></li>
+                <li><a href="https://app.cricadda.com/login" role="button">Fantasy Games</a></li>
+            </ul>
+        </div>
+        <!-- Header Top-Bar -->
+        <div class="news-bar" style="width: 100%">
+            <?php if($responseData['country'] == 'PK'){ ?>
+            <marquee> JOIN NOW AND GET 50% JOINING BONUS!! </marquee>
+            <?php } else { ?>
+            <marquee> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY
+                REFILL! </marquee>
+            <?php } ?>
+            <div class="news-title">
+                <img src="images/speaker.svg">
+            </div>
+        </div>
+        @if ($responseData['country'] != 'PK')
+            <!-- Banner Slider -->
+            <div class="carousel slide banner-slider">
+                <div class="owl-carousel owl-theme" id="banner-slider">
+                    @foreach ($images as $item)
+                        @if ($item->category == 'banner')
+                            <div class="item  carousel-item carousal-23">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            </div>
+                        @endif
+                    @endforeach
+
+                </div>
+            </div>
+        @else
+            <!-- Banner Slider -->
+            <div class="carousel slide banner-slider">
+                <div class="owl-carousel owl-theme" id="banner-slider">
+                    @foreach ($images as $item)
+                        @if ($item->category == 'banner')
+                            <div class="item  carousel-item carousal-23">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+                            </div>
+                        @endif
+                    @endforeach
+
+                </div>
+            </div>
+        @endif
 
 
+        <div class="w-100">
+
+            <h4 class="sport-list-title">Our Live Casinos</h4>
+            <div class="casino-banners-list mt-2">
+                @foreach ($images as $item)
+                    @if ($item->category == 'outliveCasino')
+                        <div class="casino-banner-item login-hover">
+                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
+                                <div role="button" tabindex="0">Login</div>
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+
+            <h4 class="sport-list-title">Our Virtual Casino</h4>
+            <div class="casino-banners-list mt-2">
+                @foreach ($images as $item)
+                    @if ($item->category == 'virtualCasino')
+                        <div class="casino-banner-item login-hover">
+                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
+                                <div role="button" tabindex="0">Login</div>
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+            <div class="container-fluid container-fluid-5">
+                <div class="row row5">
+                    <div class="col-12 col-md">
+                        <h4 class="sport-list-title">Live Casino</h4>
+                        <div class="casino-banners-list live-casinos mt-2">
+                            @foreach ($images as $item)
+                                @if ($item->category == 'liveCasino')
+                                    <div class="casino-banner-item login-hover">
+                                        <a href="https://app.cricadda.com/login"
+                                            href="https://app.cricadda.com/login">
+                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
+                                                class="img-fluid">
+                                            <div role="button" tabindex="0">Login</div>
+                                        </a>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <h4 class="sport-list-title"> Fantasy Games </h4>
+                        <div class="casino-banners-list live-casinos mt-2">
+                            @foreach ($images as $item)
+                                @if ($item->category == 'fantasyGames')
+                                    <div class="casino-banner-item login-hover">
+                                        <a href="https://app.cricadda.com/login"
+                                            href="https://app.cricadda.com/login">
+                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
+                                                class="img-fluid">
+                                            <div role="button" tabindex="0">Login</div>
+                                        </a>
+                                    </div>
+                                @endif
+                            @endforeach
 
 
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <h4 class="sport-list-title">Sports</h4>
+            <div class="all-sports-list mt-2">
+                <div class="sport-list-item">
+                    <img src="images/40-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Politics</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/4-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Cricket</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/1-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Football</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/2-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Tennis</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/10-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Horse Racing</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/8-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Table Tennis</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/15-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Basketball</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/18-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Volleyball</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/59-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Snooker</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/19-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Ice Hockey</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/11-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">E Games</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/9-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Futsal</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/39-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Handball</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/66-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Kabaddi</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/5-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Golf</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/55-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Rugby League</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/6-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Boxing</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/7-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Beach Volleyball</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/3-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Mixed Martial Arts</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/16-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">MotoGP</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/17-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Chess</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/22-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Badminton</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/29-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Cycling</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/32-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Motorbikes</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/33-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Athletics</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/35-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Basketball 3X3</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/37-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Sumo</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/38-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Virtual sports</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/52-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Motor Sports</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/53-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Baseball</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/54-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Rugby Union</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/57-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Darts</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/58-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">American Football</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/62-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Soccer</div>
+                </div>
+                <div class="sport-list-item">
+                    <img src="images/64-color.svg" role="button" tabindex="0">
+                    <div class="mt-1 text-center" onclick="loginRedirect();">Esports</div>
+                </div>
+            </div>
 
-    <!-- Javascript files-->
+            <!-- <h4 class="sport-list-title">Top Winners</h4>
+          <div class="top-winners-list-container mt-2">
+            <div class="slider" id="top-winner-slider">
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>6,32,144</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>8,52,560</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>1,00,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>52,316</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>1,20,500</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>1,00,200</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="top-winner-list-box" style="width: 100%; display: inline-block;">
+                  <div class="w-100 text-center">
+                    <img src="images/user-icon.png">
+                  </div>
+                  <div class="w-100">
+                    <div class="player-detail">
+                      <div><b>Player</b></div>
+                      <div>To****</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Time</b></div>
+                      <div>24/05/2023 04:44</div>
+                    </div>
+                    <div class="player-detail">
+                      <div><b>Win Amount</b></div>
+                      <div>5,00,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <footer class="footer">
+            <div class="support">
+                <div>
+                    <div class="w-100 text-center">
+                        <b>24X7 Support</b>
+                    </div>
+                    <?php if($responseData['country'] == 'PK'){ ?>
+                    <div class="text-center w-100">
+                        <span>https://wa.me/923075272525</span>
+                    </div>
+                    <?php } else {?>
+                    <div class="text-center w-100">
+                        <span>{{ $WhatsAppLink->value }}</span>
+                    </div>
+                    <?php } ?>
+                </div>
+                {{-- dynamic social slinks --}}
+                @php
+                    
+                    $FacebookLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'facebook';
+                    });
+                    
+                    $youtubeLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'youtube';
+                    });
+                    $instagramLink = $socialLinks->last(function ($item) {
+                        return $item->platform === 'instagram';
+                    });
+                    
+                @endphp
+
+                <div class="footer-social">
+                    <?php if($responseData['country'] == 'PK'){ ?>
+                    <a href="https://wa.me/971569062916" target="_blank"></a>
+                    <?php } else {?>
+                    <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+                            src="images/whatsapp.png">
+                    </a>
+                    <a href="{{ $FacebookLink->value }}" target="_blank">
+                        <img src="images/facebooklogo.png">
+                    </a>
+                    <a href="{{ $instagramLink->value ?? '' }}" target="_blank">
+                        <img src="images/instagramlogo.png">
+                    </a>
+                    <a href="{{ $TelegramLink->value }}" target="_blank">
+                        <img src="images/telegram.png">
+                    </a>
+                    <?php } ?>
+
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="https://app.cricadda.com/about-us" class="" target="_blank">About Us</a>
+                    </li>
+                    <li>
+                        <a href="https://app.cricadda.com/terms-and-conditions" class="" target="_blank">Terms
+                            and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="https://app.cricadda.com/responsible-gaming" class=""
+                            target="_blank">Responsible Gaming</a>
+                    </li>
+                    <li>
+                        <a href="https://app.cricadda.com/aml-policy" class="" target="_blank">AML Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://app.cricadda.com/kyc-policy" class="" target="_blank">KYC Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <div class="footer-top">
+                    <div class="secure-logo">
+                        <div>
+                            <img src="images/ssl.png">
+                        </div>
+                        <div class="ml-2">
+                            <b>100% SAFE</b>
+                            <div>Protected connection and encrypted data.</div>
+                        </div>
+                    </div>
+                    <div class="d-inline-block footer-other">
+                        <a href="javascript:void(0)" role="button" data-toggle="modal"
+                            data-target="#modal-18plusModal">
+                            <img src="images/18plus.png">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/gamecare.png">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/gt.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span class="ws-pre-wrap">This website is operated by Seven Investments America N.V., registered in
+                        Curaçao under the number 152581, with the address at Zuikertuintjeweg Z/N (Zuikertuin Tower),
+                        Curaçao</span>
+                    <br /><br /><br />
+                    <span class="ws-pre-wrap">The transactions are processed by Seven Investments LTD registered with
+                        the number 12391820, with head office at Kemp House 160 City Road, London, United Kingdom. For
+                        the purpose of processing payments via Paysafe Group including but not limited to Neteller and
+                        Skrill, the transaction processing entity shall be Seven Investments America N.V., registered in
+                        Curaçao under the number 152581, with the address at Zuikertuintjeweg Z/N (Zuikertuin Tower),
+                        Curaçao..</span>
+
+                </div>
+            </div>
+            <div class="text-center mt-1 w-100 copyright"> © Copyright 2020. All Rights Reserved. </div>
+        </footer>
+
+    </div>
+    {{-- desktop view end --}}
+
+    <!-- Javascript files for mobiles-->
     <script src="{{ asset('NewTheme/js/jquery.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/jquery-3.0.0.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/custom.js') }}"></script>
-    <script src="{{ asset('NewTheme/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('NewTheme/js/owl.carousel.min.js')}}"></script>
     <script src="{{ asset('NewTheme/js/slick.js') }}"></script>
     <script src="{{ asset('NewTheme/js/video.min.js') }}"></script>
+
+
     <script>
         function redirectToGoogle() {
             window.location.href = 'https://app.cricadda.com/login';
