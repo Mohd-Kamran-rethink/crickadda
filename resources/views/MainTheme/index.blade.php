@@ -1145,7 +1145,7 @@
             </ul>
         </div>
         <!-- Header Top-Bar -->
-        <div class="news-bar">
+        <div class="news-bar" style="width: 100%">
             <?php if($responseData['country'] == 'PK'){ ?>
             <marquee> JOIN NOW AND GET 50% JOINING BONUS!! </marquee>
             <?php } else { ?>
