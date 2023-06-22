@@ -1256,143 +1256,143 @@
             <div class="all-sports-list mt-2">
                 <div class="sport-list-item">
                     <img src="images/40-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Politics</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Politics</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/4-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Cricket</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Cricket</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/1-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Football</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Football</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/2-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Tennis</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Tennis</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/10-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Horse Racing</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Horse Racing</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/8-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Table Tennis</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Table Tennis</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/15-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Basketball</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Basketball</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/18-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Volleyball</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Volleyball</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/59-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Snooker</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Snooker</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/19-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Ice Hockey</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Ice Hockey</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/11-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">E Games</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">E Games</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/9-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Futsal</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Futsal</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/39-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Handball</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Handball</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/66-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Kabaddi</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Kabaddi</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/5-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Golf</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Golf</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/55-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Rugby League</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Rugby League</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/6-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Boxing</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Boxing</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/7-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Beach Volleyball</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Beach Volleyball</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/3-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Mixed Martial Arts</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Mixed Martial Arts</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/16-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">MotoGP</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">MotoGP</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/17-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Chess</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Chess</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/22-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Badminton</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Badminton</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/29-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Cycling</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Cycling</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/32-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Motorbikes</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Motorbikes</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/33-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Athletics</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Athletics</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/35-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Basketball 3X3</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Basketball 3X3</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/37-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Sumo</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Sumo</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/38-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Virtual sports</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Virtual sports</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/52-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Motor Sports</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Motor Sports</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/53-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Baseball</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Baseball</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/54-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Rugby Union</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Rugby Union</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/57-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Darts</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Darts</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/58-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">American Football</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">American Football</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/62-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Soccer</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Soccer</div>
                 </div>
                 <div class="sport-list-item">
                     <img src="images/64-color.svg" role="button" tabindex="0">
-                    <div class="mt-1 text-center" onclick="loginRedirect();">Esports</div>
+                    <div class="mt-1 text-center" onclick="redirectToGoogle();">Esports</div>
                 </div>
             </div>
             <h4 class="sport-list-title">Our Casinos</h4>
