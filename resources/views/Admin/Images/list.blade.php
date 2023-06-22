@@ -33,6 +33,7 @@
                                     <thead>
                                         <tr>
                                             <th>S.No.</th>
+                                            <th>ID</th>
                                             <th>Category</th>
                                             <th>Name</th>
                                             <th>Image</th>
@@ -43,6 +44,7 @@
                                         @forelse ($images as $item)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
+                                                <td>{{ $item->id }}</td>
                                                 <td>{{ $item->category }}</td>
                                                 <td>{{ $item->name }}</td>
                                                 <td><img style="max-width: 100px" src="{{asset('storage/Banners/'.$item->filename)}}" alt=""></td>
