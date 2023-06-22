@@ -846,8 +846,8 @@
     <footer style="background: #23292E" class="mobileDiv">
         <div class="max-width content-padding">
             <div class="footer-nav-items">
-                <section class="footers-container-second">
-                    <footer class="container">
+                <section class="footers-container-second mb-4 pb-4">
+                    <footer class="container pb-4">
                         <div class="footer max-width">
                             <div class="links footer-row content-padding">
                                 <div class="footer-nav max-footer-width">
@@ -922,14 +922,33 @@
                                                 </div>
                                             </div> --}}
                                             {{-- old theme --}}
-                                            <div class="menu-old text-center mt-3">
+                                            <div class="menu-old text-center mt-3 mb-4" >
                                                 <div style="color: #AAAFB5 !important">
                                                     <h4 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7
                                                         Support</h4>
                                                     <p style="font-size: 12px" class="mt-0 pt-0">
                                                         {{ $WhatsAppLink->value }}</p>
                                                 </div>
+                                                <div class="" style="border-top: 0px !important">
+                                                    <a class="px-2" href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
+                                                        <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
+                                                    </a>
+                                                    <a class="px-2" href="{{ $youtubeLink->value ?? '#' }}" target="_blank">
+                                                        <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
+                                                    </a>
+                                                    <a class="px-2" href="{{ $instagramLink->value ?? '#' }}" target="_blank">
+                                                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
+                                                    </a>
+                                                    <a class="px-2" href="https://app.cricadda.com/login" target="_blank">
+                                                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
+                                                    </a>
+                                                    <a class="px-2" href="{{ $TelegramLink->value ?? '#' }}" target="_blank">
+                                                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
+                                                    </a>
+                                                </div>
                                             </div>
+                                            <div class="dotted-line" style=" border-top: 1px dotted #ffff;"></div>
+
                                             <div class="footer-menu text-center mt-4" style="font-size: 16px;">
                                                 <ul>
                                                     <li>
@@ -1028,23 +1047,7 @@
                     </footer>
                 </section>
 
-                <div class="flexout" style="margin-bottom: 60px">
-                    <a href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
-                        <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
-                    </a>
-                    <a href="{{ $youtubeLink->value ?? '#' }}" target="_blank">
-                        <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
-                    </a>
-                    <a href="{{ $instagramLink->value ?? '#' }}" target="_blank">
-                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
-                    </a>
-                    <a href="https://app.cricadda.com/login" target="_blank">
-                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
-                    </a>
-                    <a href="{{ $TelegramLink->value ?? '#' }}" target="_blank">
-                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
-                    </a>
-                </div>
+                
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
                     style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
