@@ -67,6 +67,7 @@ class MainController extends Controller
                 $image->name = $filename;
                 $image->category = $req->category;
                 $image->heading = $req->heading;
+                $image->screen_type = $req->screen_type;
                 $image->save();
             }
         }
