@@ -525,7 +525,7 @@
         <div class="carousel slide banner-slider">
             <div class="owl-carousel owl-theme" id="banner-slider">
                 @foreach ($images as $item)
-                    @if ($item->category == 'banner')
+                    @if ($item->category == 'banner' && $item->screen_type="mobile")
                         <div class="item  carousel-item carousal-23">
                             <img style="height: 150px" onclick="redirectToGoogle();"
                                 src="{{ asset('storage/Banners/' . $item->filename) }}">

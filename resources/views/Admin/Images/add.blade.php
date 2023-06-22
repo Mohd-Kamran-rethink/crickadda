@@ -63,7 +63,21 @@
                                 @enderror
                             </div>
                         </div>
-
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label>Screen</label>
+                                <select  name="screen_type"  >
+                                    <option value="0">--Choose--</option>
+                                    <option value="mobile">Mobile</option>
+                                    <option value="desktop">Desktop</option>
+                                </select>
+                                @error('heading')
+                                    <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-12">

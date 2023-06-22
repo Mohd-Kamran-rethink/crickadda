@@ -19,6 +19,7 @@ class ImagesMIgration extends Migration
             $table->string('category');
             $table->string('filename');
             $table->string('heading');
+            $table->string('screen_type');
             $table->timestamps();
         });
     }
