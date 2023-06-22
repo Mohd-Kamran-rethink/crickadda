@@ -66,7 +66,7 @@
                         <div class="col-xs-12 col-md-4">
                             <div class="form-group">
                                 <label>Screen</label>
-                                <select  name="screen_type"  >
+                                <select  name="screen_type" class="form-control" >
                                     <option value="0">--Choose--</option>
                                     <option value="mobile">Mobile</option>
                                     <option value="desktop">Desktop</option>
