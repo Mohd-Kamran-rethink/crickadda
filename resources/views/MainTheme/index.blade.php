@@ -931,19 +931,19 @@
                                                 </div>
                                                 <div class="" style="border-top: 0px !important">
                                                     <a class="px-2" href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="instagram" class="social2" src="NewTheme/images/Faceook.svg">
+                                                        <img src="images/facebooklogo.png" class="social2">
                                                     </a>
                                                     <a class="px-2" href="{{ $youtubeLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="twitter" class="social2" src="NewTheme/images/Youtube.svg">
+                                                        <img alt="twitter" class="social2" src="images/youtube.png">
                                                     </a>
                                                     <a class="px-2" href="{{ $instagramLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="instagram" class="social2" src="NewTheme/images/instagram.svg">
+                                                        <img alt="instagram" class="social2" src="images/instagramlogo.png">
                                                     </a>
                                                     <a class="px-2" href="https://app.cricadda.com/login" target="_blank">
-                                                        <img alt="twitter" class="social2" src="NewTheme/images/twitter.svg">
+                                                        <img alt="twitter" class="social2" src="images/twitter.png">
                                                     </a>
                                                     <a class="px-2" href="{{ $TelegramLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="telegram" class="social2" src="NewTheme/images/telegram.svg">
+                                                        <img alt="telegram" class="social2"  src="images/telegram.png">
                                                     </a>
                                                 </div>
                                             </div>
