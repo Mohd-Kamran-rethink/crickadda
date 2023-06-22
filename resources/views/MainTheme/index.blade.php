@@ -88,7 +88,7 @@
     @endphp
 
     {{--  mobile theme start --}}
-    <header class="darker_theme mobileDiv" style="background: #23292E">
+    <header class="darker_theme mobileDiv">
         <nav role="navigation" class="header_top_bar">
             <div class="nav-wrapper container" style="padding-left: 0px;padding-right:6px">
                 <div class="nav-contain">
@@ -466,7 +466,7 @@
             </li>
         </ul>
     </header>
-    <main class="content-wrapper mobileDiv" style="background: #23292E">
+    <main class="content-wrapper mobileDiv">
 
         {{-- <div class="categories-home">
             <ul class="nav mobile-nav mobile-nav home-slider mobile-home-scroll-content">
