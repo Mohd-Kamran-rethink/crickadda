@@ -90,7 +90,7 @@
     {{--  mobile theme start --}}
     <header class="darker_theme mobileDiv">
         <nav role="navigation" class="header_top_bar">
-            <div class="nav-wrapper container" style="padding-left: 0px">
+            <div class="nav-wrapper container" style="padding-left: 0px;padding-right:6px">
                 <div class="nav-contain">
                     <div class="sidebrand-contain ml-0">
                         <div class="site_logo">
