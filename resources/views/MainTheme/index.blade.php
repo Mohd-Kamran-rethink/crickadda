@@ -13,10 +13,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- css for mobile -->
+    <link rel="stylesheet" href="{{ asset('NewTheme/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/bootstrap.min.css') }}" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/style.css') }}" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/custom.css') }}" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="{{ asset('NewTheme/css/owl.carousel.min.css') }}"media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/slick.css') }}" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/slick-theme.css') }}" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="{{ asset('NewTheme/css/video-js.css') }}" media="screen and (max-width: 767px)">
@@ -525,7 +525,7 @@
         <div class="carousel slide banner-slider">
             <div class="owl-carousel owl-theme" id="banner-slider">
                 @foreach ($images as $item)
-                    @if ($item->category == 'banner' && $item->screen_type="mobile")
+                    @if ($item->category == 'banner' && ($item->screen_type = 'mobile'))
                         <div class="item  carousel-item carousal-23">
                             <img style="height: 150px" onclick="redirectToGoogle();"
                                 src="{{ asset('storage/Banners/' . $item->filename) }}">
@@ -922,7 +922,7 @@
                                                 </div>
                                             </div> --}}
                                             {{-- old theme --}}
-                                            <div class="menu-old text-center mt-3 mb-4" >
+                                            <div class="menu-old text-center mt-3 mb-4">
                                                 <div style="color: #AAAFB5 !important">
                                                     <h4 class="mb-0 pb-0" style="color: #AAAFB5 !important">24x7
                                                         Support</h4>
@@ -930,20 +930,27 @@
                                                         {{ $WhatsAppLink->value }}</p>
                                                 </div>
                                                 <div class="" style="border-top: 0px !important">
-                                                    <a class="px-2" href="{{ $FacebookLink->value ?? '#' }}" target="_blank">
+                                                    <a class="px-2" href="{{ $FacebookLink->value ?? '#' }}"
+                                                        target="_blank">
                                                         <img src="images/facebooklogo.png" class="social2">
                                                     </a>
-                                                    <a class="px-2" href="{{ $youtubeLink->value ?? '#' }}" target="_blank">
+                                                    <a class="px-2" href="{{ $youtubeLink->value ?? '#' }}"
+                                                        target="_blank">
                                                         <img alt="twitter" class="social2" src="images/youtube.png">
                                                     </a>
-                                                    <a class="px-2" href="{{ $instagramLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="instagram" class="social2" src="images/instagramlogo.png">
+                                                    <a class="px-2" href="{{ $instagramLink->value ?? '#' }}"
+                                                        target="_blank">
+                                                        <img alt="instagram" class="social2"
+                                                            src="images/instagramlogo.png">
                                                     </a>
-                                                    <a class="px-2" href="https://app.cricadda.com/login" target="_blank">
+                                                    <a class="px-2" href="https://app.cricadda.com/login"
+                                                        target="_blank">
                                                         <img alt="twitter" class="social2" src="images/twitter.png">
                                                     </a>
-                                                    <a class="px-2" href="{{ $TelegramLink->value ?? '#' }}" target="_blank">
-                                                        <img alt="telegram" class="social2"  src="images/telegram.png">
+                                                    <a class="px-2" href="{{ $TelegramLink->value ?? '#' }}"
+                                                        target="_blank">
+                                                        <img alt="telegram" class="social2"
+                                                            src="images/telegram.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1047,7 +1054,7 @@
                     </footer>
                 </section>
 
-                
+
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
                     style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
                     <span class="signup_btn_wrapper" style="width: 36%">
@@ -1122,17 +1129,23 @@
                     <div class="home-new-header-bottom">
                         <nav class="navbar navbar-expand-sm justify-content-center"></nav>
                         <div class="header-buttons d-flex mr-2">
-                            <div class="" style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
+                            <div class=""
+                                style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
                                 <button class="m-0  px-2 " onclick="redirectToGoogle();"
-                                href="https://app.cricadda.com/register" style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;align-items: center;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;border: none;border-radius: 3px"><img  onclick="redirectToGoogle();" style="max-width: 15px" src="NewTheme/images/signup.svg"
-                                alt=""> Register </button>
+                                    href="https://app.cricadda.com/register"
+                                    style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;align-items: center;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;border: none;border-radius: 3px"><img
+                                        onclick="redirectToGoogle();" style="max-width: 15px"
+                                        src="NewTheme/images/signup.svg" alt=""> Register </button>
                             </div>
-                            <div class="ml-2 px-2  d-flex align-items-center" style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
+                            <div class="ml-2 px-2  d-flex align-items-center"
+                                style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
                                 <button class="" onclick="redirectToGoogle();"
-                                href="https://app.cricadda.com/login"  style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;justify-content: space-around;align-items: center;border: none;border-radius: 3px;color: #fff;background: none"> <img  style="width: 15px;" onclick="redirectToGoogle();" src="NewTheme/images/login.svg"
-                                alt=""> Login </button>
+                                    href="https://app.cricadda.com/login"
+                                    style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;justify-content: space-around;align-items: center;border: none;border-radius: 3px;color: #fff;background: none">
+                                    <img style="width: 15px;" onclick="redirectToGoogle();"
+                                        src="NewTheme/images/login.svg" alt=""> Login </button>
                             </div>
-                                
+
                         </div>
                     </div>
                 </div>
@@ -1144,7 +1157,8 @@
             <ul>
                 <li><a href="https://app.cricadda.com/login" role="button">Lottery</a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">SportBook1</a></li>
-                <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active"> Exchange
+                <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active">
+                        Exchange
                     </a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">Live Casino</a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">Slot</a></li>
@@ -1152,7 +1166,8 @@
             </ul>
         </div>
         <!-- Header Top-Bar -->
-        <div class="news-bar" style="width: 100%;background: linear-gradient(90deg, #E6C540 0%, #e7eaa2 100%) !important;">
+        <div class="news-bar"
+            style="width: 100%;background: linear-gradient(90deg, #E6C540 0%, #e7eaa2 100%) !important;">
             <?php if($responseData['country'] == 'PK'){ ?>
             <marquee> JOIN NOW AND GET 50% JOINING BONUS!! </marquee>
             <?php } else { ?>
@@ -1164,27 +1179,53 @@
             </div>
         </div>
         @if ($responseData['country'] != 'PK')
-            <!-- Banner Slider -->
-            <div class="carousel slide banner-slider">
-                <div class="owl-carousel owl-theme" id="banner-slider">
-                    @foreach ($images as $item)
-                        @if ($item->category == 'banner')
-                            <div class="item  carousel-item carousal-23">
-                                <img src="{{ asset('storage/Banners/' . $item->filename) }}">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            {{-- <ol class="carousel-indicators">
+                @foreach ($carouselItems as $key => $item)
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $key }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+                @endforeach
+            </ol> --}}
+            <div class="carousel-inner">
+               
+                        <div class="carousel-item active">
+                            <img src="{{ asset('storage/Banners/slider1_1686486836.png') }}" class="d-block w-100" alt="{{ $item['title'] }}">
+                            <div class="carousel-caption">
+                                <h5>{{ $item['title'] }}</h5>
+                                <p>{{ $item['description'] }}</p>
                             </div>
-                        @endif
-                    @endforeach
-
-                </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="{{ asset('storage/Banners/slider3_1686486859.jpg') }}" class="d-block w-100" alt="{{ $item['title'] }}">
+                            <div class="carousel-caption">
+                                <h5>{{ $item['title'] }}</h5>
+                                <p>{{ $item['description'] }}</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="{{ asset('storage/Banners/slider4_1686486879.jpg') }}" class="d-block w-100" alt="{{ $item['title'] }}">
+                            <div class="carousel-caption">
+                                <h5>{{ $item['title'] }}</h5>
+                                <p>{{ $item['description'] }}</p>
+                            </div>
+                        </div>
+                        
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         @else
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
-                    
+
                     @foreach ($images as $item)
-                        <dd></dd>    
-                    @if ($item->category == 'banner')
+                        @if ($item->category == 'banner')
                             <div class="item  carousel-item carousal-23">
                                 <img src="{{ asset('storage/Banners/' . $item->filename) }}">
                             </div>
@@ -1419,7 +1460,7 @@
 
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -1650,7 +1691,8 @@
                         <a href="https://app.cricadda.com/about-us" class="" target="_blank">About Us</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/terms-and-conditions" class="" target="_blank">Terms
+                        <a href="https://app.cricadda.com/terms-and-conditions" class=""
+                            target="_blank">Terms
                             and Conditions</a>
                     </li>
                     <li>
@@ -1658,10 +1700,12 @@
                             target="_blank">Responsible Gaming</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/aml-policy" class="" target="_blank">AML Policy</a>
+                        <a href="https://app.cricadda.com/aml-policy" class="" target="_blank">AML
+                            Policy</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/kyc-policy" class="" target="_blank">KYC Policy</a>
+                        <a href="https://app.cricadda.com/kyc-policy" class="" target="_blank">KYC
+                            Policy</a>
                     </li>
                 </ul>
             </div>
@@ -1690,7 +1734,8 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <span class="ws-pre-wrap">This website is operated by Seven Investments America N.V., registered in
+                    <span class="ws-pre-wrap">This website is operated by Seven Investments America N.V., registered
+                        in
                         Curaçao under the number 152581, with the address at Zuikertuintjeweg Z/N (Zuikertuin Tower),
                         Curaçao</span>
                     <br /><br /><br />
