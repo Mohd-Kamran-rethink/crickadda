@@ -88,7 +88,7 @@
     @endphp
 
     {{--  mobile theme start --}}
-    <header class="darker_theme mobileDiv">
+    <header class="darker_theme mobileDiv" style="background: #23292E">
         <nav role="navigation" class="header_top_bar">
             <div class="nav-wrapper container" style="padding-left: 0px;padding-right:6px">
                 <div class="nav-contain">
@@ -466,7 +466,7 @@
             </li>
         </ul>
     </header>
-    <main class="content-wrapper mobileDiv">
+    <main class="content-wrapper mobileDiv" style="background: #23292E">
 
         {{-- <div class="categories-home">
             <ul class="nav mobile-nav mobile-nav home-slider mobile-home-scroll-content">
@@ -1086,7 +1086,7 @@
     {{-- mobile theme end --}}
 
     {{-- desktop view start --}}
-    <div class="wrapper home-new desktopDiv">
+    <div class="wrapper home-new desktopDiv" style="background: #23292E !important">
 
         {{-- <?php if($responseData['country'] == 'PK'){ ?> --}}
         {{-- <div id="floater"><a href="https://wa.me/971569062916" target="_blank"><img src="images/images.png"></a> --}}
