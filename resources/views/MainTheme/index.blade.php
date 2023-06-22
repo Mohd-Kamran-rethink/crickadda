@@ -1156,7 +1156,7 @@
                 <img src="images/speaker.svg">
             </div>
         </div>
-        {{-- @if ($responseData['country'] != 'PK')
+        @if ($responseData['country'] != 'PK')
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
@@ -1170,7 +1170,7 @@
 
                 </div>
             </div>
-        @else --}}
+        @else
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
@@ -1186,7 +1186,7 @@
 
                 </div>
             </div>
-        {{-- @endif --}}
+        @endif
 
 
         <div class="w-100">
