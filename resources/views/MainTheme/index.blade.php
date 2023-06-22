@@ -1121,11 +1121,18 @@
                 <div class="col-6 col-md-10">
                     <div class="home-new-header-bottom">
                         <nav class="navbar navbar-expand-sm justify-content-center"></nav>
-                        <div class="header-buttons">
-                            <button class="btn btn-primary register-btn ml-2" onclick="registerRedirect();"
-                                href="https://app.cricadda.com/register"> Register </button>
-                            <button class="btn btn-primary ml-2" onclick="loginRedirect();"
-                                href="https://app.cricadda.com/login"> Login </button>
+                        <div class="header-buttons d-flex mr-2">
+                            <div class="" style="border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
+                                <button class="m-0  onclick="registerRedirect();"
+                                href="https://app.cricadda.com/register" style="width: 100%;display: flex;align-items: center;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;border: none;border-radius: 3px"><img onclick="redirectToGoogle();" style="max-width: 15px" src="NewTheme/images/signup.svg"
+                                alt=""> Register </button>
+                            </div>
+                            <div class="ml-2" style="border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
+                                <button class="" onclick="loginRedirect();"
+                                href="https://app.cricadda.com/login"  style="width: 100%;display: flex;justify-content: space-around;align-items: center;border: none;border-radius: 3px;color: #E6C540;background: none"> <img style="width: 15px;" onclick="redirectToGoogle();" src="NewTheme/images/login.svg"
+                                alt=""> Login </button>
+                            </div>
+                                
                         </div>
                     </div>
                 </div>
