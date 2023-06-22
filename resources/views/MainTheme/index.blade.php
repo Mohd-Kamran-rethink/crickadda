@@ -1176,6 +1176,7 @@
                 <div class="owl-carousel owl-theme" id="banner-slider">
                     
                     @foreach ($images as $item)
+                        <dd></dd>    
                     @if ($item->category == 'banner')
                             <div class="item  carousel-item carousal-23">
                                 <img src="{{ asset('storage/Banners/' . $item->filename) }}">
@@ -1185,7 +1186,7 @@
 
                 </div>
             </div>
-        @endif
+        {{-- @endif --}}
 
 
         <div class="w-100">
