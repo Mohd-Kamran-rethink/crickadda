@@ -1108,7 +1108,7 @@
         @endphp
         <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
                     src="images/images.png"></a>
-            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a>
+            {{-- <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a> --}}
         </div>
         <!-- Header -->
         <div class="home-new-header container-fluid container-fluid-5">
