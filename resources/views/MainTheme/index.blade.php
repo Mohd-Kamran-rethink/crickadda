@@ -1419,7 +1419,7 @@
             <h4 class="sport-list-title">Slot Games</h4>
             <div class="casino-banners-list mt-2">
                 @foreach ($images as $item)
-                    @if ($item->category == 'slot')
+                    @if ($item->category == 'slot_games')
                         <div class="casino-banner-item login-hover">
                             <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
                                 <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
