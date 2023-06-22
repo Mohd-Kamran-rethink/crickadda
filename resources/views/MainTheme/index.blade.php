@@ -1190,11 +1190,10 @@
 
 
         <div class="w-100">
-
-            <h4 class="sport-list-title">Our Live Casinos</h4>
+            <h4 class="sport-list-title">New launch</h4>
             <div class="casino-banners-list mt-2">
                 @foreach ($images as $item)
-                    @if ($item->category == 'outliveCasino')
+                    @if ($item->category == 'popular_today')
                         <div class="casino-banner-item login-hover">
                             <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
                                 <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
@@ -1203,60 +1202,6 @@
                         </div>
                     @endif
                 @endforeach
-            </div>
-
-            <h4 class="sport-list-title">Our Virtual Casino</h4>
-            <div class="casino-banners-list mt-2">
-                @foreach ($images as $item)
-                    @if ($item->category == 'virtualCasino')
-                        <div class="casino-banner-item login-hover">
-                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
-                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
-                                <div role="button" tabindex="0">Login</div>
-                            </a>
-                        </div>
-                    @endif
-                @endforeach
-            </div>
-            <div class="container-fluid container-fluid-5">
-                <div class="row row5">
-                    <div class="col-12 col-md">
-                        <h4 class="sport-list-title">Live Casino</h4>
-                        <div class="casino-banners-list live-casinos mt-2">
-                            @foreach ($images as $item)
-                                @if ($item->category == 'liveCasino')
-                                    <div class="casino-banner-item login-hover">
-                                        <a href="https://app.cricadda.com/login"
-                                            href="https://app.cricadda.com/login">
-                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
-                                                class="img-fluid">
-                                            <div role="button" tabindex="0">Login</div>
-                                        </a>
-                                    </div>
-                                @endif
-                            @endforeach
-                        </div>
-                    </div>
-                    <div class="col-12 col-md">
-                        <h4 class="sport-list-title"> Fantasy Games </h4>
-                        <div class="casino-banners-list live-casinos mt-2">
-                            @foreach ($images as $item)
-                                @if ($item->category == 'fantasyGames')
-                                    <div class="casino-banner-item login-hover">
-                                        <a href="https://app.cricadda.com/login"
-                                            href="https://app.cricadda.com/login">
-                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
-                                                class="img-fluid">
-                                            <div role="button" tabindex="0">Login</div>
-                                        </a>
-                                    </div>
-                                @endif
-                            @endforeach
-
-
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <h4 class="sport-list-title">Sports</h4>
@@ -1401,6 +1346,88 @@
                     <img src="images/64-color.svg" role="button" tabindex="0">
                     <div class="mt-1 text-center" onclick="loginRedirect();">Esports</div>
                 </div>
+            </div>
+            <h4 class="sport-list-title">Our Casinos</h4>
+            <div class="casino-banners-list mt-2">
+                @foreach ($images as $item)
+                    @if ($item->category == 'outliveCasino')
+                        <div class="casino-banner-item login-hover">
+                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
+                                <div role="button" tabindex="0">Login</div>
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+
+            <h4 class="sport-list-title">Our Virtual Casino</h4>
+            <div class="casino-banners-list mt-2">
+                @foreach ($images as $item)
+                    @if ($item->category == 'virtualCasino')
+                        <div class="casino-banner-item login-hover">
+                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
+                                <div role="button" tabindex="0">Login</div>
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+            <div class="container-fluid container-fluid-5">
+                <div class="row row5">
+                    <div class="col-12 col-md">
+                        <h4 class="sport-list-title">Live Casino</h4>
+                        <div class="casino-banners-list live-casinos mt-2">
+                            @foreach ($images as $item)
+                                @if ($item->category == 'liveCasino')
+                                    <div class="casino-banner-item login-hover">
+                                        <a href="https://app.cricadda.com/login"
+                                            href="https://app.cricadda.com/login">
+                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
+                                                class="img-fluid">
+                                            <div role="button" tabindex="0">Login</div>
+                                        </a>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <h4 class="sport-list-title"> Fantasy Games </h4>
+                        <div class="casino-banners-list live-casinos mt-2">
+                            @foreach ($images as $item)
+                                @if ($item->category == 'fantasyGames')
+                                    <div class="casino-banner-item login-hover">
+                                        <a href="https://app.cricadda.com/login"
+                                            href="https://app.cricadda.com/login">
+                                            <img src="{{ asset('storage/Banners/' . $item->filename) }}"
+                                                class="img-fluid">
+                                            <div role="button" tabindex="0">Login</div>
+                                        </a>
+                                    </div>
+                                @endif
+                            @endforeach
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <h4 class="sport-list-title">Slot Games</h4>
+            <div class="casino-banners-list mt-2">
+                @foreach ($images as $item)
+                    @if ($item->category == 'slot')
+                        <div class="casino-banner-item login-hover">
+                            <a href="https://app.cricadda.com/login" href="https://app.cricadda.com/login">
+                                <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="img-fluid">
+                                <div role="button" tabindex="0">Login</div>
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
             </div>
 
             <!-- <h4 class="sport-list-title">Top Winners</h4>
