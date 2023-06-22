@@ -1156,7 +1156,7 @@
                 <img src="images/speaker.svg">
             </div>
         </div>
-        @if ($responseData['country'] != 'PK')
+        {{-- @if ($responseData['country'] != 'PK')
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
@@ -1170,12 +1170,13 @@
 
                 </div>
             </div>
-        @else
+        @else --}}
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
                 <div class="owl-carousel owl-theme" id="banner-slider">
+                    
                     @foreach ($images as $item)
-                        @if ($item->category == 'banner')
+                    @if ($item->category == 'banner')
                             <div class="item  carousel-item carousal-23">
                                 <img src="{{ asset('storage/Banners/' . $item->filename) }}">
                             </div>
