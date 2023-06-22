@@ -1124,12 +1124,12 @@
                         <div class="header-buttons d-flex mr-2">
                             <div class="" style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
                                 <button class="m-0  px-2 " onclick="redirectToGoogle();"
-                                href="https://app.cricadda.com/register" style="padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;align-items: center;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;border: none;border-radius: 3px"><img  onclick="redirectToGoogle();" style="max-width: 15px" src="NewTheme/images/signup.svg"
+                                href="https://app.cricadda.com/register" style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;align-items: center;background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;border: none;border-radius: 3px"><img  onclick="redirectToGoogle();" style="max-width: 15px" src="NewTheme/images/signup.svg"
                                 alt=""> Register </button>
                             </div>
                             <div class="ml-2 px-2  d-flex align-items-center" style="cursor: pointer;border:1px solid #DEB439;padding: 3px;border-radius: 4px;width: 90px">
                                 <button class="" onclick="redirectToGoogle();"
-                                href="https://app.cricadda.com/login"  style="padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;justify-content: space-around;align-items: center;border: none;border-radius: 3px;color: #fff;background: none"> <img  style="width: 15px;" onclick="redirectToGoogle();" src="NewTheme/images/login.svg"
+                                href="https://app.cricadda.com/login"  style="cursor: pointer;padding-bottom: 4px;padding-top: 4px;width: 100%;display: flex;justify-content: space-around;align-items: center;border: none;border-radius: 3px;color: #fff;background: none"> <img  style="width: 15px;" onclick="redirectToGoogle();" src="NewTheme/images/login.svg"
                                 alt=""> Login </button>
                             </div>
                                 
