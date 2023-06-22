@@ -1103,10 +1103,10 @@
                 return $item->platform === 'telegram';
             });
         @endphp
-        <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+        {{-- <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
                     src="images/images.png"></a>
             <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a>
-        </div>
+        </div> --}}
         <!-- Header -->
         <div class="home-new-header container-fluid container-fluid-5">
             <div class="row row5">
