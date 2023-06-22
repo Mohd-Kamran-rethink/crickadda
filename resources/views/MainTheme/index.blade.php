@@ -546,7 +546,7 @@
                 <div class="title-left">
                     {{-- <img onclick="redirectToGoogle();" alt="Table Games"
                         src="NewTheme/images/popular.svg"> --}}
-                    <h1 class="title-section" style="color: #DEB439 !important;"> Popular Today</h1>
+                    <h1 class="title-section" style="color: #DEB439 !important;">New Launch</h1>
                 </div>
             </div>
         </div>
@@ -796,6 +796,41 @@
             </div>
         </div>
 
+        {{-- slot games --}}
+        <div class="text-slider" id="scrollDiv">
+            <div class="info">
+                <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
+                    <h1 class="title-section" style="color: #DEB439 !important;"> Slot Games</h1>
+                </a>
+                <a onclick="toggleSeeAll('slot-games-scroll','slot-games-box',this)" class="see-all-a"> See All
+                    <i class="fas fa-solid fa-arrow-right iconArrow"></i>
+            </div>
+        </div>
+        <div class="mobile-home-games-scroll" id="slot-games-scroll" style="display: block">
+            <ul class="home-slider mobile-home-scroll-content">
+                @foreach ($images as $item)
+                    @if ($item->category == 'slot_games')
+                        <li class="item">
+                            <div class="top-row">
+                                <a>
+                                    <img onclick="redirectToGoogle();" alt="Evolution Gaming"
+                                        src="{{ asset('storage/Banners/' . $item->filename) }}">
+                                </a>
+                            </div>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+        </div>
+        <div class="containerPopular" style="display: none" id="slot-games-box">
+            <div class="secPopular">
+                @foreach ($images as $item)
+                    @if ($item->category == 'slot_games')
+                        <img onclick="redirectToGoogle();" src="{{ asset('storage/Banners/' . $item->filename) }}">
+                    @endif
+                @endforeach
+            </div>
+        </div>
 
         <!-- Advirtize Banner Section -->
         <div class="container">
@@ -1048,7 +1083,7 @@
     {{-- mobile theme end --}}
 
     {{-- desktop view start --}}
-    <div class="wrapper home-new desktopDiv">
+    <div class="wrapper home-new">
 
         {{-- <?php if($responseData['country'] == 'PK'){ ?> --}}
         {{-- <div id="floater"><a href="https://wa.me/971569062916" target="_blank"><img src="images/images.png"></a> --}}
@@ -1099,7 +1134,8 @@
             <ul>
                 <li><a href="https://app.cricadda.com/login" role="button">Lottery</a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">SportBook1</a></li>
-                <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active"> Exchange
+                <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active">
+                        Exchange
                     </a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">Live Casino</a></li>
                 <li><a href="https://app.cricadda.com/login" role="button">Slot</a></li>
@@ -1107,7 +1143,7 @@
             </ul>
         </div>
         <!-- Header Top-Bar -->
-        <div class="news-bar" style="width: 100%">
+        <div class="news-bar">
             <?php if($responseData['country'] == 'PK'){ ?>
             <marquee> JOIN NOW AND GET 50% JOINING BONUS!! </marquee>
             <?php } else { ?>
@@ -1576,7 +1612,8 @@
                         <a href="https://app.cricadda.com/about-us" class="" target="_blank">About Us</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/terms-and-conditions" class="" target="_blank">Terms
+                        <a href="https://app.cricadda.com/terms-and-conditions" class=""
+                            target="_blank">Terms
                             and Conditions</a>
                     </li>
                     <li>
@@ -1584,10 +1621,12 @@
                             target="_blank">Responsible Gaming</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/aml-policy" class="" target="_blank">AML Policy</a>
+                        <a href="https://app.cricadda.com/aml-policy" class="" target="_blank">AML
+                            Policy</a>
                     </li>
                     <li>
-                        <a href="https://app.cricadda.com/kyc-policy" class="" target="_blank">KYC Policy</a>
+                        <a href="https://app.cricadda.com/kyc-policy" class="" target="_blank">KYC
+                            Policy</a>
                     </li>
                 </ul>
             </div>
@@ -1616,7 +1655,8 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <span class="ws-pre-wrap">This website is operated by Seven Investments America N.V., registered in
+                    <span class="ws-pre-wrap">This website is operated by Seven Investments America N.V., registered
+                        in
                         Curaçao under the number 152581, with the address at Zuikertuintjeweg Z/N (Zuikertuin Tower),
                         Curaçao</span>
                     <br /><br /><br />
@@ -1640,7 +1680,7 @@
     <script src="{{ asset('NewTheme/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/jquery-3.0.0.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/custom.js') }}"></script>
-    <script src="{{ asset('NewTheme/js/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('NewTheme/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/slick.js') }}"></script>
     <script src="{{ asset('NewTheme/js/video.min.js') }}"></script>
 

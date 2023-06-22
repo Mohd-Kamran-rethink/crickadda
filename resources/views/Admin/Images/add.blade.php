@@ -31,6 +31,7 @@
                                     <option value="outliveCasino">Our Live Casino</option>
                                     <option value="popular_today">Popular Today</option>
                                     <option value="sport">Sports</option>
+                                    <option value="slot_games">Slot Games</option>
                                     <option value="virtualCasino">Virtual Casino</option>
                                 </select>
                                 @error('category')
