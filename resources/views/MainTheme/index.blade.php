@@ -661,8 +661,7 @@
             </div>
         </div>
         <div class="mobile-home-games-scroll carousel" id="our-virtual-cashino-scroll">
-            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme"
-            id="out-virtual-cascino">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="out-virtual-cascino">
                 @foreach ($images as $item)
                     @if ($item->category == 'virtualCasino')
                         <div class="item carousel-item">
@@ -1028,7 +1027,7 @@
 
 
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
-                    style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px">
+                    style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px;z-index: 9999;">
                     <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="{{ $TelegramLink->value }}" class="signup waves-effect waves-light ng-star-inserted"
                             style="display: flex;justify-content: center">
@@ -1085,9 +1084,11 @@
                 return $item->platform === 'telegram';
             });
         @endphp
-        <div id="floater"><a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
-                    src="images/images.png"></a>
-            {{-- <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"></a> --}}
+        
+        <div id="floater" style="position: fixed;top: 45%">
+            <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
+                    src="images/images.png" loading="lazy"></a>
+            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png" loading="lazy"></a>
         </div>
         <!-- Header -->
         <div class="home-new-header container-fluid container-fluid-5">
