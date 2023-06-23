@@ -638,14 +638,17 @@ body .links {
 }
 
 .mobile-home-games-scroll .home-slider {
-	overflow-x: auto;
-	overflow-y: hidden;
-	display: flex;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	margin-top: 10px;
-	padding-left: 15px;
-	margin-bottom: 10px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+
 }
 
 .mobile-home-games-scroll .home-slider li {
@@ -670,10 +673,10 @@ body .links {
 }
 
 .mobile-home-games-scroll .home-slider img {
-	max-width: 159px;
-	min-width: 152px;
+	/* max-width: 159px;
+	min-width: 152px; */
 	box-shadow: 0 1px 8px -2px #000000b3;
-	border-radius: 6px;
+    border-radius: 6px;
 }
 
 .containerPopular {
@@ -1014,4 +1017,16 @@ input[type=text]:not(.browser-default):focus {
 @media (min-width: 1200px) {
     width: 40% !important; /* Width for large screens */
   }
+}
+
+#endorsements_slider .carousel-item {
+
+    text-align: center;
+
+}
+#endorsements_slider .Govinda-vid-dimensions {
+
+    width: 100% !important;
+    height: 295px;
+
 }

@@ -551,11 +551,11 @@
             </div>
         </div>
 
-        <div class="mobile-home-games-scroll ng-star-inserted">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div class="mobile-home-games-scroll ng-star-inserted carousel">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="populer_today">
                 @foreach ($images as $item)
                     @if ($item->category == 'popular_today')
-                        <li class="item ng-star-inserted">
+                        <div class="item carousel-item ng-star-inserted">
                             <div class="top-row">
                                 <a href="https://app.cricadda.com/login">
                                     <img onclick="redirectToGoogle();" alt="New Games"
@@ -564,58 +564,29 @@
                             </div>
                             <div class="name-slider" style="text-align: center;color: #DEB439 !important;">
                                 {{ $item->heading ?? '' }}</div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-                {{-- <li class="item ng-star-inserted">
-          <div class="top-row">
-            <a href="https://app.cricadda.com/login">
-              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/Test-Match--Bangladesh-VS-Afghanistan---Copy.png">
-            </a>
-          </div>
-          <div class="name-slider">AFG vs BAN</div>
-        </li>
-        <li class="item ng-star-inserted">
-          <div class="top-row">
-            <a href="https://app.cricadda.com/login">
-              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/TNPL-Chepauk-Super-Gillies-VS-IDream-Tiruppur-Tamizhans.png">
-            </a>
-          </div>
-          <div class="name-slider">CHEPAUK vs IDREAM</div>
-        </li>
-        <li class="item ng-star-inserted">
-          <div class="top-row">
-            <a href="https://app.cricadda.com/login">
-              <img onclick="redirectToGoogle();" alt="New Games" src="NewTheme/images/Friendlies-International-Australia-VS-Argentina.png">
-            </a>
-          </div>
-          <div class="name-slider">ARG vs AUS</div>
-        </li> --}}
-            </ul>
+
+            </div>
         </div>
 
         <div class="text-slider">
             <div class="info">
                 <a href="https://app.cricadda.com/login" class="title-left text_decoration_none">
-                    {{-- <span>
-                        <img onclick="redirectToGoogle();" width="25px;" alt="Exchange Games"
-                            src="NewTheme/images/Sports.svg">
-                    </span> --}}
+
                     <h1 class="title-section" style="color: #DEB439 !important;"> Sports</h1>
                 </a>
-                {{-- <div>
-                    <a onclick="toggleSeeAll('sports-scroll','sports-box',this)" class="see-all-a"> See All <i
-                            class="fas fa-solid fa-arrow-right iconArrow"></i>
-                    </a>
-                </div> --}}
+
             </div>
         </div>
-        <div class="mobile-home-games-scroll" id="sports-scroll">
-            <ul class="home-slider sports-section mobile-home-scroll-content">
+        <div class="mobile-home-games-scroll carousel" id="sports-scroll">
+            <div class="home-slider sports-section mobile-home-scroll-content owl-carousel owl-theme"
+                id="slorts_slider">
                 @foreach ($images as $item)
                     @if ($item->category == 'sport')
-                        <li class="item">
-                            <div class="top-row">
+                        <div class="item">
+                            <div class="top-row carousel-item">
                                 <a href="https://app.cricadda.com/login">
                                     <img onclick="redirectToGoogle();" alt="Cricket"
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
@@ -624,10 +595,10 @@
                             <div class="name-slider"
                                 style="text-align: center;color: #DEB439 !important;text-transform: uppercase">
                                 {{ $item->heading ?? '' }}</div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-            </ul>
+            </div>
         </div>
 
 
@@ -647,21 +618,21 @@
                 </div>
             </div>
         </div>
-        <div id="our-cashino-scroll" class="mobile-home-games-scroll">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div id="our-cashino-scroll" class="mobile-home-games-scroll carousel">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="casinos_slider">
                 @foreach ($images as $item)
                     @if ($item->category === 'outliveCasino')
-                        <li class="item">
-                            <div class="top-row">
+                        <div class="item carousel-item">
+                            <div class="top-row ">
                                 <a>
                                     <img onclick="redirectToGoogle();" alt="Casino Games"
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-            </ul>
+            </div>
         </div>
         <div class="containerPopular" style="display: none" id="our-cashino-box">
             <div class="secPopular">
@@ -689,11 +660,12 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-home-games-scroll" id="our-virtual-cashino-scroll">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div class="mobile-home-games-scroll carousel" id="our-virtual-cashino-scroll">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme"
+            id="out-virtual-cascino">
                 @foreach ($images as $item)
                     @if ($item->category == 'virtualCasino')
-                        <li class="item">
+                        <div class="item carousel-item">
                             <div class="top-row">
                                 <a>
                                     <img onclick="redirectToGoogle();" alt="Roulette"
@@ -703,10 +675,10 @@
                             {{-- <div class="heading_wrapper">
                                 <span>Roulette</span>
                             </div> --}}
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-            </ul>
+            </div>
         </div>
         <div class="containerPopular" style="display: none" id="our-virtual-cashino-box">
             <div class="secPopular">
@@ -734,22 +706,22 @@
                 </div>
             </div>
         </div>
-        <div id="live-cascino-scroll" class="mobile-home-games-scroll">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div id="live-cascino-scroll" class="mobile-home-games-scroll carousel">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="live_casinos_slider">
                 @foreach ($images as $item)
                     @if ($item->category == 'liveCasino')
-                        <li class="item">
+                        <div class="item carousel-item">
                             <div class="top-row">
                                 <a>
                                     <img onclick="redirectToGoogle();" alt="Evolution Gaming"
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
 
-            </ul>
+            </div>
         </div>
         <div class="containerPopular" style="display: none" id="live-cascino-box">
             <div class="secPopular">
@@ -770,21 +742,21 @@
                     <i class="fas fa-solid fa-arrow-right iconArrow"></i>
             </div>
         </div>
-        <div class="mobile-home-games-scroll" id="fantasy-games-scroll" style="display: block">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div class="mobile-home-games-scroll carousel" id="fantasy-games-scroll" style="display: block">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="provider_slider">
                 @foreach ($images as $item)
                     @if ($item->category == 'fantasyGames')
-                        <li class="item">
+                        <div class="item carousel-item">
                             <div class="top-row">
                                 <a>
                                     <img onclick="redirectToGoogle();" alt="Evolution Gaming"
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-            </ul>
+            </div>
         </div>
         <div class="containerPopular" style="display: none" id="fantasy-games-box">
             <div class="secPopular">
@@ -1179,38 +1151,41 @@
             </div>
         </div>
         @if ($responseData['country'] != 'PK')
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            {{-- <ol class="carousel-indicators">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                {{-- <ol class="carousel-indicators">
                 @foreach ($carouselItems as $key => $item)
                     <li data-target="#carouselExampleIndicators" data-slide-to="{{ $key }}" class="{{ $loop->first ? 'active' : '' }}"></li>
                 @endforeach
             </ol> --}}
-            <div class="carousel-inner">
-               
-                        <div class="carousel-item active">
-                            <img src="{{ asset('storage/Banners/slider1_1686486836.png') }}" class="d-block w-100" alt="{{ $item['title'] }}">
-                            <div class="carousel-caption">
-                                <h5>{{ $item['title'] }}</h5>
-                                <p>{{ $item['description'] }}</p>
-                            </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="{{ asset('storage/Banners/slider1_1686486836.png') }}" class="d-block w-100"
+                            alt="{{ $item['title'] }}">
+                        <div class="carousel-caption">
+                            <h5>{{ $item['title'] }}</h5>
+                            <p>{{ $item['description'] }}</p>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="{{ asset('storage/Banners/slider3_1686486859.jpg') }}" class="d-block w-100" alt="{{ $item['title'] }}">
-                            <div class="carousel-caption">
-                                <h5>{{ $item['title'] }}</h5>
-                                <p>{{ $item['description'] }}</p>
-                            </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="{{ asset('storage/Banners/slider3_1686486859.jpg') }}" class="d-block w-100"
+                            alt="{{ $item['title'] }}">
+                        <div class="carousel-caption">
+                            <h5>{{ $item['title'] }}</h5>
+                            <p>{{ $item['description'] }}</p>
                         </div>
-                        <div class="carousel-item ">
-                            <img src="{{ asset('storage/Banners/slider4_1686486879.jpg') }}" class="d-block w-100" alt="{{ $item['title'] }}">
-                            <div class="carousel-caption">
-                                <h5>{{ $item['title'] }}</h5>
-                                <p>{{ $item['description'] }}</p>
-                            </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="{{ asset('storage/Banners/slider4_1686486879.jpg') }}" class="d-block w-100"
+                            alt="{{ $item['title'] }}">
+                        <div class="carousel-caption">
+                            <h5>{{ $item['title'] }}</h5>
+                            <p>{{ $item['description'] }}</p>
                         </div>
-                        
-            </div>
-            {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    </div>
+
+                </div>
+                {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
@@ -1218,7 +1193,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a> --}}
-        </div>
+            </div>
         @else
             <!-- Banner Slider -->
             <div class="carousel slide banner-slider">
