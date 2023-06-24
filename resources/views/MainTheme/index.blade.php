@@ -777,21 +777,21 @@
                     <i class="fas fa-solid fa-arrow-right iconArrow"></i>
             </div>
         </div>
-        <div class="mobile-home-games-scroll" id="slot-games-scroll" style="display: block">
-            <ul class="home-slider mobile-home-scroll-content">
+        <div class="mobile-home-games-scroll carousel" id="slot-games-scroll" style="display: block">
+            <div class="home-slider mobile-home-scroll-content owl-carousel owl-theme" id="slot-games-scrolls">
                 @foreach ($images as $item)
                     @if ($item->category == 'slot_games')
-                        <li class="item">
+                        <div class="item carousel-item">
                             <div class="top-row">
                                 <a>
                                     <img onclick="redirectToGoogle();" alt="Evolution Gaming"
                                         src="{{ asset('storage/Banners/' . $item->filename) }}">
                                 </a>
                             </div>
-                        </li>
+                        </div>
                     @endif
                 @endforeach
-            </ul>
+            </div>
         </div>
         <div class="containerPopular" style="display: none" id="slot-games-box">
             <div class="secPopular">

@@ -169,6 +169,24 @@ $(document).ready(function () {
       },
     },
   });
+  $("#slot-games-scrolls").owlCarousel({
+    loop: true,
+    margin: 10,
+    slideBy: 2,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 2,
+      },
+    },
+  });
 
   // Endorsements Slider
   $("#endorsements_slider").owlCarousel({

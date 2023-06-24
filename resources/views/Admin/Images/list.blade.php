@@ -18,13 +18,10 @@
             @endif
         </div>
     </section>
-
-
-
     <section class="content">
         <div class="card">
             <div class="card-body">
-                <a href="{{url('admin/images/add')}}" class="btn btn-primary mb-4">Add Image</a>
+                <a href="{{ url('admin/images/add') }}" class="btn btn-primary mb-4">Add Image</a>
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -47,7 +44,9 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->category }}</td>
                                                 <td>{{ $item->name }}</td>
-                                                <td><img style="max-width: 100px" src="{{asset('storage/Banners/'.$item->filename)}}" alt=""></td>
+                                                <td><img style="max-width: 100px"
+                                                        src="{{ asset('storage/Banners/' . $item->filename) }}"
+                                                        alt=""></td>
                                                 <td>
                                                     {{-- <a href="{{ url('expense-type/edit/?id=' . $item->id) }}"
                                                         title="Edit this expense type" class="btn btn-primary"><i
@@ -56,8 +55,6 @@
                                                         onclick="manageModal({{ $item->id }})" class="btn btn-danger"><i
                                                             class="fa fa-trash"></i></button>
                                                 </td>
-
-
                                             </tr>
                                         @empty
                                             <tr>
@@ -100,10 +97,9 @@
         </div>
     </div>
     <script>
-        function manageModal(id)
-        {
+        function manageModal(id) {
             $('#deleteInput').val(id)
-                $('#modal-default').modal('show')
+            $('#modal-default').modal('show')
         }
     </script>
 @endsection
