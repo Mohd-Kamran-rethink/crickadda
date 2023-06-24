@@ -34,6 +34,7 @@
                                             <th>Category</th>
                                             <th>Name</th>
                                             <th>Image</th>
+                                            <th>Screen Type</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -44,6 +45,7 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->category }}</td>
                                                 <td>{{ $item->name }}</td>
+                                                <td>{{ $item->screen_type=='0'?'':$item->screen_type }}</td>
                                                 <td><img style="max-width: 100px"
                                                         src="{{ asset('storage/Banners/' . $item->filename) }}"
                                                         alt=""></td>

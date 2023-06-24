@@ -31,12 +31,13 @@ class MainController extends Controller
 
         $socialLinks = SocialLink::where('country', '=', 'india')->get();
         $news = Anouncement::orderBy('created_at', 'desc')->first();
+        $desktopBanners=Image::where('category','=','banner')->where('screen_type','=','desktop')->get();
 
-        return view('MainTheme.index', compact('responseData', 'logo', 'images', 'socialLinks', 'news'));
+        return view('MainTheme.index', compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
     }
     public function listImages()
     {
-        $images = Image::get();
+        $images = Image::orderBy('id','desc')->get();
         return view('Admin.Images.list', compact('images'));
     }
     public function addForm()

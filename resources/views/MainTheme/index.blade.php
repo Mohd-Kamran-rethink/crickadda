@@ -525,7 +525,7 @@
         <div class="carousel slide banner-slider">
             <div class="owl-carousel owl-theme" id="banner-slider">
                 @foreach ($images as $item)
-                    @if ($item->category == 'banner' && ($item->screen_type = 'mobile'))
+                    @if ($item->category == 'banner' && $item->screen_type == 'mobile')
                         <div class="item  carousel-item carousal-23">
                             <img style="height: 150px" onclick="redirectToGoogle();"
                                 src="{{ asset('storage/Banners/' . $item->filename) }}">
@@ -1161,15 +1161,17 @@
             </ol> --}}
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <img src="{{ asset('images/slider1.png') }}" class="d-block w-100"
-                            alt="{{ $item['title'] }}">
-                        <div class="carousel-caption">
-                            <h5>{{ $item['title'] }}</h5>
-                            <p>{{ $item['description'] }}</p>
+                    @foreach ($desktopBanners as $key => $item)
+                        <div class="carousel-item{{ $key == 0 ? ' active' : '' }}">
+                            <img src="{{ asset('storage/Banners/' . $item->filename) }}" class="d-block w-100"
+                                alt="{{ $item->title }}">
+                            <div class="carousel-caption">
+                                <h5>{{ $item->title }}</h5>
+                                <p>{{ $item->description }}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item ">
+                    @endforeach
+                    {{-- <div class="carousel-item ">
                         <img src="{{ asset('images/slider.jpg') }}" class="d-block w-100"
                             alt="{{ $item['title'] }}">
                         <div class="carousel-caption">
@@ -1184,7 +1186,7 @@
                             <h5>{{ $item['title'] }}</h5>
                             <p>{{ $item['description'] }}</p>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
                 {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
