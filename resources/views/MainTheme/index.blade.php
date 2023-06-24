@@ -1084,11 +1084,12 @@
                 return $item->platform === 'telegram';
             });
         @endphp
-        
+
         <div id="floater" style="position: fixed;top: 45%">
-            <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img
-                    src="images/images.png" loading="lazy"></a>
-            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png" loading="lazy"></a>
+            <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank"><img src="images/images.png"
+                    loading="lazy"></a>
+            <a href="{{ $TelegramLink->value }}" target="_blank"><img src="images/telegram1.png"
+                    loading="lazy"></a>
         </div>
         <!-- Header -->
         <div class="home-new-header container-fluid container-fluid-5">
@@ -1161,7 +1162,7 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                        <img src="{{ asset('storage/Banners/slider1_1686486836.png') }}" class="d-block w-100"
+                        <img src="{{ asset('images/slider1.png') }}" class="d-block w-100"
                             alt="{{ $item['title'] }}">
                         <div class="carousel-caption">
                             <h5>{{ $item['title'] }}</h5>
@@ -1169,7 +1170,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="{{ asset('storage/Banners/slider3_1686486859.jpg') }}" class="d-block w-100"
+                        <img src="{{ asset('images/slider.jpg') }}" class="d-block w-100"
                             alt="{{ $item['title'] }}">
                         <div class="carousel-caption">
                             <h5>{{ $item['title'] }}</h5>
@@ -1177,7 +1178,7 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="{{ asset('storage/Banners/slider4_1686486879.jpg') }}" class="d-block w-100"
+                        <img src="{{ asset('images/slider4.jpg') }}" class="d-block w-100"
                             alt="{{ $item['title'] }}">
                         <div class="carousel-caption">
                             <h5>{{ $item['title'] }}</h5>

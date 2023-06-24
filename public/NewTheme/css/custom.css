@@ -642,7 +642,7 @@ body .links {
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none; */
     scrollbar-width: none;
     margin-top: 10px;
     padding-left: 15px;
@@ -1030,3 +1030,6 @@ input[type=text]:not(.browser-default):focus {
     height: 295px;
 
 }
+.owl-carousel.owl-drag .owl-item {
+    touch-action: initial !important;
+ }

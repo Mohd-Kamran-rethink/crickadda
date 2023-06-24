@@ -45,7 +45,7 @@ class AuthController extends Controller
     {
         $result = session()->remove('user');
         if ($result) {
-            return redirect('/login');
+            return redirect('/admin');
         }
     }
     // dashboard to show expense and credits daily, monthly,and total
