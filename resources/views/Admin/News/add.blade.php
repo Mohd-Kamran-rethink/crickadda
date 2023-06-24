@@ -31,6 +31,21 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label>Country<span style="color:red">*</span></label>
+                                <select type="text" name="country" class="form-control" >
+                                    <option value="0">--Choose--</option>
+                                    <option value="india">India</option>
+                                    <option value="pakistan">Pakistan</option>
+                                </select>
+                                @error('country')
+                                    <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
 
                     </div>
                     <div class="row mt-2">

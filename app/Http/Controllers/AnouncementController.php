@@ -16,8 +16,13 @@ class AnouncementController extends Controller
         return view('Admin.News.add');
     }
     public function add(Request $req ) {
-        $req->validate(['title'=>'required']);
+        $req->validate(
+            [
+                'title'=>'required',
+                'country'=>'required|not_in:0'
+    ]);
         $news=new Anouncement();
+        $news->title=$req->title;
         $news->title=$req->title;
         $result=$news->save();
         

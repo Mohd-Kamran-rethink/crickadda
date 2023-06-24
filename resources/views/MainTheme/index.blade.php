@@ -1145,8 +1145,7 @@
             <?php if($responseData['country'] == 'PK'){ ?>
             <marquee> JOIN NOW AND GET 50% JOINING BONUS!! </marquee>
             <?php } else { ?>
-            <marquee> WELCOME TO CRICADDA, INDIA'S BIGGEST BETTING AND GAMING EXCHANGE, NOW GET 5% BONUS ON EVERY
-                REFILL! </marquee>
+            <marquee>{{ $news->title ?? '' }}</marquee>
             <?php } ?>
             <div class="news-title">
                 <img src="images/speaker.svg">
