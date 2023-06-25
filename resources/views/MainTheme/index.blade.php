@@ -82,6 +82,12 @@
             /* Hide the div for mobile devices */
         }
     }
+    .zsiq_floatmain
+    {
+        bottom: 13px !important;
+        left: 43%;
+
+    }
 </style>
 
 <body class="dark-theme">
@@ -1044,7 +1050,7 @@
 
 
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
-                    style="display: flex  !important;justify-content: start !important;width: 99%;margin-bottom: 20px;z-index: 9999;">
+                    style="display: flex  !important;justify-content: space-between !important;width: 99%;margin-bottom: 20px;z-index: 9999;">
                     {{-- <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="{{ $TelegramLink->value }}" class="signup waves-effect waves-light ng-star-inserted"
                             style="display: flex;justify-content: center">
