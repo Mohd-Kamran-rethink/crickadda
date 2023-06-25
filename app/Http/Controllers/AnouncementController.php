@@ -20,21 +20,21 @@ class AnouncementController extends Controller
             [
                 'title'=>'required',
                 'country'=>'required|not_in:0'
-    ]);
+        ]);
         $news=new Anouncement();
         $news->title=$req->title;
         $news->title=$req->title;
         $result=$news->save();
-        
-            return redirect('admin/anouncement')->with(['msg-success'=>'Anouncement added and active now']);
-        
+        return redirect('admin/anouncement')->with(['msg-success'=>'Anouncement added and active now']);
     }
     public function delete(Request $req) 
     {
         $news=Anouncement::find($req->deleteId);
         $news->delete();
-        
         return redirect('admin/anouncement')->with(['msg-success'=>'Anouncement deleted successfullyy']);
     }
-        
 }
+        
+        
+        
+        
