@@ -1803,9 +1803,9 @@
             toggleButton.addEventListener('click', function() {
                 // Toggle the display property of the element
                 if (floatMain.style.display === 'none') {
-                    floatMain.style.display = 'block';
+                    floatMain.style.display = 'block !important';
                 } else {
-                    floatMain.style.display = 'none';
+                    floatMain.style.display = 'none !important';
                 }
             });
         }
