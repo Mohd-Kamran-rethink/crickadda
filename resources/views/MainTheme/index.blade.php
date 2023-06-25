@@ -91,7 +91,10 @@
     .zsiq_flt_rel{
         background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;
     }
-
+    .zsiq_theme1 .siqicon:before
+    {
+        color: black !important;
+    }
 
     
 </style>
