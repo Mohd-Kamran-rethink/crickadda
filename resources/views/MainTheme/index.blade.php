@@ -82,10 +82,6 @@
             /* Hide the div for mobile devices */
         }
     }
-
-    .zsiq_floatmain {
-        display: none !important
-    }
 </style>
 
 <body class="dark-theme">
@@ -1060,11 +1056,11 @@
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
-                        <a class="signup waves-effect waves-light ng-star-inserted"
+                        <a 
+                            class="signup waves-effect waves-light ng-star-inserted"
                             style="text-align: center;display: flex;justify-content: center">
 
-                            <span onclick="toggleLiveCHat()" style="font-size: 10px;font-weight: 900"> Live Chat
-                            </span>
+                            <span onclick="toggleLiveCHat()" style="font-size: 10px;font-weight: 900"> Live Chat </span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%;">
@@ -1791,23 +1787,10 @@
                 button.innerText = 'See All';
             }
         }
-
-        function toggleLiveCHat() {
-            // Get the button element
-            var toggleButton = document.getElementById('toggleButton');
-
-            // Get the element with the CSS class
-            var floatMain = document.querySelector('.zsiq_floatmain');
-
-            // Add a click event listener to the button
-            toggleButton.addEventListener('click', function() {
-                // Toggle the display property of the element
-                if (floatMain.style.display === 'none') {
-                    floatMain.style.display = 'block !important';
-                } else {
-                    floatMain.style.display = 'none !important';
-                }
-            });
+        toggleLiveCHat()
+        function toggleLiveCHat()
+        {
+            $('.zsiq_floatmain').toggle()
         }
     </script>
 </body>
