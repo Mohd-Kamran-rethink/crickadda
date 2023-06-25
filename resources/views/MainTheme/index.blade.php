@@ -82,6 +82,7 @@
             /* Hide the div for mobile devices */
         }
     }
+    .zsiq_floatmain{display: none}
 </style>
 
 <body class="dark-theme">
@@ -1787,7 +1788,6 @@
                 button.innerText = 'See All';
             }
         }
-        toggleLiveCHat()
         function toggleLiveCHat()
         {
             $('.zsiq_floatmain').toggle()
