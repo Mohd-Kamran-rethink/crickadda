@@ -1787,10 +1787,9 @@
                 button.innerText = 'See All';
             }
         }
-        $('.zsiq_floatmain').toggle()
         function toggleLiveCHat()
         {
-            $('.zsiq_floatmain').toggle()
+            $('.zsiq_floatmain').hide()
         }
     </script>
 </body>
