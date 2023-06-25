@@ -88,6 +88,12 @@
         left: 43%;
 
     }
+    .zsiq_flt_rel{
+        background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;
+    }
+
+
+    
 </style>
 
 <body class="dark-theme">
