@@ -82,6 +82,7 @@
             /* Hide the div for mobile devices */
         }
     }
+    .zsiq_floatmain{display: none !important}
 </style>
 
 <body class="dark-theme">
