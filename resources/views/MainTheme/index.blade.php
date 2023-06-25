@@ -1044,8 +1044,8 @@
 
 
                 <div class="fixed-footer-buttons user-signin-links ng-star-inserted"
-                    style="display: flex  !important;justify-content: center !important;width: 99%;margin-bottom: 20px;z-index: 9999;">
-                    <span class="signup_btn_wrapper" style="width: 36%">
+                    style="display: flex  !important;justify-content: start !important;width: 99%;margin-bottom: 20px;z-index: 9999;">
+                    {{-- <span class="signup_btn_wrapper" style="width: 36%">
                         <a href="{{ $TelegramLink->value }}" class="signup waves-effect waves-light ng-star-inserted"
                             style="display: flex;justify-content: center">
                             <span>
@@ -1054,15 +1054,26 @@
                             </span>
                             <span style="font-size: 10px;font-weight: 900"> Telegram for new ID</span>
                         </a>
-                    </span>
-                    <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
-                        <a 
+                    </span> --}}
+                    <span class="signup_btn_wrapper" style="width: 36%;">
+                        <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}"
                             class="signup waves-effect waves-light ng-star-inserted"
-                            style="text-align: center;display: flex;justify-content: center">
-
-                            <span onclick="toggleLiveCHat()" style="font-size: 10px;font-weight: 900"> Live Chat </span>
+                            style="display: flex;justify-content: center">
+                            <span>
+                                <img onclick="redirectToGoogle();" src="NewTheme/images/whatsapp_PNG1.png"
+                                    alt="" style="width: 19px !important;">
+                            </span>
+                            <span style="font-size: 10px;font-weight: 900"> Whatsapp for new ID </span>
                         </a>
                     </span>
+                    {{-- <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
+                        <a class="signup waves-effect waves-light ng-star-inserted"
+                            style="text-align: center;display: flex;justify-content: center">
+
+                            <span onclick="toggleLiveCHat()" style="font-size: 10px;font-weight: 900"> Live Chat
+                            </span>
+                        </a>
+                    </span> --}}
                     <span class="signup_btn_wrapper" style="width: 36%;">
                         <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}"
                             class="signup waves-effect waves-light ng-star-inserted"
@@ -1787,9 +1798,8 @@
                 button.innerText = 'See All';
             }
         }
-        $('.zsiq_floatmain').hide()
-        function toggleLiveCHat()
-        {
+
+        function toggleLiveCHat() {
             $('.zsiq_floatmain').toggle()
         }
     </script>
