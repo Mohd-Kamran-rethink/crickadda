@@ -31,9 +31,26 @@
     <link rel="stylesheet" href="{{ asset('css/slick.css') }}" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="{{ asset('css/intlTelInput.min.css') }}" media="screen and (min-width: 768px)">
-
     <!-- fevicon -->
     <link rel="icon" href="NewTheme/images/favicon.png" type="image/gif" />
+    {{-- chat bot script --}}
+    <script type="text/javascript" id="zsiqchat">
+        var $zoho = $zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {
+            widgetcode: "3170bbcf9410430ed8ebd58a4de3231d3f5a702bb7ffa3e142ccf27b23c08d09",
+            values: {},
+            ready: function() {}
+        };
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.id = "zsiqscript";
+        s.defer = true;
+        s.src = "https://salesiq.zoho.in/widget";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+    </script>
+
 </head>
 <style>
     #scrollDiv {
@@ -1732,7 +1749,7 @@
     </div>
     {{-- desktop view end --}}
 
-    <!-- Javascript files for mobiles-->
+    <!-- common Javascript files for mobiles-->
     <script src="{{ asset('NewTheme/js/jquery.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('NewTheme/js/jquery-3.0.0.min.js') }}"></script>
