@@ -82,7 +82,6 @@
             /* Hide the div for mobile devices */
         }
     }
-    .zsiq_floatmain{display: none !important}
 </style>
 
 <body class="dark-theme">
@@ -1057,11 +1056,11 @@
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 20%" style="text-align: center">
-                        <a href="https://app.cricadda.com/login"
+                        <a 
                             class="signup waves-effect waves-light ng-star-inserted"
                             style="text-align: center;display: flex;justify-content: center">
 
-                            <span style="font-size: 10px;font-weight: 900"> Live Chat </span>
+                            <span onclick="toggleLiveCHat()" style="font-size: 10px;font-weight: 900"> Live Chat </span>
                         </a>
                     </span>
                     <span class="signup_btn_wrapper" style="width: 36%;">
@@ -1787,6 +1786,11 @@
                 element2.style.display = 'none';
                 button.innerText = 'See All';
             }
+        }
+        toggleLiveCHat()
+        function toggleLiveCHat()
+        {
+            $('.zsiq_floatmain').toggle()
         }
     </script>
 </body>
