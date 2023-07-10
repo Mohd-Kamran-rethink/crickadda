@@ -35,6 +35,30 @@ class MainController extends Controller
 
         return view('NewExchangeTheme.index', compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
     }
+    public function register() {
+        return view('NewExchangeTheme.register');
+        
+    }
+    public function login() {
+        return view('NewExchangeTheme.login');
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function listImages()
     {
         $images = Image::orderBy('id','desc')->get();

@@ -4348,8 +4348,8 @@
                   </div>
                </div>
                <div class="login-box">
-                  <a href="register.html" class="btn btn-primary"><span class="register-blink">Register</span></a>
-                  <a href="login.html" class="btn btn-primary"> Login </a>
+                  <a href="{{url('register')}}" class="btn btn-primary"><span class="register-blink">Register</span></a>
+                  <a href="{{url('login')}}" class="btn btn-primary"> Login </a>
                </div>
             </header>
             <div class="center-main-content">

@@ -13,18 +13,18 @@
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- css -->
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/bootstrap.min.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/style.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/world-open-custom.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/all.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/fonts.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/responsive.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/owl.carousel.min.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/slick.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/slick-theme.css')}}">
-   <link rel="stylesheet" href="{{asset('NewExchangeTheme/Newcss/intlTelInput.min.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/bootstrap.min.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/style.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/world-open-custom.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/all.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/fonts.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/responsive.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/owl.carousel.min.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/slick.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/slick-theme.css')}}">
+   <link rel="stylesheet" href="{{asset('NewExchangeTheme/css/intlTelInput.min.css')}}">
    <!-- fevicon -->
-   <link rel="icon" href="images/c.png" type="image/gif" />
+   <link rel="icon" href="images/c.png')}}" type="image/gif" />
 </head>
 
 <body class="login-home">
@@ -4348,8 +4348,8 @@
                   </div>
                </div>
                <div class="login-box">
-                  <a href="register.html" class="btn btn-primary"><span class="register-blink">Register</span></a>
-                  <a href="login.html" class="btn btn-primary"> Login </a>
+                  <a href="{{url('register')}}" class="btn btn-primary"><span class="register-blink">Register</span></a>
+                  <a href="{{url('login')}}" class="btn btn-primary"> Login </a>
                </div>
             </header>
             <div class="center-main-content">
@@ -8431,16 +8431,16 @@
                                  </div>
                                  <div class="footer-social">
                                     <a href="https://wa.me/0000000000" target="_blank"><img
-                                          src="{{asset('NewExchangeTheme/images/whatsapp.png"></a>
+                                          src="{{asset('NewExchangeTheme/images/whatsapp.png')}}"></a>
                                     <a href="https://www.facebook.com/" target="_blank"><img
-                                          src="{{asset('NewExchangeTheme/images/facebookico.png"></a>
+                                          src="{{asset('NewExchangeTheme/images/facebookico.png')}}"></a>
                                     <a href="https://instagram.com/" target="_blank"><img
-                                          src="{{asset('NewExchangeTheme/images/instagramico.png"></a>
-                                    <a href="https://t.me/" target="_blank"><img src="{{asset('NewExchangeTheme/images/telegram.png"></a>
-                                    <a href="https://twitter.com/" target="_blank"><img src="{{asset('NewExchangeTheme/images/twitter.png"></a>
+                                          src="{{asset('NewExchangeTheme/images/instagramico.png')}}"></a>
+                                    <a href="https://t.me/" target="_blank"><img src="{{asset('NewExchangeTheme/images/telegram.png')}}"></a>
+                                    <a href="https://twitter.com/" target="_blank"><img src="{{asset('NewExchangeTheme/images/twitter.png')}}"></a>
                                     <a href="https://www.youtube.com/" target="_blank"><img
-                                          src="{{asset('NewExchangeTheme/images/youtubeico.png"></a>
-                                    <a href="#" target="_blank"><img src="{{asset('NewExchangeTheme/images/news.png"></a>
+                                          src="{{asset('NewExchangeTheme/images/youtubeico.png')}}"></a>
+                                    <a href="#" target="_blank"><img src="{{asset('NewExchangeTheme/images/news.png')}}"></a>
                                  </div>
                               </div>
                               <div class="footer-menu">
@@ -8456,7 +8456,7 @@
                                  <div class="footer-top">
                                     <div class="secure-logo">
                                        <div>
-                                          <img src="{{asset('NewExchangeTheme/images/ssl.png">
+                                          <img src="{{asset('NewExchangeTheme/images/ssl.png')}}">
                                        </div>
                                        <div class="ml-2">
                                           <b>100% SAFE</b>
@@ -8466,13 +8466,13 @@
                                     <div class="d-inline-block footer-other">
                                        <a href="javascript:void(0)" role="button" data-toggle="modal"
                                           data-target="#modal-18plusModal">
-                                          <img src="{{asset('NewExchangeTheme/images/18plus.png">
+                                          <img src="{{asset('NewExchangeTheme/images/18plus.png')}}">
                                        </a>
                                        <a href="https://www.gamcare.org.uk/" target="_blank">
-                                          <img src="{{asset('NewExchangeTheme/images/gamecare.png">
+                                          <img src="{{asset('NewExchangeTheme/images/gamecare.png')}}">
                                        </a>
                                        <a href="#" target="_blank">
-                                          <img src="{{asset('NewExchangeTheme/images/gt.png">
+                                          <img src="{{asset('NewExchangeTheme/images/gt.png')}}">
                                        </a>
                                     </div>
                                  </div>
@@ -8593,42 +8593,42 @@
                               <ul class="hooper-track new-launched">
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/roulette1.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/roulette1.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen20.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen20.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen9.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen9.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/roulette1.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/roulette1.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen20.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen20.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                                  <li class="hooper-slide item">
                                     <a href="javascript:void(0);" role="button">
-                                       <img src="{{asset('NewExchangeTheme/images/teen9.jpg" class="img-fluid">
+                                       <img src="{{asset('NewExchangeTheme/images/teen9.jpg')}}" class="img-fluid">
                                     </a>
                                  </li>
                               </ul>
@@ -8644,366 +8644,366 @@
                               <ul class="hooper-track our-casino-slider">
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/roulette1.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/roulette1.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen9.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen8.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/poker.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/poker20.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/poker6.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen9.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/baccarat.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen8.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/baccarat2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/poker.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/poker20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt6.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dtl20.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt202.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/card32.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/card32eu.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/poker6.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/ab20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/baccarat.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/abj.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/baccarat2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/dt20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/3cardj.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/war.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/worli.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/worli2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/dt6.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/aaa.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/dtl20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/btable.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/dt202.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lottcard.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/card32.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cricketv3.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cmatch20.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cmeter.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen6.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/queen.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/card32eu.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/ab20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/abj.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/superover.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/trap.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/patti2.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teensin.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teenmuf.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race17.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen20b.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/3cardj.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/trio.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/war.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/notenum.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/worli.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen2024.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/kbc.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen120.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen1.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/roulette.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/worli2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/ab3.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/aaa.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/aaa2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/btable.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/lottcard.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen3.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dum10.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cmeter1.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/roulette1.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/cricketv3.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/cmatch20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen9.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/cmeter.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen8.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen6.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/baccarat.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/baccarat2.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt20.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt6.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dtl20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/queen.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dt202.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/race20.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/card32.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/card32eu.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/superover.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/ab20.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/abj.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/3cardj.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/trap.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/war.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/patti2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/worli.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teensin.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/worli2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teenmuf.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/aaa.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/btable.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lottcard.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cricketv3.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cmatch20.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/race17.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/cmeter.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen20b.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen6.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/trio.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/queen.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/notenum.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race20.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu2.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/superover.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/trap.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/patti2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen2024.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teensin.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/kbc.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teenmuf.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen120.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race17.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen1.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen20b.jpg" class="img-fluid"></a>
-                                    </div>
-                                 </li>
-                                 <li class="hooper-slide items">
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/trio.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/notenum.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen2024.jpg" class="img-fluid"></a>
-                                    </div>
-                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/kbc.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/roulette.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen120.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/ab3.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen1.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/aaa2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/roulette.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/race2.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/ab3.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen3.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide items">
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/aaa2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/dum10.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/race2.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/cmeter1.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/teen3.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/roulette1.jpg')}}" class="img-fluid"></a>
                                     </div>
                                     <div class="login-hover"><a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/dum10.jpg" class="img-fluid"></a>
+                                          <img src="{{asset('NewExchangeTheme/images/teen.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen9.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen8.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/baccarat.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/baccarat2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/dt20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/dt6.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/dtl20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/dt202.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/card32.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/card32eu.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/ab20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/abj.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/3cardj.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/war.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/worli.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/worli2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/aaa.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/btable.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/lottcard.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/cricketv3.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/cmatch20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/cmeter.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen6.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/queen.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/race20.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/lucky7eu2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/superover.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/trap.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/patti2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teensin.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teenmuf.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/race17.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen20b.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/trio.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/notenum.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen2024.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/kbc.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen120.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen1.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/roulette.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/ab3.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                 </li>
+                                 <li class="hooper-slide items">
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/aaa2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/race2.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/teen3.jpg')}}" class="img-fluid"></a>
+                                    </div>
+                                    <div class="login-hover"><a href="javascript:void(0);" role="button">
+                                          <img src="{{asset('NewExchangeTheme/images/dum10.jpg')}}" class="img-fluid"></a>
                                     </div>
                                  </li>
                               </ul>
@@ -9020,112 +9020,112 @@
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vlucky7.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vlucky7.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vtrio.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vtrio.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vdtl20.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vdtl20.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vteenmuf.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vteenmuf.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vaaa.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vaaa.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vbtable.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vbtable.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vdt6.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vdt6.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vteen.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vteen.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vteen20.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vteen20.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vlucky7.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vlucky7.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vtrio.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vtrio.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vdtl20.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vdtl20.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vteenmuf.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vteenmuf.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vaaa.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vaaa.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vbtable.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vbtable.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
                                  <li class="hooper-slide item">
                                     <div class="login-hover">
                                        <a href="javascript:void(0);" role="button">
-                                          <img src="{{asset('NewExchangeTheme/images/vdt6.jpg" class="img-fluid">
+                                          <img src="{{asset('NewExchangeTheme/images/vdt6.jpg')}}" class="img-fluid">
                                        </a>
                                     </div>
                                  </li>
