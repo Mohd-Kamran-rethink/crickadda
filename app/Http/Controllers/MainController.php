@@ -33,7 +33,7 @@ class MainController extends Controller
         $news = Anouncement::orderBy('created_at', 'desc')->first();
         $desktopBanners=Image::where('category','=','banner')->where('screen_type','=','desktop')->get();
 
-        return view('MainTheme.index', compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
+        return view('NewExchangeTheme.index', compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
     }
     public function listImages()
     {

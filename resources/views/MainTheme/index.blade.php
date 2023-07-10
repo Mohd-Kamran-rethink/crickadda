@@ -81,22 +81,21 @@
             display: none;
             /* Hide the div for mobile devices */
         }
-    }
-    .zsiq_floatmain
-    {
-        bottom: 13px !important;
-        left: 43%;
 
-    }
-    .zsiq_flt_rel{
-        background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;
-    }
-    .zsiq_theme1 .siqicon:before
-    {
-        color: black !important;
-    }
+        .zsiq_floatmain {
+            bottom: 13px !important;
+            left: 43%;
 
-    
+        }
+
+        .zsiq_flt_rel {
+            background: linear-gradient(90deg, #E6C540 0%, #F5F7B8 100%) !important;
+        }
+
+        .zsiq_theme1 .siqicon:before {
+            color: black !important;
+        }
+    }
 </style>
 
 <body class="dark-theme">
