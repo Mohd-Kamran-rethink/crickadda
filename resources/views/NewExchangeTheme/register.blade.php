@@ -57,7 +57,7 @@
          <div class="sidebar-left d-none-mobile">
             <div class="logo-box">
                <div class="logo">
-                  <a href="/" class="router-link-exact-active router-link-active">
+                  <a href="{{url('/')}}" class="router-link-exact-active router-link-active">
                      <img src="{{asset('NewExchangeTheme/images/logmain.png')}}" class="img-fluid">
                   </a>
                </div>
@@ -4334,7 +4334,7 @@
                </div>
                <div class="logo-box d-none-desktop">
                   <div class="logo">
-                     <a href="/" aria-current="page" class="router-link-exact-active router-link-active">
+                     <a href="{{url('/')}}" aria-current="page" class="router-link-exact-active router-link-active">
                         <img src="{{asset('NewExchangeTheme/images/logmain.png')}}">
                      </a>
                   </div>
