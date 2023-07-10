@@ -43,7 +43,7 @@
          <!-- Header Top-Bar -->
          <div class="header-top">
             <ul>
-               <li><a href="/" aria-current="page" class="router-link-exact-active router-link-active"> Exchange </a>
+               <li><a href="{{url('/')}}" aria-current="page" class="router-link-exact-active router-link-active"> Exchange </a>
                </li>
                <li><a href="javascript:void(0);" role="button">Live Casino</a></li>
                <li><a href="javascript:void(0);" role="button">Slot</a></li>
