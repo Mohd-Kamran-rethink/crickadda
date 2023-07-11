@@ -57,7 +57,7 @@
         <div class="logo-box">
           <div class="logo">
             <a href="{{url('/')}}" class="router-link-exact-active router-link-active">
-              <img src="{{asset('NewExchangeTheme/images/logmain.png')}}" class="img-fluid">
+              <img src="{{ asset('storage/Banners/' . $logo->filename) }}" class="img-fluid">
             </a>
           </div>
         </div>
@@ -4305,13 +4305,12 @@
           <div class="logo-box d-none-desktop">
             <div class="logo">
               <a href="{{url('/')}}" aria-current="page" class="router-link-exact-active router-link-active">
-                <img src="{{asset('NewExchangeTheme/images/logmain.png')}}">
+                <img src="{{ asset('storage/Banners/' . $logo->filename) }}">
               </a>
             </div>
           </div>
           <div class="news-bar d-none-mobile">
-            <marquee>PLAY ONLY ON CRICADDA &amp; GET 100% BONUS. 24/7 BEST CUSTOMER SERVICES AND SUPER FAST
-              WITHDRAWALS!!!
+            <marquee>{{ $news->title ?? '' }}
             </marquee>
             <div class="news-title">
               <img src="{{asset('NewExchangeTheme/images/speaker.svg')}}">
@@ -4324,8 +4323,7 @@
         </header>
         <div class="center-main-content">
           <div class="news-bar d-none-desktop">
-            <marquee> PLAY ONLY ON CRICADDA &amp; GET 100% BONUS. 24/7 BEST CUSTOMER SERVICES AND SUPER FAST
-              WITHDRAWALS!!!
+            <marquee>{{ $news->title ?? '' }}
             </marquee>
             <div class="news-title"><img src="{{asset('NewExchangeTheme/images/speaker.svg')}}"></div>
           </div>
@@ -7624,30 +7622,14 @@
                   <!-- Banner Slider -->
                   <div class="carousel slide banner-slider">
                     <div class="owl-carousel owl-theme" id="banner-slider">
+                      @foreach($images as $item)
+                      @if ($item->category == 'banner')
                       <div class="item  carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685002078080.png')}}">
+                        <img src="{{ asset('storage/Banners/' . $item->filename) }}">
                       </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685009175890.png')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685428975801.jpg')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685429183429.jpg')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685460102862.jpg')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685460102888.jpg')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685608489223.jpg')}}">
-                      </div>
-                      <div class="item carousel-item carousal-23">
-                        <img src="{{asset('NewExchangeTheme/images/1685608489251.jpg')}}">
-                      </div>
+                      @endif
+                      @endforeach
+                     
                     </div>
                   </div>
                   <!-- <div class="point-casino-list d-none-desktop">
