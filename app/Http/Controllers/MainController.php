@@ -36,11 +36,49 @@ class MainController extends Controller
         return view('NewExchangeTheme.index', compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
     }
     public function register() {
-        return view('NewExchangeTheme.register');
+        // Get the user's IP address
+        $userIpAddress = request()->ip();
+
+        // Make a request to the IP geolocation service
+        $client = new Client();
+        $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
+        // Parse the JSON response
+        $data = json_decode($response->getBody(), true);
+        // Retrieve the country information
+        $country = $data['countryCode'] ?? "IN";
+        $responseData = ['country' => $country];
+        $logo = Image::where('category', 'logo')
+            ->orderBy('created_at', 'desc')
+            ->first();
+        $images = Image::get();
+
+        $socialLinks = SocialLink::where('country', '=', 'india')->get();
+        $news = Anouncement::orderBy('created_at', 'desc')->first();
+        $desktopBanners=Image::where('category','=','banner')->where('screen_type','=','desktop')->get();
+        return view('NewExchangeTheme.register',compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
         
     }
     public function login() {
-        return view('NewExchangeTheme.login');
+         // Get the user's IP address
+         $userIpAddress = request()->ip();
+
+         // Make a request to the IP geolocation service
+         $client = new Client();
+         $response = $client->get("http://ip-api.com/json/{$userIpAddress}");
+         // Parse the JSON response
+         $data = json_decode($response->getBody(), true);
+         // Retrieve the country information
+         $country = $data['countryCode'] ?? "IN";
+         $responseData = ['country' => $country];
+         $logo = Image::where('category', 'logo')
+             ->orderBy('created_at', 'desc')
+             ->first();
+         $images = Image::get();
+ 
+         $socialLinks = SocialLink::where('country', '=', 'india')->get();
+         $news = Anouncement::orderBy('created_at', 'desc')->first();
+         $desktopBanners=Image::where('category','=','banner')->where('screen_type','=','desktop')->get();
+        return view('NewExchangeTheme.login',compact('desktopBanners','responseData', 'logo', 'images', 'socialLinks', 'news'));
         
     }
 

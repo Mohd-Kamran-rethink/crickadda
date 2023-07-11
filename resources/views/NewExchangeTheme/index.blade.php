@@ -31,8 +31,26 @@
   <div id="app">
     <div class="wrapper world-open-home">
       <!-- Floter Icon -->
+      @php
+        $WhatsAppLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'whatsapp';
+        });
+        $TelegramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'telegram';
+        });
+        $FacebookLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'facebook';
+        });
+        
+        $youtubeLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'youtube';
+        });
+        $instagramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'instagram';
+        });
+    @endphp
       <div id="floater">
-        <a href="https://wa.me/0000000000" target="_blank">
+        <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank">
           <img src="{{asset('NewExchangeTheme/images/images.png')}}">
         </a>
         <a href="#" target="_blank">

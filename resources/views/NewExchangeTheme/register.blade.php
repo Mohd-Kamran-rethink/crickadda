@@ -29,10 +29,28 @@
 
 <body class="login-home">
    <div id="app">
+      @php
+        $WhatsAppLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'whatsapp';
+        });
+        $TelegramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'telegram';
+        });
+        $FacebookLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'facebook';
+        });
+        
+        $youtubeLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'youtube';
+        });
+        $instagramLink = $socialLinks->last(function ($item) {
+            return $item->platform === 'instagram';
+        });
+    @endphp
       <div class="wrapper world-open-home">
          <!-- Floter Icon -->
          <div id="floater">
-            <a href="https://wa.me/0000000000" target="_blank">
+            <a href="{{ 'https://wa.me/' . $WhatsAppLink->value }}" target="_blank">
                <img src="{{asset('NewExchangeTheme/images/images.png')}}">
             </a>
             <a href="#" target="_blank">
@@ -4340,8 +4358,7 @@
                   </div>
                </div>
                <div class="news-bar d-none-mobile">
-                  <marquee>PLAY ONLY ON CRICADDA &amp; GET 100% BONUS. 24/7 BEST CUSTOMER SERVICES AND SUPER FAST
-                     WITHDRAWALS!!!
+                  <marquee>{{ $news->title ?? '' }}
                   </marquee>
                   <div class="news-title">
                      <img src="{{asset('NewExchangeTheme/images/speaker.svg')}}">
@@ -4354,8 +4371,7 @@
             </header>
             <div class="center-main-content">
                <div class="news-bar d-none-desktop">
-                  <marquee> PLAY ONLY ON CRICADDA &amp; GET 100% BONUS. 24/7 BEST CUSTOMER SERVICES AND SUPER FAST
-                     WITHDRAWALS!!!
+                  <marquee>{{ $news->title ?? '' }}
                   </marquee>
                   <div class="news-title"><img src="{{asset('NewExchangeTheme/images/speaker.svg')}}"></div>
                </div>
@@ -8328,30 +8344,13 @@
                            <!-- Banner Slider -->
                            <div class="carousel slide banner-slider">
                               <div class="owl-carousel owl-theme" id="banner-slider">
+                                 @foreach($images as $item)
+                                 @if ($item->category == 'banner')
                                  <div class="item  carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685002078080.png')}}">
+                                    <img src="{{ asset('storage/Banners/' . $item->filename) }}">
                                  </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685009175890.png')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685428975801.jpg')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685429183429.jpg')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685460102862.jpg')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685460102888.jpg')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685608489223.jpg')}}">
-                                 </div>
-                                 <div class="item carousel-item carousal-23">
-                                    <img src="{{asset('NewExchangeTheme/images/1685608489251.jpg')}}">
-                                 </div>
+                                 @endif
+                                 @endforeach
                               </div>
                            </div>
 
