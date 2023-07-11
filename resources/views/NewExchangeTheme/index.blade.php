@@ -15711,10 +15711,10 @@
                     <div class="support">
                       <div>
                         <div class="w-100 text-center"><b>24X7 Support</b></div>
-                        <div class="text-center w-100"><span>https://wa.me/0000000000</span></div>
+                        <div class="text-center w-100"><span>{{$WhatsAppLink->value}}</span></div>
                       </div>
                       <div class="footer-social">
-                        <a href="https://wa.me/0000000000" target="_blank"><img src="{{asset('NewExchangeTheme/images/whatsapp.png')}}"></a>
+                        <a href="{{$WhatsAppLink->value}}" target="_blank"><img src="{{asset('NewExchangeTheme/images/whatsapp.png')}}"></a>
                         <a href="https://www.facebook.com/" target="_blank"><img src="{{asset('NewExchangeTheme/images/facebookico.png')}}"></a>
                         <a href="https://instagram.com/" target="_blank"><img src="{{asset('NewExchangeTheme/images/instagramico.png')}}"></a>
                         <a href="https://t.me/" target="_blank"><img src="{{asset('NewExchangeTheme/images/telegram.png')}}"></a>
